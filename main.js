@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Menú móvil
   const menuButton = document.getElementById('mobile-menu-button');
   const menu = document.getElementById('mobile-menu');
   const openIcon = document.getElementById('menu-open-icon');
@@ -9,22 +10,37 @@ document.addEventListener('DOMContentLoaded', () => {
     openIcon.classList.toggle('hidden');
     closeIcon.classList.toggle('hidden');
   });
-});
 
-document.addEventListener('DOMContentLoaded', function () {
+  // Control de idioma
   const currentPath = window.location.pathname;
+  const esFlag = document.getElementById('es-flag');
+  const enFlag = document.getElementById('en-flag');
+  const esFlagMobile = document.getElementById('es-flag-mobile');
+  const enFlagMobile = document.getElementById('en-flag-mobile');
 
-  // Menú principal
   if (currentPath.includes('index_es.html')) {
-    document.getElementById('es-flag').classList.add('bg-green-800');
-  } else if (currentPath.includes('index_en.html')) {
-    document.getElementById('en-flag').classList.add('bg-green-800');
-  }
+    esFlag.classList.add('bg-white', 'text-black');
+    esFlag.classList.remove('text-white');
+    enFlag.classList.remove('bg-white', 'text-black');
+    enFlag.classList.add('text-white');
 
-  // Menú móvil
-  if (currentPath.includes('index_es.html')) {
-    document.getElementById('es-flag-mobile').classList.add('bg-green-800');
+    if (esFlagMobile && enFlagMobile) {
+      esFlagMobile.classList.add('bg-white', 'text-black');
+      esFlagMobile.classList.remove('text-white');
+      enFlagMobile.classList.remove('bg-white', 'text-black');
+      enFlagMobile.classList.add('text-white');
+    }
   } else if (currentPath.includes('index_en.html')) {
-    document.getElementById('en-flag-mobile').classList.add('bg-green-800');
+    enFlag.classList.add('bg-white', 'text-black');
+    enFlag.classList.remove('text-white');
+    esFlag.classList.remove('bg-white', 'text-black');
+    esFlag.classList.add('text-white');
+
+    if (esFlagMobile && enFlagMobile) {
+      enFlagMobile.classList.add('bg-white', 'text-black');
+      enFlagMobile.classList.remove('text-white');
+      esFlagMobile.classList.remove('bg-white', 'text-black');
+      esFlagMobile.classList.add('text-white');
+    }
   }
 });
