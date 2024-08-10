@@ -1,3 +1,42 @@
 html {
     scroll-behavior: smooth;
 }
+
+/* Estilo personalizado para animación */
+nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 60%;
+    height: 100%;
+    width: 50%;
+    background-color: #2f855a;
+    transition: width 0.3s ease;
+    z-index: -1;
+  }
+  
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #2f855a;
+    color: white;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+  }
+  
+  #navbar-logo {
+    transition: transform 0.3s ease, width 0.3s ease;
+  }
+  
+  #scroll-section {
+    height: 100vh;
+    background-image: url('images/Roxia pag-04.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #main-logo {
+    transition: transform 0.3s ease;
+  }
+  

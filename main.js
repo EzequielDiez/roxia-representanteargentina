@@ -43,4 +43,28 @@ document.addEventListener('DOMContentLoaded', () => {
       esFlagMobile.classList.add('text-white');
     }
   }
+
+  // Animación de fondo del navbar
+  const navbar = document.querySelector('nav');
+  function updateNavbarBackground() {
+    const scrollPercentage = Math.min(window.scrollY / (document.body.scrollHeight - window.innerHeight), 1);
+    navbar.style.background = `linear-gradient(to left, #2f855a ${(scrollPercentage * 100) + 40}%, transparent ${(scrollPercentage * 100) + 50}%)`;
+  }
+
+  // Ejecuta la animación inmediatamente al cargar la página y al hacer scroll
+  updateNavbarBackground();
+  document.addEventListener('scroll', updateNavbarBackground);
+
+  document.addEventListener('scroll', function() {
+    const scrollY = window.scrollY;
+    const logo = document.getElementById('main-logo');
+
+    // Ajusta la posición y tamaño de la imagen según el scroll
+    const xOffset = scrollY * 3;  // Aumenta el valor para mover más a la izquierda
+    const yOffset = scrollY * 0.3;  // Ajusta según el movimiento vertical deseado
+    const scale = 1 - scrollY * 0.0025; // Ajusta el valor para el tamaño de la imagen
+
+    logo.style.transform = `translate(-${xOffset}px, -${yOffset}px) scale(${scale})`;
+  });
+
 });
