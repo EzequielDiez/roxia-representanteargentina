@@ -55,40 +55,4 @@ document.addEventListener('DOMContentLoaded', () => {
   updateNavbarBackground();
   document.addEventListener('scroll', updateNavbarBackground);
 
-  // Static variables - That do not change while scrolling
-  const header = document.querySelector('#navbar'); // Cambiado para seleccionar el nav con el ID navbar
-  const logo = document.querySelector('#main-logo'); // Cambiado para seleccionar el logo con el ID main-logo
-  const scrollTo = 120; // Animation until scrolled to this point
-
-  const headerHeight = header.offsetHeight; // Get height of header
-  const logoHeight = logo.offsetHeight; // Get logo height
-
-  // Scroll function
-  window.addEventListener('scroll', function() {
-  // Dynamic variables - That do change while scrolling
-  const yPos = window.scrollY; // Get the scroll Y-position
-  let yPer = yPos / scrollTo; // Calculate percentage of scroll
-
-  // If percentage is over 100, set to 100
-  if (yPer > 1) {
-    yPer = 1;
-  }
-
-  // Dynamic variables for the elements
-  const logoPos = (-1 * (yPer * 50) + 50); // Calculate position of logo (starting from 50%)
-  const logoSize = ((headerHeight * yPer) - (logoHeight * yPer) + logoHeight); // Calculate new size height for logo
-  const headerPos = ((yPer * headerHeight) - headerHeight); // Calculate position of header (starting from minus the height of itself)
-
-  // Change the top, left, transform, and height of the logo
-  logo.style.top = logoPos + '%';
-  logo.style.left = logoPos + '%';
-  logo.style.transform = `translate3d(-${logoPos}%, -${logoPos}%, 0)`;
-  logo.style.height = logoSize + 'px';
-
-  // Change the transform and opacity of the header
-  header.style.top = headerPos + 'px';
-  header.style.opacity = yPer;
-});
-
-
 });
