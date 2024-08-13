@@ -16,5 +16,17 @@ nav::before {
 }
 
 #scroll-section {
-  background-image: url('images/Roxia pag-04.png');
+  background-image: url('images/filter-img-background.png');
+}
+
+/* #first-section {
+  background-image: url('images/return-img-background.png');
+} */
+
+#first-section {
+  background: 
+    linear-gradient(to bottom, transparent 20%, white 40%),
+    url('images/return-img-background.png') no-repeat center top;
+  background-size: contain;
+  height: 100vh; /* Ajusta según el tamaño de la sección */
 }
