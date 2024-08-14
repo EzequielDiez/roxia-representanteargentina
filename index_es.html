@@ -117,31 +117,103 @@
     
     <section class="h-screen bg-white">
       <!-- Parte superior (50%) -->
-      <div class="h-1/2 flex flex-col justify-center items-center text-center p-6">
-        <h1 class="text-3xl md:text-5xl font-bold mb-4">El filtrado de tu empresa en nuestras manos</h1>
-        <p class="text-lg md:text-xl mb-4">
-          Vendemos equipos nuevos de filtrado tanto automáticos como manuales.
-          También ACTUALIZAMOS / ACONDICIONAMOS sus viejos equipos, soluciones A MEDIDA.
-        </p>
-        <a href="#contacto" class="bg-green-500 text-white px-6 py-3 rounded-md shadow-lg hover:bg-green-600">
-          Contactate con nosotros
-        </a>
+      <div class="h-1/2 flex flex-col justify-center items-center">
+        <div class="text-left">
+            <h1 class="text-5xl md:text-7xl font-bold mb-8">El filtrado de tu empresa <br> en nuestras manos</h1>
+            <p class="text-lg md:text-3xl mb-8">
+                Vendemos equipos nuevos de filtrado tanto automáticos como manuales. <br>
+                También <strong>ACTUALIZAMOS / ACONDICIONAMOS</strong> sus viejos equipos, <br>
+                soluciones <strong>A MEDIDA</strong>.
+            </p>
+            <div>
+                <a href="#contacto" class="bg-green-500 text-white text-2xl px-4 py-1 rounded-md shadow-lg hover:bg-green-600 ">
+                    Contactate con nosotros
+                </a>
+            </div>
+        </div>
       </div>
-    
+
       <!-- Parte inferior (50%) -->
-      <div class="h-1/2 flex items-center justify-center">
-        <div class="flex space-x-4">
+      <div class="h-1/2 flex justify-center items-center">
+        <div class="flex w-full max-w-screen-lg h-full pb-40">
           <!-- Video de YouTube -->
-          <div class="w-[960px] h-[720px]">
-            <iframe class="w-full h-full" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-          </div>
+          <iframe class="flex-1 h-full border-0 rounded-tl-lg rounded-bl-lg" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
           <!-- Cuadrado gris oscuro con texto -->
-          <div class="w-[960px] h-[720px] bg-gray-800 text-white flex items-center justify-center text-center">
-            <p class="text-lg md:text-xl">Nos encargamos de los procesos de separación SOLIDOS / LIQUIDOS</p>
+          <div class="relative flex-1 h-full bg-gray-800 text-white flex items-center justify-center text-center p-4 rounded-tr-lg rounded-br-lg">
+            <div class="relative bg-gray-800 border-t-4 border-r-4 border-green-500 p-8 ml-8 flex flex-col justify-between h-full">
+                <p class="text-lg md:text-3xl mb-4">
+                    Nos encargamos de los procesos de separación SOLIDOS / LIQUIDOS
+                </p>
+                <img src="images/roxia-logo.svg" alt="Roxia Logo" class="self-end w-4/12 h-auto mt-4">
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="h-screen flex">
+        <!-- Div con la foto alineada arriba a la derecha -->
+        <div class="flex-1 flex items-start justify-end">
+          <img src="images/about-us-section.png" alt="Descripción de la imagen" class="w-auto h-auto object-cover">
+        </div>   
+        <h2 class="text-xl font-bold">Nosotros</h2>
+
+      <!-- Segundo div transparente con borde verde y la palabra "Nosotros" -->
+      <div class="ml-auto border-l-4 border-green-500 pl-4 py-2">
+        
+      </div>
+    
+      <!-- Tercer div con el título y texto alineados a la izquierda -->
+      <div class="ml-10 pl-4 pr-8 py-6">
+        <h3 class="text-2xl font-bold mb-4">Con más de 40 años de experiencia</h3>
+        <p class="text-base leading-relaxed">
+          En 1977 fundamos la empresa LAROX Oy para especializarnos en
+          Filtros Prensa y Válvulas Pinch. Después de convertirnos en líderes de ese
+          mercado, en 2009 se vendió la marca LAROX Oy a Outotec y se creó
+          FLOWROX para dedicarse a Bombas y Válvulas pinch.
+    
+          FLOWROX se desempeñó exitosamente hasta que en 2021, se tomó la
+          decisión de retornar al Negocio de los Filtros Prensa, causa por la cual,
+          se vendió a Neles Oy.
+    
+          En 2021 con la misma Planta en Lappeenranta, Finlandia y prácticamente
+          el mismo personal de nuestros comienzos en 1977, se decidió crear
+          ROXIA Oy para REENFOCARSE en el Negocio de Filtros Prensa -
+          Separación Solidos / Líquidos ‒ Dewatering. Además se compró el 50 %
+          de AQUACHEM para convertirla en: a ROXIA Brand e iniciar una
+          NUEVA GENERACION de Filtros Prensa.
+    
+          En procesos de separación sólido-líquido, ofrecemos soluciones
+          integrales que destacan por su calidad y eficacia.
+    
+          Nuestros servicios abarcan desde un exhaustivo análisis de procesos y
+          pruebas de filtrado, hasta la entrega e instalación del filtro
+          correspondiente.
+    
+          Asimismo, brindamos entrenamiento especializado y acompañamiento
+          continuo durante todo el ciclo de vida del equipo, garantizando una
+          rápida entrega de repuestos y soporte técnico eficiente.
+        </p>
+      </div>
+    </section>
+
+    <div class="h-screen flex items-center justify-center">
+      <div class="border-2 border-red-500 h-full w-4/5 flex items-center justify-center p-4 relative overflow-hidden">
+        <img src="images/about-us-section.png" class="absolute top-0 right-0" alt="About Us">
+        <div class="border-2 border-blue-500 h-4/5 w-3/4 flex items-center justify-center p-4">
+          <div class="border-2 border-green-500 h-full w-3/4 p-4">
+            <!-- Contenido de la caja más interna -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
     
     
     
