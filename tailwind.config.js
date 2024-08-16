@@ -1,8 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  important: true,
   content: [
-    './index.html',
-    ['./src/**/*.{html,js}', './public/index.html'],
+    "./index.html",
+    "./index_es.html",
+    "./index_en.html",
+    "./main.js",
   ],
   safelist: [
     {
