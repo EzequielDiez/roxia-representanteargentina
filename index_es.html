@@ -150,32 +150,157 @@
       </div>
     </section>
 
-    <section class="h-screen flex items-center justify-center">
-      <div class="relative flex w-full max-w-7xl px-4">
-        <!-- Imagen de fondo a la derecha -->
-        <div class="w-1/2 absolute top-0 right-0 h-full overflow-hidden">
-          <img src="images/about-us-section.png" alt="" class="h-4/6 w-auto object-cover">
+    <section class="h-auto flex items-center justify-center bg-white">
+  <div class="relative flex w-full max-w-6xl px-4">
+    <!-- Imagen de fondo a la derecha -->
+    <div class="absolute top-0 right-0 h-full overflow-hidden w-1/2">
+      <!-- Contenedor con el degradado -->
+      <div class="relative h-full">
+        <img src="images/about-us-section.png" alt="" class="h-5/6 w-auto object-cover relative z-0">
+        <!-- Capa de degradado -->
+        <div class="absolute inset-0 bg-gradient-to-tr from-white via-white/90 to-transparent"></div>
+      </div>
+    </div>
+    
+    <!-- Contenido de texto -->
+    <div class="w-4/6 pl-8 relative z-10">
+      <h2 class="text-green-600 text-2xl md:text-3xl font-semibold">Nosotros</h2>
+      <h1 class="text-7xl md:text-7xl font-bold text-gray-900 mt-2">
+        Con más <br> de 40 años <br> de experiencia
+      </h1>
+      <p class="text-gray-700 text-2xl md:text-2xl leading-10 mt-4">
+        En 1977 fundamos la empresa <strong>LAROX Oy</strong> para especializarnos en Filtros Prensa y Válvulas Pinch. Después de convertirnos en líderes de ese mercado, en 2009 se vendió la marca <strong>LAROX Oy a Outotec</strong> y se creó <strong>FLOWROX</strong> para dedicarse a Bombas y Válvulas pinch. <br>
+        <strong>FLOWROX</strong> se desempeñó exitosamente hasta que en 2021, se tomó la decisión de retornar al Negocio de los Filtros Prensa, causa por la cual, se vendió a Neles Oy. <br>
+        En 2021 con la misma Planta en Lappeenranta, Finlandia y prácticamente el mismo personal de nuestros comienzos en 1977, se decidió crear <strong>ROXIA Oy</strong> para REENFOCARSE en el Negocio de Filtros Prensa - Separación Sólidos / Líquidos - Dewatering. Además se compró el 50 % de AQUACHEM para convertirla en: a <strong>ROXIA Brand</strong> e iniciar una <strong>NUEVA GENERACIÓN</strong> de Filtros Prensa.
+      </p>
+      <p class="text-gray-700 text-2xl md:text-2xl mt-4">
+        En procesos de separación sólido-líquido, ofrecemos <strong>soluciones integrales</strong> que destacan por su calidad y eficacia. <br>
+        Nuestros servicios abarcan desde un exhaustivo <strong>análisis de procesos</strong> y pruebas de filtrado, hasta la entrega e <strong>instalación del filtro</strong> correspondiente. <br>
+        Asimismo, brindamos entrenamiento especializado y acompañamiento continuo durante todo el ciclo de vida del equipo, garantizando una rápida entrega de repuestos y soporte técnico eficiente.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="h-screen relative">
+  <!-- Fondo gris -->
+  <div class="absolute inset-0 bg-gray-200" style="height: 15%;"></div>
+
+  <!-- Fondo blanco -->
+  <div class="absolute inset-0 top-[15%] bg-white" style="height: 85%;"></div>
+
+  <!-- Contenido -->
+  <div class="relative flex flex-col items-center px-8 mx-auto max-w-6xl">
+    <!-- Texto en la parte gris -->
+    <div class="absolute top-0 left-0 w-full h-[22%] flex items-center justify-end px-8">
+      <h3 class="p-7 font-bold text-6xl text-black mr-8">Roxia en Argentina</h3>
+    </div>
+    
+    <!-- Contenido en la parte blanca -->
+    <div class="relative pt-[15%] flex flex-col items-end max-w-6xl px-8">
+      <p class="max-w-5xl p-4 text-right text-2xl">
+        Roxia ha establecido una Cobertura Global con Oficinas en muchos países del mundo. En Argentina, contamos con una Oficina Roxia con Ingenieros Especializados y un Depósito
+        local de Repuestos OEM en Stock en Santiago, Chile, a solo una hora de vuelo de cualquier punto de nuestro país.
+      </p>
+      <div class="flex flex-wrap justify-center space-x-4 mt-24 gap-5">
+        <!-- Card 1 -->
+        <div class="bg-gradient-to-tr from-blue-100 via-white to-blue-100 shadow_box rounded-xl p-4 w-56 mb-4 flex flex-col justify-between items-center">
+          <img src="images/icons2.png" alt="" class="w-auto"> <!-- Ajusta el margen inferior -->
+          <p class="text-gray-700 text-center">Test de filtración, con el fluido real a procesar, para asegurar el diseño y equipo adecuado.</p>
+      </div>
+
+        <!-- Card 2 -->
+        <div class="bg-gradient-to-tr from-blue-100 via-white to-blue-100 shadow_box rounded-xl p-4 w-56 mb-4 flex flex-col justify-between items-center">
+            <img src="images/icons3.png" alt="" class="mb-2 w-auto h-2/4">
+            <p class="text-gray-700 text-center">Fecuentes inspecciones planificadas para prevención de fallas y mejora de performance.</p>
         </div>
-        
-        <!-- Contenido de texto -->
-        <div class="w-4/6 pl-8 relative z-10">
-          <h2 class="text-green-600 text-2xl md:text-3xl font-semibold">Nosotros</h2>
-          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mt-2">
-            Con más <br> de 40 años <br> de experiencia
-          </h1>
-          <p class="text-gray-700 text-md md:text-lg mt-4">
-            En 1977 fundamos la empresa <strong>LAROX Oy</strong> para especializarnos en Filtros Prensa y Válvulas Pinch. Después de convertirnos en líderes de ese mercado, en 2009 se vendió la marca <strong>LAROX Oy a Outotec</strong> y se creó <strong>FLOWROX</strong> para dedicarse a Bombas y Válvulas pinch. <br>
-            <strong>FLOWROX</strong> se desempeñó exitosamente hasta que en 2021, se tomó la decisión de retornar al Negocio de los Filtros Prensa, causa por la cual, se vendió a Neles Oy. <br>
-            En 2021 con la misma Planta en Lappeenranta, Finlandia y prácticamente el mismo personal de nuestros comienzos en 1977, se decidió crear <strong>ROXIA Oy</strong> para REENFOCARSE en el Negocio de Filtros Prensa - Separación Sólidos / Líquidos - Dewatering. Además se compró el 50 % de AQUACHEM para convertirla en: a <strong>ROXIA Brand</strong> e iniciar una <strong>NUEVA GENERACIÓN</strong> de Filtros Prensa.
-          </p>
-          <p class="text-gray-700 text-md md:text-lg mt-4">
-            En procesos de separación sólido-líquido, ofrecemos <strong>soluciones integrales</strong> que destacan por su calidad y eficacia. <br>
-            Nuestros servicios abarcan desde un exhaustivo <strong>análisis de procesos</strong> y pruebas de filtrado, hasta la entrega e <strong>instalación del filtro</strong> correspondiente. <br>
-            Asimismo, brindamos entrenamiento especializado y acompañamiento continuo durante todo el ciclo de vida del equipo, garantizando una rápida entrega de repuestos y soporte técnico eficiente.
-          </p>
+    
+        <!-- Card 3 -->
+        <div class="bg-gradient-to-tr from-red-100 via-white to-red-100 shadow_box rounded-xl p-4 w-56 mb-4 flex flex-col justify-between items-center">
+            <img src="images/icons4.png" alt="" class="mb-2 w-auto h-28">
+            <p class="text-gray-700 text-center">Reducir tiempos de espera de repuestos y tiempos de parada de plantas.</p>
+        </div>
+    
+        <!-- Card 4 -->
+        <div class="bg-gradient-to-tr from-blue-100 via-white to-blue-100 shadow_box rounded-xl p-4 w-56 mb-4 flex flex-col justify-between items-center">
+            <img src="images/icons1.png" alt="" class="mb-2 w-auto h-16">
+            <p class="text-gray-700 text-center">Entrenamientos al personal de nuestros clientes para mejorar la operación de filtrado.</p>
+        </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="mx-auto">
+    <!-- Contenedor 1 -->
+    <div class="grid grid-cols-2 h-auto mx-auto max-w-screen-2xl">
+      <div class="bg-white p-4 flex flex-col items-center justify-center">
+        <h3 class="text-green-600 underline mb-4 text-3xl pr-80">Equipos</h3>
+        <img src="images/filter1.png" alt="">
+      </div>
+      <div class="bg-gray-200 p-4 flex flex-col justify-center space-y-8 pt-16">
+        <h3 class="text-3xl text-right">
+          <span class="border border-black inline-block p-1">TP60 - TP16</span>
+        </h3>
+        <h2 class="text-right text-6xl font-bold max-w-[399px] ml-auto">
+          <span class="inline-block p-1">Tecnología de filtración horizontal a presión</span>
+        </h2>        
+        <p class="text-right text-2xl">El Tower Press™ de Roxia es un filtro de presión completamente automático, excelente para cualquier proceso que requiera de una separación eficiente de sólidos y líquidos. El diseño tiene 40 años de respetable experiencia en el campo. El filtro Tower Press de Roxia es una máquina confiable de producción que ofrece un alto rendimiento. Roxia tiene dos tipos de Tower Press: <strong>TP60, más grande, con un área de filtración de 48m² a 156m², y TP16, más pequeña, con un área de filtración de 16m² a 44m².</strong></p>
+        <div class="flex space-x-4 justify-start">
+          <button class="bg-green-600 text-white rounded-lg px-4 py-2 text-2xl">Tower Press TP60</button>
+          <button class="bg-green-600 text-white rounded-lg px-4 py-2 text-2xl">Tower Press TP16</button>
         </div>
       </div>
-    </section>   
+    </div>
+    
+    <!-- Contenedor 2 -->  
+    <div class="grid grid-cols-2 h-auto mx-auto max-w-screen-2xl">
+      <div class="bg-white p-4 flex flex-col items-center justify-center">
+        <img src="images/filter2.png" alt="">
+      </div>
+      <div class="bg-gray-200 p-4 flex flex-col justify-center space-y-8 pt-16">
+        <h3 class="text-3xl text-right">
+          <span class="border border-black inline-block p-1">SFP - SMART FILTER PRESS</span>
+        </h3>
+        <h2 class="text-right text-6xl font-bold max-w-[420px] ml-auto">
+          <span class="inline-block p-1">Filtro prensa automático, con mínimo consumo de mano de obra</span>
+        </h2>        
+        <p class="text-right text-2xl">La SFP corresponde a la nueva generación de filtros prensa: filtro autolimpiante totalmente automático. Brinda funcionamiento libre de problemas
+          sin participación de operadores.
+          <br>          
+          Disponibilidad sin personal sobre el 98% <br>
+          Baja necesidad de mantenimiento <br>
+          Superficie de filtración entre 1,2 - 22,3 m²<br>
+          Completamente sellado para un ambiente limpio <br>
+          Producción de hasta 1 t/hora</strong></p>
+        <div class="flex space-x-4 justify-start">
+          <button class="bg-green-600 text-white rounded-lg px-4 py-2 text-2xl">Smart Filter Press</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contenedor 3 -->
+    <div class="grid grid-cols-2 h-auto">
+      <div class="bg-white p-4 flex items-center justify-center">
+        <img src="images/filter3.png" alt="">
+      </div>
+      <div class="bg-gray-200 p-4 flex items-center justify-center">
+        <h3>CERAMIC DISC FILTER</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+    
     
 </main>
 
