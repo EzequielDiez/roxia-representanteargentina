@@ -16,7 +16,7 @@ nav::before {
   left: 60%;
   height: 100%;
   width: 50%;
-  background-color: #2f855a;
+  background-color: #5E8A5A;
   transition: width 0.3s ease;
   z-index: -1;
 }

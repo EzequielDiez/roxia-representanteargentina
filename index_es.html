@@ -12,9 +12,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-white">
   <header>
-    <nav class="fixed top-0 w-full z-10 bg-green-700" id="navbar">
+    <nav class="fixed top-0 w-full z-10 bg-custom-green" id="navbar">
       <div class="mx-auto px-2 sm:px-6 lg:px-8">
         <div class="relative flex h-16 items-center justify-between">
           <div class="flex items-center">
@@ -23,13 +23,13 @@
             </div>
           </div>
           <div class="hidden sm:flex sm:ml-auto space-x-4">
-            <a href="#" class="rounded-md px-3 py-2 text-lg font-medium text-white hover:bg-green-800 hover:text-white">INICIO</a>
-            <a href="#" class="rounded-md px-3 py-2 text-lg font-medium text-white hover:bg-green-800 hover:text-white">NOSOTROS</a>
-            <a href="#" class="rounded-md px-3 py-2 text-lg font-medium text-white hover:bg-green-800 hover:text-white">EQUIPOS</a>
-            <a href="#" class="rounded-md px-3 py-2 text-lg font-medium text-white hover:bg-green-800 hover:text-white">REPUESTOS</a>
-            <a href="#" class="rounded-md px-3 py-2 text-lg font-medium text-white hover:bg-green-800 hover:text-white">CONTACTO</a>
-            <a href="index_es.html" id="es-flag" class="flex items-center rounded-md px-3 py-2 text-lg font-medium hover:bg-green-800">ES</a>
-            <a href="index_en.html" id="en-flag" class="flex items-center rounded-md px-3 py-2 text-lg font-medium hover:bg-green-800">EN</a>
+            <a href="#inicio" class="rounded-md px-3 py-2 text-lg font-medium text-white hover:bg-white hover:text-black">INICIO</a>
+            <a href="#nosotros" class="rounded-md px-3 py-2 text-lg font-medium text-white hover:bg-white hover:text-black">NOSOTROS</a>
+            <a href="#equipos" class="rounded-md px-3 py-2 text-lg font-medium text-white hover:bg-white hover:text-black">EQUIPOS</a>
+            <a href="#repuestos" class="rounded-md px-3 py-2 text-lg font-medium text-white hover:bg-white hover:text-black">REPUESTOS</a>
+            <a href="#contacto" class="rounded-md px-3 py-2 text-lg font-medium text-white hover:bg-white hover:text-black">CONTACTO</a>
+            <a href="index_es.html" id="es-flag" class="flex items-center rounded-md px-3 py-2 text-lg font-medium hover:bg-white hover:text-black">ES</a>
+            <a href="index_en.html" id="en-flag" class="flex items-center rounded-md px-3 py-2 text-lg font-medium hover:bg-white hover:text-black">EN</a>
           </div>
           <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
             <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
@@ -125,7 +125,7 @@
                 soluciones <strong>A MEDIDA</strong>.
             </p>
             <div>
-                <a href="#contacto" class="bg-green-500 text-white text-2xl px-4 py-1 rounded-md shadow-lg hover:bg-green-600 ">
+                <a href="#contacto" class="bg-custom-green text-white text-2xl px-4 py-1 rounded-md shadow-lg hover:bg-green-600 ">
                     Contactate con nosotros
                 </a>
             </div>
@@ -139,7 +139,7 @@
           <iframe class="flex-1 h-full border-0 rounded-tl-lg rounded-bl-lg" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
           <!-- Cuadrado gris oscuro con texto -->
           <div class="relative flex-1 h-full bg-gray-800 text-white flex items-center justify-center text-center p-4 rounded-tr-lg rounded-br-lg">
-            <div class="relative bg-gray-800 border-t-4 border-r-4 border-green-500 p-8 ml-8 flex flex-col justify-between h-full">
+            <div class="relative bg-gray-800 border-t-4 border-r-4 border-custom-green p-8 ml-8 flex flex-col justify-between h-full">
                 <p class="text-lg md:text-3xl mb-4">
                     Nos encargamos de los procesos de separación SOLIDOS / LIQUIDOS
                 </p>
@@ -163,8 +163,8 @@
     </div>
     
     <!-- Contenido de texto -->
-    <div class="w-4/6 pl-8 relative z-10">
-      <h2 class="text-green-600 text-2xl md:text-3xl font-semibold">Nosotros</h2>
+    <div class="w-4/6 pl-8 relative z-10" id="nosotros">
+      <h2 class="text-custom-green text-2xl md:text-3xl font-semibold">Nosotros</h2>
       <h1 class="text-7xl md:text-7xl font-bold text-gray-900 mt-2">
         Con más <br> de 40 años <br> de experiencia
       </h1>
@@ -231,12 +231,12 @@
   </div>
 </section>
 
-<section>
+<section id="equipos">
   <div class="mx-auto">
     <!-- Contenedor 1 -->
     <div class="grid grid-cols-2 h-auto mx-auto max-w-screen-2xl">
       <div class="bg-white p-4 flex flex-col items-center justify-center">
-        <h3 class="text-green-600 underline mb-4 text-3xl pr-80">Equipos</h3>
+        <h3 class="text-custom-green underline mb-4 text-3xl pr-80">Equipos</h3>
         <img src="images/filter1.png" alt="">
       </div>
       <div class="bg-gray-200 p-4 flex flex-col justify-center space-y-8 pt-16">
@@ -248,8 +248,8 @@
         </h2>        
         <p class="text-right text-2xl">El Tower Press™ de Roxia es un filtro de presión completamente automático, excelente para cualquier proceso que requiera de una separación eficiente de sólidos y líquidos. El diseño tiene 40 años de respetable experiencia en el campo. El filtro Tower Press de Roxia es una máquina confiable de producción que ofrece un alto rendimiento. Roxia tiene dos tipos de Tower Press: <strong>TP60, más grande, con un área de filtración de 48m² a 156m², y TP16, más pequeña, con un área de filtración de 16m² a 44m².</strong></p>
         <div class="flex space-x-4 justify-start">
-          <button class="bg-green-600 text-white rounded-lg px-4 py-2 text-2xl">Tower Press TP60</button>
-          <button class="bg-green-600 text-white rounded-lg px-4 py-2 text-2xl">Tower Press TP16</button>
+          <button class="bg-custom-green text-white rounded-lg px-4 py-2 text-2xl">Tower Press TP60</button>
+          <button class="bg-custom-green text-white rounded-lg px-4 py-2 text-2xl">Tower Press TP16</button>
         </div>
       </div>
     </div>
@@ -268,45 +268,258 @@
         </h2>        
         <p class="text-right text-2xl">La SFP corresponde a la nueva generación de filtros prensa: filtro autolimpiante totalmente automático. Brinda funcionamiento libre de problemas
           sin participación de operadores.
-          <br>          
+          <br><br>          
           Disponibilidad sin personal sobre el 98% <br>
           Baja necesidad de mantenimiento <br>
-          Superficie de filtración entre 1,2 - 22,3 m²<br>
+          <strong>Superficie de filtración entre 1,2 - 22,3 m²<br>
           Completamente sellado para un ambiente limpio <br>
           Producción de hasta 1 t/hora</strong></p>
         <div class="flex space-x-4 justify-start">
-          <button class="bg-green-600 text-white rounded-lg px-4 py-2 text-2xl">Smart Filter Press</button>
+          <button class="bg-custom-green text-white rounded-lg px-4 py-2 text-2xl">Smart Filter Press</button>
         </div>
       </div>
     </div>
 
     <!-- Contenedor 3 -->
-    <div class="grid grid-cols-2 h-auto">
-      <div class="bg-white p-4 flex items-center justify-center">
+    <div class="grid grid-cols-2 h-auto mx-auto max-w-screen-2xl">
+      <div class="bg-white p-4 flex flex-col items-center justify-center">
         <img src="images/filter3.png" alt="">
       </div>
-      <div class="bg-gray-200 p-4 flex items-center justify-center">
-        <h3>CERAMIC DISC FILTER</h3>
+      <div class="bg-gray-200 p-4 flex flex-col justify-center space-y-8 pt-16">
+        <h3 class="text-3xl text-right">
+          <span class="border border-black inline-block p-1">CERAMIC DISC FILTER</span>
+        </h3>
+        <h2 class="text-right text-6xl font-bold max-w-[450px] ml-auto">
+          <span class="inline-block p-1">Consume hasta 90% menos de energía</span>
+        </h2>        
+        <p class="text-right text-2xl">
+          El filtro de disco cerámico Roxia Ceramic Disc Filter requiere una baja inversión, brinda un filtrado limpio con una torta seca y opera continuamente a alta capacidad.
+          <br><br>
+          Filtrado más limpio con el menor consumo eléctrico. <br>
+          Operación continua visible. <br>
+          <strong>Superficie de filtración de 15 - 120 m². <br>
+            Producción de hasta 200 t/hora.</strong>
+        </p>
+        <div class="flex space-x-4 justify-start">
+          <button class="bg-custom-green text-white rounded-lg px-4 py-2 text-2xl">Ceramic Disc Filter</button>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-
-
-
-
-
-
-
-
+<section class="h-auto mt-20" id="repuestos">
+  <div class="flex flex-col items-center">
+    <!-- Primer contenedor -->
+    <div class="flex flex-col justify-center items-start p-8 w-full max-w-7xl">
+      <h1 class="text-3xl mb-6 text-custom-green underline">REPUESTOS PARA FILTROS</h1>
+      <ul class="space-y-4 mb-8">
+        <li class="flex items-center">
+          <!-- Ícono de tilde verde -->
+          <svg class="w-6 h-6 mr-2" fill="none" stroke="green" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+          </svg>
+          <span class="font-bold text-xl">Calidad OEM y rendimientos mejorado</span>
+        </li>
+        <li class="flex items-center">
+          <!-- Ícono de tilde verde -->
+          <svg class="w-6 h-6 mr-2" fill="none" stroke="green" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+          </svg>
+          <span class="font-bold text-xl">Costo más bajo por tonelada</span>
+        </li>
+        <li class="flex items-center">
+          <!-- Ícono de tilde verde -->
+          <svg class="w-6 h-6 mr-2" fill="none" stroke="green" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+          </svg>
+          <span class="font-bold text-xl">Plazos de entrega breves</span>
+        </li>
+      </ul>
+      <button class="bg-custom-green text-white px-6 py-2 rounded text-lg">Solicitar una cotización</button>
+    </div>
     
-    
+
+    <!-- Segundo contenedor -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-28 p-8 w-full max-w-7xl">
+      <!-- Card 1 -->
+      <div class="shadow_box flex flex-col">
+        <img src="images/diafragmas-goma.png" alt="Imagen" class="mb-3 w-full">
+        <div class="p-4 flex-grow">
+          <h3 class="text-md text-gray-500">PIEZA DE REPUESTO</h3>
+          <h2 class="text-2xl font-bold mb-8">DIAFRAGMAS DE GOMA</h2>
+          <p class="text-gray-700 mb-4 text-lg">Los diafragmas de caucho Roxia para filtros de torre combinan la fabricación profesional de moldes y los beneficios de más …</p>
+        </div>
+        <button class="bg-custom-green text-white w-full text-left py-2 px-6">LEÉ MÁS</button>
+      </div>
+      
+      
+      <!-- Card 2 -->
+      <div class="shadow_box flex flex-col">
+        <img src="images/placas-y-sellos-de-filtro.png" alt="Imagen" class="mb-3 w-full">
+        <div class="p-4 flex-grow">
+          <h3 class="text-md text-gray-500">PIEZA DE REPUESTO</h3>
+          <h2 class="text-2xl font-bold mb-8">PLACAS DE FILTRO Y SELLOS DE FILTRO</h2>
+          <p class="text-gray-700 mb-4 text-lg">El corazón de cada prensa de torre son las placas de filtro y los marcos de filtros. Basándose en las …</p>
+        </div>
+        <button class="bg-custom-green text-white w-full text-left py-2 px-6">LEÉ MÁS</button>
+      </div>
+      <!-- Card 3 -->
+      <div class="shadow_box flex flex-col">
+        <img src="images/rodillos-y-raspadores.png" alt="Imagen" class="mb-3 w-full">
+        <div class="p-4 flex-grow">
+          <h3 class="text-md text-gray-500">PIEZA DE REPUESTO</h3>
+          <h2 class="text-2xl font-bold mb-8">RODILLOS Y RASPADORES</h2>
+          <p class="text-gray-700 mb-4 text-lg">Los rodillos Roxia se fabrican según el diseño más reciente. El doble cierre radial del eje y el cromado hacen …</p>
+        </div>
+        <button class="bg-custom-green text-white w-full text-left py-2 px-6">LEÉ MÁS</button>
+      </div>
+      <!-- Card 4 -->
+      <div class="shadow_box flex flex-col">
+        <img src="images/parrillas-filtrantes.png" alt="Imagen" class="mb-3 w-full">
+        <div class="p-4 flex-grow">
+          <h3 class="text-md text-gray-500">PIEZA DE REPUESTO</h3>
+          <h2 class="text-2xl font-bold mb-8">PARRILLAS FILTRANTES</h2>
+          <p class="text-gray-700 mb-4 text-lg">Las parrillas filtrantes Roxia para filtros de torre tienen una vida útil más larga porque están fabricadas con polipropileno con …</p>
+        </div>
+        <button class="bg-custom-green text-white w-full text-left py-2 px-6">LEÉ MÁS</button>
+      </div>
+      <!-- Card 5 -->
+      <div class="shadow_box flex flex-col">
+        <img src="images/mangueras-de-alimentacion.png" alt="Imagen" class="mb-3 w-full">
+        <div class="p-4 flex-grow">
+          <h3 class="text-md text-gray-500">PIEZA DE REPUESTO</h3>
+          <h2 class="text-2xl font-bold mb-8">MANGUERAS DE ALIMENTACIÓN PARA EL PAQUETE COMPLETO DE PLACAS DE FILTRO</h2>
+          <p class="text-gray-700 mb-4 text-lg">Las mangueras Roxia se utilizan en los filtros prensa de torre para la alimentación de lodos, el filtrado, el aire …</p>
+        </div>
+        <button class="bg-custom-green text-white w-full text-left py-2 px-6">LEÉ MÁS</button>
+      </div>
+      <!-- Card 6 -->
+      <div class="shadow_box flex flex-col">
+        <img src="images/bateas-filtrantes.png" alt="Imagen" class="mb-3 w-full">
+        <div class="p-4 flex-grow">
+          <h3 class="text-md text-gray-500">PIEZA DE REPUESTO</h3>
+          <h2 class="text-2xl font-bold mb-8">BATEAS FILTRANTES</h2>
+          <p class="text-gray-700 mb-4 text-lg">Las bateas filtrantes son componentes constructivos importantes en las placas de filtros de torre. Su función principal es recoger el …</p>
+        </div>
+        <button class="bg-custom-green text-white w-full text-left py-2 px-6">LEÉ MÁS</button>
+      </div>
+      <!-- Card 7 -->
+      <div class="shadow_box flex flex-col">
+        <img src="images/sellos-de-placa-para-prensas.png" alt="Imagen" class="mb-3 w-full">
+        <div class="p-4 flex-grow">
+          <h3 class="text-md text-gray-500">PIEZA DE REPUESTO</h3>
+          <h2 class="text-2xl font-bold mb-8">SELLOS DE PLACA PARA PRENSAS TIPO TORRE</h2>
+          <p class="text-gray-700 mb-4 text-lg">El propósito principal de los sellos de placa de filtro es sellar herméticamente las cámaras de filtración de la prensa …</p>
+        </div>
+        <button class="bg-custom-green text-white w-full text-left py-2 px-6">LEÉ MÁS</button>
+      </div>
+      <!-- Card 8 -->
+      <div class="shadow_box flex flex-col">
+        <img src="images/paquetes-de-placa-para-filtro.png" alt="Imagen" class="mb-3 w-full">
+        <div class="p-4 flex-grow">
+          <h3 class="text-md text-gray-500">PIEZA DE REPUESTO</h3>
+          <h2 class="text-2xl font-bold mb-8">PAQUETES DE PLACA PARA FILTROS PRENSA TIPO TORRE</h2>
+          <p class="text-gray-700 mb-4 text-lg">Los expertos en filtración de Roxia han rediseñado los paquetes de placas completos para los filtros de prensa tipo torre: …</p>
+        </div>
+        <button class="bg-custom-green text-white w-full text-left py-2 px-6">LEÉ MÁS</button>
+      </div>
+      <!-- Card 9 -->
+      <div class="shadow_box flex flex-col">
+        <img src="images/telas-de-filtro-para-prensas.png" alt="Imagen" class="mb-3 w-full">
+        <div class="p-4 flex-grow">
+          <h3 class="text-md text-gray-500">PIEZA DE REPUESTO</h3>
+          <h2 class="text-2xl font-bold mb-8">TELAS DE FILTRO PARA PRENSAS TIPO TORRE</h2>
+          <p class="text-gray-700 mb-4 text-lg">Una amplia gama de telas filtrantes Roxia para filtros prensa de torre permite elegir el tipo de tela adecuado para …</p>
+        </div>
+        <button class="bg-custom-green text-white w-full text-left py-2 px-6">LEÉ MÁS</button>
+      </div>
+      <!-- Card 10 -->
+      <div class="shadow_box flex flex-col">
+        <img src="images/componentes-de-montaje.png" alt="Imagen" class="mb-3 w-full">
+        <div class="p-4 flex-grow">
+          <h3 class="text-md text-gray-500">PIEZA DE REPUESTO</h3>
+          <h2 class="text-2xl font-bold mb-8">COMPONENTES DE MONTAJE</h2>
+          <p class="text-gray-700 mb-4 text-lg">El filtro de torre incluye una variedad de componentes de montaje que aseguran la fiabilidad del filtro sin importar la …</p>
+        </div>
+        <button class="bg-custom-green text-white w-full text-left py-2 px-6">LEÉ MÁS</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="h-screen relative" id="contacto">
+  <!-- Fondo dividido en 30% verde y 70% blanco -->
+  <div class="h-[45%] w-full bg-custom-green p-4 flex justify-center relative">
+    <div class="max-w-7xl w-full text-left">
+      <h2 class="text-white font-bold text-5xl pt-2">Contactanos</h2>
+    </div>
+    <!-- Imagen que va desde la mitad hacia la izquierda con degradado de blanco a transparente -->
+    <div class="absolute bottom-0 left-0 right-1/2">
+      <div class="relative w-full h-full">
+        <img src="images/contacto.jpg" alt="Imagen de contacto" class="h-auto w-full object-cover">
+        <div class="absolute inset-0 " style="background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 40%);"></div>
+      </div>
+    </div>
+  </div>
+  <div class="h-[55%] w-full bg-white p-4 flex justify-center mt-4">
+    <div class="max-w-7xl w-full text-left">
+        <div class="bg-custom-green w-full max-w-sm rounded-2xl mb-4 pl-8 pr-16 py-6 relative">
+            <p class="text-white text-3xl font-bold">LUIS ALBANESE</p>
+            <p class="text-white text-xl">Representante en Argentina</p>
+            <!-- Triángulo/flecha en el cuadrado verde -->
+            <div class="absolute top-[-14px] left-10 w-0 h-0 border-l-[24px] border-l-transparent border-r-[24px] border-r-transparent border-b-[24px] border-b-custom-green"></div>
+        </div>    
+        <p class="text-2xl text-gray-800 mb-4"><i class="fas fa-phone-alt mr-2"></i> +54 9 1124818236</p>
+        <p class="text-2xl text-gray-800 mb-4"><i class="fas fa-envelope mr-2"></i> roxiaagentarg.luisalbanese@gmail.com</p>
+        <p class="text-2xl text-gray-800"><i class="fas fa-map-marker-alt mr-2"></i> Buenos Aires, Argentina</p>
+    </div>
+</div>
+
+<!-- Contenido que se superpone sobre los dos fondos -->
+<div class="absolute top-0 left-1/2 w-2/5 mt-10">
+  <form class="bg-white p-6 shadow_box rounded-3xl px-14">
+    <h3 class="text-black text-4xl font-bold mb-6 mt-6">Envianos tu mensaje</h3> <!-- Incrementé el margen inferior -->
+    <!-- Campos del formulario -->
+    <div class="mb-6"> <!-- Incrementé el margen inferior -->
+      <label class="block text-gray-700 text-2xl font-bold mb-3" for="name"> <!-- Incrementé el margen inferior -->
+        Nombre y Apellido
+      </label>
+      <input class="shadow appearance-none border rounded-lg w-full py-3 px-3 text-2xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text">
+    </div>
+    <div class="mb-6"> <!-- Incrementé el margen inferior -->
+      <label class="block text-gray-700 text-2xl font-bold mb-3" for="email"> <!-- Incrementé el margen inferior -->
+        Mail
+      </label>
+      <input class="shadow appearance-none border rounded-lg w-full py-3 px-3 text-2xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email">
+    </div>
+    <div class="mb-6"> <!-- Incrementé el margen inferior -->
+      <label class="block text-gray-700 text-2xl font-bold mb-3" for="company"> <!-- Incrementé el margen inferior -->
+        Empresa
+      </label>
+      <input class="shadow appearance-none border rounded-lg w-full py-3 px-3 text-2xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="company" type="text">
+    </div>
+    <div class="mb-8"> <!-- Incrementé el margen inferior -->
+      <label class="block text-gray-700 text-2xl font-bold mb-3" for="message"> <!-- Incrementé el margen inferior -->
+        Mensaje
+      </label>
+      <textarea class="shadow appearance-none border rounded-lg w-full py-3 px-3 text-2xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" rows="4"></textarea>
+    </div>
+    <div class="flex items-center justify-between mb-8">
+      <button class="bg-custom-green hover:bg-green-700 text-white font-bold py-2 px-10 rounded-lg focus:outline-none focus:shadow-outline text-2xl" type="button">
+        Contactar
+      </button>
+    </div>
+  </form>
+</div>
+</section>
 </main>
 
-<footer class="bg-gray-800 text-white p-4">
-  <p>© 2024 Mi Proyecto. Todos los derechos reservados.</p>
+<footer class="text-black p-4 mx-auto text-center">
+  <img src="images/LOGO ROXIA-02.png" alt="Roxia Logo" class="w-2/12 h-auto mx-auto mb-16 mt-10">
+  <p class="mb-20 text-2xl">©ROXIA Representante Argentina, All rights reserved.</p>
 </footer>
+
 
 <!-- Link to external JavaScript file -->
 <script src="main.js"></script>

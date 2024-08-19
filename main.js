@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navbar = document.querySelector('nav');
   function updateNavbarBackground() {
     const scrollPercentage = Math.min(window.scrollY / (document.body.scrollHeight - window.innerHeight), 1);
-    navbar.style.background = `linear-gradient(to left, #2f855a ${(scrollPercentage * 100) + 40}%, transparent ${(scrollPercentage * 100) + 50}%)`;
+    navbar.style.background = `linear-gradient(to left, #5E8A5A ${(scrollPercentage * 100) + 40}%, transparent ${(scrollPercentage * 100) + 50}%)`;
   }
 
   // Ejecuta la animación inmediatamente al cargar la página y al hacer scroll
