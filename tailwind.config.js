@@ -17,6 +17,13 @@ module.exports = {
       colors: {
         'custom-green': '#5E8A5A',
       },
+      fontFamily: {
+        acumin: ["AcuminVariableConcept", "sans-serif"],
+        consola: ["Consola", "monospace"],
+        consolaBold: ["ConsolaBold", "monospace"],
+        myriad: ["MyriadPro", "sans-serif"],
+        noto: ["NotoSansBlack", "sans-serif"],
+      },
     },
   },
   plugins: [],

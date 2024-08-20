@@ -7,148 +7,162 @@
   <title>Roxia - Representante Argentina</title>
   <!-- CSS CDN -->
   <link href="index.css" rel="stylesheet">
-  <link href="dist/output.css" rel="stylesheet">
   <!-- Tailwind CSS CDN -->
+  <link href="dist/output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
-<body class="bg-white">
+<body class="bg-white overflow-x-hidden">
   <header>
     <nav class="fixed top-0 w-full z-10 bg-custom-green" id="navbar">
-      <div class="mx-auto px-2 sm:px-6 lg:px-8">
-        <div class="relative flex h-16 items-center justify-between">
+      <div class="mx-auto px-2 sm:px-6 lg:px-8 w-full">
+        <div class="relative flex h-14 items-center justify-between">
           <div class="flex items-center">
-            <div class="flex-shrink-0" id="navbar-logo">
-              <!-- <img class="h-8 w-auto" src="images/roxia-logo.svg" alt="Your Company"> -->
-            </div>
+            <div class="flex-shrink-0" id="navbar-logo"></div>
           </div>
-          <div class="hidden sm:flex sm:ml-auto space-x-4">
-            <a href="#inicio" class="rounded-md px-3 py-2 text-lg font-medium text-white hover:bg-white hover:text-black">INICIO</a>
-            <a href="#nosotros" class="rounded-md px-3 py-2 text-lg font-medium text-white hover:bg-white hover:text-black">NOSOTROS</a>
-            <a href="#equipos" class="rounded-md px-3 py-2 text-lg font-medium text-white hover:bg-white hover:text-black">EQUIPOS</a>
-            <a href="#repuestos" class="rounded-md px-3 py-2 text-lg font-medium text-white hover:bg-white hover:text-black">REPUESTOS</a>
-            <a href="#contacto" class="rounded-md px-3 py-2 text-lg font-medium text-white hover:bg-white hover:text-black">CONTACTO</a>
-            <a href="index_es.html" id="es-flag" class="flex items-center rounded-md px-3 py-2 text-lg font-medium hover:bg-white hover:text-black">ES</a>
-            <a href="index_en.html" id="en-flag" class="flex items-center rounded-md px-3 py-2 text-lg font-medium hover:bg-white hover:text-black">EN</a>
+          <div class="hidden sm:flex sm:ml-auto space-x-3">
+            <a href="#inicio" class="rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">INICIO</a>
+            <a href="#nosotros" class="rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">NOSOTROS</a>
+            <a href="#equipos" class="rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">EQUIPOS</a>
+            <a href="#repuestos" class="rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">REPUESTOS</a>
+            <a href="#contacto" class="rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">CONTACTO</a>
+            <a href="index_es.html" id="es-flag" class="flex items-center rounded-md px-3 py-1.5 text-base font-medium hover:bg-white hover:text-black">ES</a>
+            <a href="index_en.html" id="en-flag" class="flex items-center rounded-md px-3 py-1.5 text-base font-medium hover:bg-white hover:text-black">EN</a>
           </div>
           <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
             <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
               <span class="absolute -inset-0.5"></span>
               <span class="sr-only">Open main menu</span>
-              <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" id="menu-open-icon">
+              <svg class="block h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" id="menu-open-icon">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
-              <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" id="menu-close-icon">
+              <svg class="hidden h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" id="menu-close-icon">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
           </div>
         </div>
       </div>
-
+      
       <!-- Mobile menu -->
       <div class="hidden sm:hidden" id="mobile-menu">
         <div class="space-y-1 px-2 pb-3 pt-2 flex flex-col items-center justify-center">
-          <a href="#" class="block rounded-md hover:bg-green-800 hover:text-white px-3 py-2 text-base font-medium text-gray-300">INICIO</a>
-          <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-green-800 hover:text-white">NOSOTROS</a>
-          <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-green-800 hover:text-white">EQUIPOS</a>
-          <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-green-800 hover:text-white">REPUESTOS</a>
-          <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-green-800 hover:text-white">CONTACTO</a>
+          <a href="#" class="block rounded-md hover:bg-green-800 hover:text-white px-3 py-2 text-sm font-medium text-gray-300">INICIO</a>
+          <a href="#" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-green-800 hover:text-white">NOSOTROS</a>
+          <a href="#" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-green-800 hover:text-white">EQUIPOS</a>
+          <a href="#" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-green-800 hover:text-white">REPUESTOS</a>
+          <a href="#" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-green-800 hover:text-white">CONTACTO</a>
           <div class="flex justify-around w-full">
-            <a href="index_es.html" id="es-flag-mobile" class="flex items-center rounded-lg px-2 py-1"><img src="images/Flag_of_Argentina.svg.webp" alt="Español" class="h-4 w-6"></a>
-            <a href="index_en.html" id="en-flag-mobile" class="flex items-center rounded-lg px-2 py-1"><img src="images/Flag_of_the_United_States.png" alt="English" class="h-4 w-6"></a>
+            <a href="index_es.html" id="es-flag-mobile" class="flex items-center rounded-lg px-2 py-1"></a>
+            <a href="index_en.html" id="en-flag-mobile" class="flex items-center rounded-lg px-2 py-1"></a>
           </div>
         </div>
       </div>
     </nav>
   </header>
+  
 
   <main>
-    <section id="scroll-section" class="relative isolate px-6 pt-60 pb-40 lg:px-20 bg-cover bg-center h-screen">
-      <div class="absolute inset-0 flex flex-col justify-center items-center text-center space-y-6">
+    <section id="inicio" class="relative isolate bg-cover bg-center h-screen">
+      <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
         <img src="images/LOGO ROXIA-02.png" alt="Roxia Logo" class="w-4/12 h-auto">
-        <p class="text-black text-3xl font-semibold">EMPRESA FINLANDESA ESPECIALISTA EN</p>
-        <p class="text-black text-5xl font-semibold">SEPARACIÓN DE SÓLIDOS-LÍQUIDOS</p>
-        <p class="text-black text-2xl font-medium">-DEWATERING & AUTOMATION-</p>
+        <p class="mt-4 text-black text-xl font-semibold">EMPRESA FINLANDESA ESPECIALISTA EN</p>
+        <p class="mt-2 text-black text-4xl font-myriad">SEPARACIÓN DE SÓLIDOS-LÍQUIDOS</p>
+        <p class="text-black text-xl font-acumin font-bold">-DEWATERING & AUTOMATION-</p>
       </div>
     </section>
+  </main>
+    
+    
 
-    <section id="first-section" class="relative isolate px-6 pt-60 pb-40 lg:px-20 bg-cover bg-center h-screen">
-      <div class="absolute inset-0 flex flex-col justify-center items-center text-center space-y-16">
-        <img src="images/LOGO ROXIA-02.png" alt="Roxia Logo" class="w-4/12 h-auto">
-        <p class="text-black text-7xl font-semibold">MARCA EL RETORNO AL MERCADO MUNDIAL</p>
-        <p class="text-black text-3xl font-semibold">del fabricante finlandés Creador del 1er Filtro Torre de Prensa Vertical (1977), con sub <br>
-          nueva marca y con una alianza estratégica con</p>
-        <img src="images/aquachem-logo.png" alt="Roxia Logo" class="w-2/12 h-auto">
-        <div class="shadow_box rounded-xl">
-          <p class="text-red-600 text-6xl font-semibold pl-72 pr-72 py-5">PARA LIDERAR UNA NUEVA GENERACIÓN <br> DE EQUIPOS DE FILTRADO</p>
-        </div>
+  <section id="first-section" class="relative isolate px-4 pt-40 pb-20 lg:px-16 bg-cover bg-center min-h-screen">
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-center space-y-10 lg:space-y-8">
+      <img src="images/LOGO ROXIA-02.png" alt="Roxia Logo" class="w-8/12 md:w-5/12 lg:w-3/12 h-auto">
+      <p class="text-black text-3xl md:text-5xl lg:text-4xl font-semibold leading-tight">
+        MARCA EL RETORNO AL MERCADO MUNDIAL
+      </p>
+      <p class="text-black text-lg md:text-2xl lg:text-2xl font-semibold leading-relaxed">
+        del fabricante finlandés Creador del 1er Filtro Torre de Prensa Vertical (1977), con su <br>
+        nueva marca y con una alianza estratégica con
+      </p>
+      <img src="images/aquachem-logo.png" alt="Aquachem Logo" class="w-6/12 md:w-3/12 lg:w-2/12 h-auto">
+      <div class="shadow_box rounded-xl p-4 lg:p-8">
+        <p class="text-red-600 text-2xl md:text-4xl lg:text-4xl font-semibold leading-tight px-4 lg:px-16">
+          PARA LIDERAR UNA NUEVA GENERACIÓN <br> DE EQUIPOS DE FILTRADO
+        </p>
       </div>
-    </section>
+    </div>
+  </section>
+  
+  
     
-    <section class="h-44 flex items-center justify-evenly bg-gray-200">
-      <div class="grid grid-cols-2 gap-96 text-center">
-        <!-- Primera columna -->
-        <div>
-          <div class="flex flex-row items-center">
-            <!-- Icono persona -->
-            <i class="fas fa-user text-red-600 text-5xl"></i>
-            <!-- Número de clientes -->
-            <p class="text-6xl font-bold ml-4">221</p>
-          </div>
-          <!-- Descripción -->
-          <p class="text-3xl mt-2 text-gray-600 text-left">CLIENTES GLOBALES</p>
+  <section id="clientes" class="py-8 bg-gray-200">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-5xl mx-auto text-center">
+      <!-- Primera columna -->
+      <div>
+        <div class="flex flex-col sm:flex-row items-center justify-center">
+          <!-- Icono persona -->
+          <i class="fas fa-user text-red-600 text-4xl"></i>
+          <!-- Número de clientes -->
+          <p class="text-4xl sm:text-4xl font-bold mt-4 sm:mt-0 sm:ml-4">221</p>
         </div>
-    
-        <!-- Segunda columna -->
-        <div>
-          <div class="flex flex-row items-center">
-            <!-- Icono paquete -->
-            <i class="fas fa-box text-red-600 text-5xl"></i>
-            <!-- Número de productos -->
-            <p class="text-6xl font-bold ml-4">56,757</p>
-          </div>
-          <!-- Descripción -->
-          <p class="text-3xl mt-2 text-gray-600 text-left">PRODUCTOS ENTREGADOS</p>
-        </div>
+        <!-- Descripción -->
+        <p class="text-xl sm:text-2xl mt-2 text-gray-600">CLIENTES GLOBALES</p>
       </div>
-    </section>    
+  
+      <!-- Segunda columna -->
+      <div>
+        <div class="flex flex-col sm:flex-row items-center justify-center">
+          <!-- Icono paquete -->
+          <i class="fas fa-box text-red-600 text-4xl"></i>
+          <!-- Número de productos -->
+          <p class="text-4xl sm:text-4xl font-bold mt-4 sm:mt-0 sm:ml-4">56,757</p>
+        </div>
+        <!-- Descripción -->
+        <p class="text-xl sm:text-2xl mt-2 text-gray-600">PRODUCTOS ENTREGADOS</p>
+      </div>
+    </div>
+  </section>
     
-    <section class="h-screen bg-white">
+    
+    <section class="h-auto md:h-screen bg-white">
       <!-- Parte superior (50%) -->
-      <div class="h-1/2 flex flex-col justify-center items-center">
-        <div class="text-left">
-            <h1 class="text-5xl md:text-7xl font-bold mb-8">El filtrado de tu empresa <br> en nuestras manos</h1>
-            <p class="text-lg md:text-3xl mb-8">
-                Vendemos equipos nuevos de filtrado tanto automáticos como manuales. <br>
-                También <strong>ACTUALIZAMOS / ACONDICIONAMOS</strong> sus viejos equipos, <br>
-                soluciones <strong>A MEDIDA</strong>.
-            </p>
-            <div>
-                <a href="#contacto" class="bg-custom-green text-white text-2xl px-4 py-1 rounded-md shadow-lg hover:bg-green-600 ">
-                    Contactate con nosotros
-                </a>
-            </div>
+      <div class="h-auto md:h-1/2 flex flex-col justify-center items-center px-4 py-8 md:py-0">
+        <div class="text-center md:text-left max-w-3xl">
+          <h1 class="text-3xl md:text-5xl lg:text-5xl font-bold mb-4 md:mb-8">
+            El filtrado de tu empresa <br class="hidden md:block"> en nuestras manos
+          </h1>
+          <p class="text-base md:text-lg lg:text-2xl mb-4 md:mb-8">
+            Vendemos equipos nuevos de filtrado tanto automáticos como manuales. <br class="hidden md:block">
+            También <strong>ACTUALIZAMOS / ACONDICIONAMOS</strong> sus viejos equipos, <br class="hidden md:block">
+            soluciones <strong>A MEDIDA</strong>.
+          </p>
+          <div class="flex justify-center md:justify-start">
+            <a href="#contacto" class="bg-custom-green text-white text-lg md:text-xl px-4 py-2 rounded-md shadow-lg hover:bg-green-600">
+              Contactate con nosotros
+            </a>
+          </div>
         </div>
       </div>
-
+    
       <!-- Parte inferior (50%) -->
-      <div class="h-1/2 flex justify-center items-center">
-        <div class="flex w-full max-w-screen-lg h-full pb-40">
+      <div class="h-auto md:h-1/2 flex flex-col md:flex-row justify-center items-center">
+        <div class="flex flex-col md:flex-row w-full max-w-screen-lg h-full pb-8 md:pb-40 px-4">
           <!-- Video de YouTube -->
-          <iframe class="flex-1 h-full border-0 rounded-tl-lg rounded-bl-lg" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+          <iframe class="flex-1 h-64 md:h-full border-0 md:rounded-l-lg rounded-t-lg md:rounded-tr-none" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
           <!-- Cuadrado gris oscuro con texto -->
-          <div class="relative flex-1 h-full bg-gray-800 text-white flex items-center justify-center text-center p-4 rounded-tr-lg rounded-br-lg">
-            <div class="relative bg-gray-800 border-t-4 border-r-4 border-custom-green p-8 ml-8 flex flex-col justify-between h-full">
-                <p class="text-lg md:text-3xl mb-4">
-                    Nos encargamos de los procesos de separación SOLIDOS / LIQUIDOS
-                </p>
-                <img src="images/roxia-logo.svg" alt="Roxia Logo" class="self-end w-4/12 h-auto mt-4">
+          <div class="relative flex-1 h-64 md:h-full bg-gray-800 text-white flex items-center justify-center text-center p-4 md:rounded-r-lg rounded-b-lg md:rounded-bl-none">
+            <div class="relative bg-gray-800 border-t-4 border-r-4 border-custom-green p-4 md:p-8 ml-0 md:ml-8 flex flex-col justify-between h-full">
+              <p class="text-base md:text-lg lg:text-2xl mb-4">
+                Nos encargamos de los procesos de separación SOLIDOS / LIQUIDOS
+              </p>
+              <img src="images/roxia-logo.svg" alt="Roxia Logo" class="self-center md:self-end w-1/4 h-auto mt-4">
             </div>
           </div>
         </div>
       </div>
     </section>
+    
 
     <section class="h-auto flex items-center justify-center bg-white">
   <div class="relative flex w-full max-w-6xl px-4">

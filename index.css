@@ -1,12 +1,55 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-html {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body {
   scroll-behavior: smooth;
 }
 
 
+
+
+/* Importación de fuentes */
+@font-face {
+  font-family: "AcuminVariableConcept";
+  src: url("/fonts/AcuminVariableConcept.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Consola";
+  src: url("/fonts/consola.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ConsolaBold";
+  src: url("/fonts/consolab.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MyriadPro";
+  src: url("/fonts/MyriadPro-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NotoSansBlack";
+  src: url("/fonts/NotoSans-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
 
 /* Estilo personalizado para animación */
 nav::before {
@@ -21,7 +64,7 @@ nav::before {
   z-index: -1;
 }
 
-#scroll-section {
+#inicio {
   background-image: url('/images/filter-img-background2.png');
 }
 
