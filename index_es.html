@@ -63,7 +63,7 @@
   
 
   <main>
-    <section id="inicio" class="relative isolate bg-cover bg-center h-screen">
+    <section id="inicio" class="relative isolate bg-[url('../images/filter-img-background2.png')] bg-cover bg-center h-screen">
       <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
         <img src="images/LOGO ROXIA-02.png" alt="Roxia Logo" class="w-4/12 h-auto">
         <p class="mt-4 text-black text-xl font-semibold">EMPRESA FINLANDESA ESPECIALISTA EN</p>
@@ -71,9 +71,6 @@
         <p class="text-black text-xl font-acumin font-bold">-DEWATERING & AUTOMATION-</p>
       </div>
     </section>
-  </main>
-    
-    
 
   <section id="first-section" class="relative isolate px-4 pt-40 pb-20 lg:px-16 bg-cover bg-center min-h-screen">
     <div class="absolute inset-0 flex flex-col justify-center items-center text-center space-y-10 lg:space-y-8">
@@ -351,9 +348,12 @@
     
     
     
-    
-<section class="h-auto mt-20" id="repuestos">
-  <div class="flex flex-col items-center">
+    <section class="h-auto mt-20 relative" id="repuestos">
+      <!-- Fondo degradado y logos -->
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white z-0"></div>
+      <div class="absolute inset-0 bg-[url('/images/logo-roxia-fondo.png')] bg-repeat-y bg-custom-width bg-top opacity-40 z-0"></div>
+
+    <div class="relative z-10 flex flex-col items-center">
     <!-- Primer contenedor -->
     <div class="flex flex-col justify-center items-start p-8 w-full max-w-7xl">
       <h1 class="text-3xl mb-6 text-custom-green underline">REPUESTOS PARA FILTROS</h1>
@@ -380,128 +380,135 @@
           <span class="font-bold text-xl">Plazos de entrega breves</span>
         </li>
       </ul>
-      <button class="bg-custom-green text-white px-6 py-2 rounded text-lg">Solicitar una cotización</button>
+      <button class="bg-custom-green text-white px-6 py-1 rounded text-lg">Solicitar una cotización</button>
     </div>
     
 
-    <!-- Segundo contenedor -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-28 p-8 w-full max-w-7xl">
+  <!-- Segundo contenedor -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-28 gap-8 p-8 w-full max-w-7xl mx-auto">
       <!-- Card 1 -->
-      <div class="shadow_box flex flex-col">
-        <img src="images/diafragmas-goma.png" alt="Imagen" class="mb-3 w-full">
-        <div class="p-4 flex-grow">
-          <h3 class="text-md text-gray-500">PIEZA DE REPUESTO</h3>
-          <h2 class="text-2xl font-bold mb-8">DIAFRAGMAS DE GOMA</h2>
-          <p class="text-gray-700 mb-4 text-lg">Los diafragmas de caucho Roxia para filtros de torre combinan la fabricación profesional de moldes y los beneficios de más …</p>
+      <div class="shadow_box flex flex-col h-full">
+        <img src="images/diafragmas-goma.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
+        <div class="p-3 flex-grow flex flex-col bg-white">
+          <h3 class="text-sm text-gray-500">PIEZA DE REPUESTO</h3>
+          <h2 class="text-lg font-bold mb-2">DIAFRAGMAS DE GOMA</h2>
+          <p class="text-gray-700 mb-2 text-sm">Los diafragmas de caucho Roxia para filtros de torre combinan la fabricación profesional de moldes y los beneficios de más …</p>
         </div>
-        <button class="bg-custom-green text-white w-full text-left py-2 px-6">LEÉ MÁS</button>
+        <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto">LEÉ MÁS</button>
       </div>
-      
-      
+
       <!-- Card 2 -->
-      <div class="shadow_box flex flex-col">
-        <img src="images/placas-y-sellos-de-filtro.png" alt="Imagen" class="mb-3 w-full">
-        <div class="p-4 flex-grow">
-          <h3 class="text-md text-gray-500">PIEZA DE REPUESTO</h3>
-          <h2 class="text-2xl font-bold mb-8">PLACAS DE FILTRO Y SELLOS DE FILTRO</h2>
-          <p class="text-gray-700 mb-4 text-lg">El corazón de cada prensa de torre son las placas de filtro y los marcos de filtros. Basándose en las …</p>
+      <div class="shadow_box flex flex-col h-full">
+        <img src="images/placas-y-sellos-de-filtro.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
+        <div class="p-3 flex-grow flex flex-col bg-white">
+          <h3 class="text-sm text-gray-500">PIEZA DE REPUESTO</h3>
+          <h2 class="text-lg font-bold mb-2">PLACAS DE FILTRO Y SELLOS DE FILTRO</h2>
+          <p class="text-gray-700 mb-2 text-sm">El corazón de cada prensa de torre son las placas de filtro y los marcos de filtros. Basándose en las …</p>
         </div>
-        <button class="bg-custom-green text-white w-full text-left py-2 px-6">LEÉ MÁS</button>
+        <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto">LEÉ MÁS</button>
       </div>
+
       <!-- Card 3 -->
-      <div class="shadow_box flex flex-col">
-        <img src="images/rodillos-y-raspadores.png" alt="Imagen" class="mb-3 w-full">
-        <div class="p-4 flex-grow">
-          <h3 class="text-md text-gray-500">PIEZA DE REPUESTO</h3>
-          <h2 class="text-2xl font-bold mb-8">RODILLOS Y RASPADORES</h2>
-          <p class="text-gray-700 mb-4 text-lg">Los rodillos Roxia se fabrican según el diseño más reciente. El doble cierre radial del eje y el cromado hacen …</p>
+      <div class="shadow_box flex flex-col h-full">
+        <img src="images/rodillos-y-raspadores.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
+        <div class="p-3 flex-grow flex flex-col bg-white">
+          <h3 class="text-sm text-gray-500">PIEZA DE REPUESTO</h3>
+          <h2 class="text-lg font-bold mb-2">RODILLOS Y RASPADORES</h2>
+          <p class="text-gray-700 mb-2 text-sm">Los rodillos Roxia se fabrican según el diseño más reciente. El doble cierre radial del eje y el cromado hacen …</p>
         </div>
-        <button class="bg-custom-green text-white w-full text-left py-2 px-6">LEÉ MÁS</button>
+        <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto">LEÉ MÁS</button>
       </div>
+
       <!-- Card 4 -->
-      <div class="shadow_box flex flex-col">
-        <img src="images/parrillas-filtrantes.png" alt="Imagen" class="mb-3 w-full">
-        <div class="p-4 flex-grow">
-          <h3 class="text-md text-gray-500">PIEZA DE REPUESTO</h3>
-          <h2 class="text-2xl font-bold mb-8">PARRILLAS FILTRANTES</h2>
-          <p class="text-gray-700 mb-4 text-lg">Las parrillas filtrantes Roxia para filtros de torre tienen una vida útil más larga porque están fabricadas con polipropileno con …</p>
+      <div class="shadow_box flex flex-col h-full">
+        <img src="images/parrillas-filtrantes.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
+        <div class="p-3 flex-grow flex flex-col bg-white">
+          <h3 class="text-sm text-gray-500">PIEZA DE REPUESTO</h3>
+          <h2 class="text-lg font-bold mb-2">PARRILLAS FILTRANTES</h2>
+          <p class="text-gray-700 mb-2 text-sm">Las parrillas filtrantes Roxia para filtros de torre tienen una vida útil más larga porque están fabricadas con polipropileno con …</p>
         </div>
-        <button class="bg-custom-green text-white w-full text-left py-2 px-6">LEÉ MÁS</button>
+        <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto">LEÉ MÁS</button>
       </div>
+
       <!-- Card 5 -->
-      <div class="shadow_box flex flex-col">
-        <img src="images/mangueras-de-alimentacion.png" alt="Imagen" class="mb-3 w-full">
-        <div class="p-4 flex-grow">
-          <h3 class="text-md text-gray-500">PIEZA DE REPUESTO</h3>
-          <h2 class="text-2xl font-bold mb-8">MANGUERAS DE ALIMENTACIÓN PARA EL PAQUETE COMPLETO DE PLACAS DE FILTRO</h2>
-          <p class="text-gray-700 mb-4 text-lg">Las mangueras Roxia se utilizan en los filtros prensa de torre para la alimentación de lodos, el filtrado, el aire …</p>
+      <div class="shadow_box flex flex-col h-full">
+        <img src="images/mangueras-de-alimentacion.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
+        <div class="p-3 flex-grow flex flex-col bg-white">
+          <h3 class="text-sm text-gray-500">PIEZA DE REPUESTO</h3>
+          <h2 class="text-lg font-bold mb-2">MANGUERAS DE ALIMENTACIÓN PARA EL PAQUETE COMPLETO DE PLACAS DE FILTRO</h2>
+          <p class="text-gray-700 mb-2 text-sm">Las mangueras Roxia se utilizan en los filtros prensa de torre para la alimentación de lodos, el filtrado, el aire …</p>
         </div>
-        <button class="bg-custom-green text-white w-full text-left py-2 px-6">LEÉ MÁS</button>
+        <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto">LEÉ MÁS</button>
       </div>
+
       <!-- Card 6 -->
-      <div class="shadow_box flex flex-col">
-        <img src="images/bateas-filtrantes.png" alt="Imagen" class="mb-3 w-full">
-        <div class="p-4 flex-grow">
-          <h3 class="text-md text-gray-500">PIEZA DE REPUESTO</h3>
-          <h2 class="text-2xl font-bold mb-8">BATEAS FILTRANTES</h2>
-          <p class="text-gray-700 mb-4 text-lg">Las bateas filtrantes son componentes constructivos importantes en las placas de filtros de torre. Su función principal es recoger el …</p>
+      <div class="shadow_box flex flex-col h-full">
+        <img src="images/bateas-filtrantes.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
+        <div class="p-3 flex-grow flex flex-col bg-white">
+          <h3 class="text-sm text-gray-500">PIEZA DE REPUESTO</h3>
+          <h2 class="text-lg font-bold mb-2">BATEAS FILTRANTES</h2>
+          <p class="text-gray-700 mb-2 text-sm">Las bateas filtrantes son componentes constructivos importantes en las placas de filtros de torre. Su función principal es recoger el …</p>
         </div>
-        <button class="bg-custom-green text-white w-full text-left py-2 px-6">LEÉ MÁS</button>
+        <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto">LEÉ MÁS</button>
       </div>
+
       <!-- Card 7 -->
-      <div class="shadow_box flex flex-col">
-        <img src="images/sellos-de-placa-para-prensas.png" alt="Imagen" class="mb-3 w-full">
-        <div class="p-4 flex-grow">
-          <h3 class="text-md text-gray-500">PIEZA DE REPUESTO</h3>
-          <h2 class="text-2xl font-bold mb-8">SELLOS DE PLACA PARA PRENSAS TIPO TORRE</h2>
-          <p class="text-gray-700 mb-4 text-lg">El propósito principal de los sellos de placa de filtro es sellar herméticamente las cámaras de filtración de la prensa …</p>
+      <div class="shadow_box flex flex-col h-full">
+        <img src="images/sellos-de-placa-para-prensas.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
+        <div class="p-3 flex-grow flex flex-col bg-white">
+          <h3 class="text-sm text-gray-500">PIEZA DE REPUESTO</h3>
+          <h2 class="text-lg font-bold mb-2">SELLOS DE PLACA PARA PRENSAS TIPO TORRE</h2>
+          <p class="text-gray-700 mb-2 text-sm">El propósito principal de los sellos de placa de filtro es sellar herméticamente las cámaras de filtración de la prensa …</p>
         </div>
-        <button class="bg-custom-green text-white w-full text-left py-2 px-6">LEÉ MÁS</button>
+        <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto">LEÉ MÁS</button>
       </div>
+
       <!-- Card 8 -->
-      <div class="shadow_box flex flex-col">
-        <img src="images/paquetes-de-placa-para-filtro.png" alt="Imagen" class="mb-3 w-full">
-        <div class="p-4 flex-grow">
-          <h3 class="text-md text-gray-500">PIEZA DE REPUESTO</h3>
-          <h2 class="text-2xl font-bold mb-8">PAQUETES DE PLACA PARA FILTROS PRENSA TIPO TORRE</h2>
-          <p class="text-gray-700 mb-4 text-lg">Los expertos en filtración de Roxia han rediseñado los paquetes de placas completos para los filtros de prensa tipo torre: …</p>
+      <div class="shadow_box flex flex-col h-full">
+        <img src="images/paquetes-de-placa-para-filtro.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
+        <div class="p-3 flex-grow flex flex-col bg-white">
+          <h3 class="text-sm text-gray-500">PIEZA DE REPUESTO</h3>
+          <h2 class="text-lg font-bold mb-2">PAQUETES DE PLACA PARA FILTROS PRENSA TIPO TORRE</h2>
+          <p class="text-gray-700 mb-2 text-sm">Los expertos en filtración de Roxia han rediseñado los paquetes de placas completos para los filtros de prensa tipo torre: …</p>
         </div>
-        <button class="bg-custom-green text-white w-full text-left py-2 px-6">LEÉ MÁS</button>
+        <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto">LEÉ MÁS</button>
       </div>
+
       <!-- Card 9 -->
-      <div class="shadow_box flex flex-col">
-        <img src="images/telas-de-filtro-para-prensas.png" alt="Imagen" class="mb-3 w-full">
-        <div class="p-4 flex-grow">
-          <h3 class="text-md text-gray-500">PIEZA DE REPUESTO</h3>
-          <h2 class="text-2xl font-bold mb-8">TELAS DE FILTRO PARA PRENSAS TIPO TORRE</h2>
-          <p class="text-gray-700 mb-4 text-lg">Una amplia gama de telas filtrantes Roxia para filtros prensa de torre permite elegir el tipo de tela adecuado para …</p>
+      <div class="shadow_box flex flex-col h-full">
+        <img src="images/telas-de-filtro-para-prensas.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
+        <div class="p-3 flex-grow flex flex-col bg-white">
+          <h3 class="text-sm text-gray-500">PIEZA DE REPUESTO</h3>
+          <h2 class="text-lg font-bold mb-2">TELAS DE FILTRO PARA PRENSAS TIPO TORRE</h2>
+          <p class="text-gray-700 mb-2 text-sm">Una amplia gama de telas filtrantes Roxia para filtros prensa de torre permite elegir el tipo de tela adecuado para …</p>
         </div>
-        <button class="bg-custom-green text-white w-full text-left py-2 px-6">LEÉ MÁS</button>
+        <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto">LEÉ MÁS</button>
       </div>
+
       <!-- Card 10 -->
-      <div class="shadow_box flex flex-col">
-        <img src="images/componentes-de-montaje.png" alt="Imagen" class="mb-3 w-full">
-        <div class="p-4 flex-grow">
-          <h3 class="text-md text-gray-500">PIEZA DE REPUESTO</h3>
-          <h2 class="text-2xl font-bold mb-8">COMPONENTES DE MONTAJE</h2>
-          <p class="text-gray-700 mb-4 text-lg">El filtro de torre incluye una variedad de componentes de montaje que aseguran la fiabilidad del filtro sin importar la …</p>
+      <div class="shadow_box flex flex-col h-full">
+        <img src="images/componentes-de-montaje.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
+        <div class="p-3 flex-grow flex flex-col bg-white">
+          <h3 class="text-sm text-gray-500">PIEZA DE REPUESTO</h3>
+          <h2 class="text-lg font-bold mb-2">COMPONENTES DE MONTAJE</h2>
+          <p class="text-gray-700 mb-2 text-sm">El filtro de torre incluye una variedad de componentes de montaje que aseguran la fiabilidad del filtro sin importar la …</p>
         </div>
-        <button class="bg-custom-green text-white w-full text-left py-2 px-6">LEÉ MÁS</button>
+        <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto">LEÉ MÁS</button>
       </div>
     </div>
   </div>
 </section>
 
-<section class="h-screen relative" id="contacto">
+<section class="h-screen relative mt-20" id="contacto">
   <!-- Fondo dividido en 30% verde y 70% blanco -->
-  <div class="h-[45%] w-full bg-custom-green p-4 flex justify-center relative">
+  <div class="h-[40%] w-full bg-custom-green p-4 flex justify-center relative">
     <div class="max-w-7xl w-full text-left">
-      <h2 class="text-white font-bold text-5xl pt-2">Contactanos</h2>
+      <h2 class="text-white font-bold text-5xl pt-4">Contactanos</h2>
     </div>
     <!-- Imagen que va desde la mitad hacia la izquierda con degradado de blanco a transparente -->
     <div class="absolute bottom-0 left-0 right-1/2">
-      <div class="relative w-full h-full">
-        <img src="images/contacto.jpg" alt="Imagen de contacto" class="h-auto w-full object-cover">
+      <div class="relative w-full">
+        <img src="images/contacto.jpg" alt="Imagen de contacto" class="h-64 w-full object-cover">
         <div class="absolute inset-0 " style="background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 40%);"></div>
       </div>
     </div>
@@ -509,48 +516,48 @@
   <div class="h-[55%] w-full bg-white p-4 flex justify-center mt-4">
     <div class="max-w-7xl w-full text-left">
         <div class="bg-custom-green w-full max-w-sm rounded-2xl mb-4 pl-8 pr-16 py-6 relative">
-            <p class="text-white text-3xl font-bold">LUIS ALBANESE</p>
-            <p class="text-white text-xl">Representante en Argentina</p>
+            <p class="text-white text-2xl font-bold">LUIS ALBANESE</p>
+            <p class="text-white text-lg">Representante en Argentina</p>
             <!-- Triángulo/flecha en el cuadrado verde -->
             <div class="absolute top-[-14px] left-10 w-0 h-0 border-l-[24px] border-l-transparent border-r-[24px] border-r-transparent border-b-[24px] border-b-custom-green"></div>
         </div>    
-        <p class="text-2xl text-gray-800 mb-4"><i class="fas fa-phone-alt mr-2"></i> +54 9 1124818236</p>
-        <p class="text-2xl text-gray-800 mb-4"><i class="fas fa-envelope mr-2"></i> roxiaagentarg.luisalbanese@gmail.com</p>
-        <p class="text-2xl text-gray-800"><i class="fas fa-map-marker-alt mr-2"></i> Buenos Aires, Argentina</p>
+        <p class="text-xl text-gray-800 mb-4"><i class="fas fa-phone-alt mr-2"></i> +54 9 1124818236</p>
+        <p class="text-xl text-gray-800 mb-4"><i class="fas fa-envelope mr-2"></i> roxiaagentarg.luisalbanese@gmail.com</p>
+        <p class="text-xl text-gray-800"><i class="fas fa-map-marker-alt mr-2"></i> Buenos Aires, Argentina</p>
     </div>
 </div>
 
 <!-- Contenido que se superpone sobre los dos fondos -->
-<div class="absolute top-0 left-1/2 w-2/5 mt-10">
+<div class="absolute top-0 left-1/2 w-4/12 mt-16">
   <form class="bg-white p-6 shadow_box rounded-3xl px-14">
-    <h3 class="text-black text-4xl font-bold mb-6 mt-6">Envianos tu mensaje</h3> <!-- Incrementé el margen inferior -->
+    <h3 class="text-black text-3xl font-bold mb-3 mt-2">Envianos tu mensaje</h3> <!-- Incrementé el margen inferior -->
     <!-- Campos del formulario -->
-    <div class="mb-6"> <!-- Incrementé el margen inferior -->
-      <label class="block text-gray-700 text-2xl font-bold mb-3" for="name"> <!-- Incrementé el margen inferior -->
+    <div class="mb-2"> <!-- Incrementé el margen inferior -->
+      <label class="block text-gray-700 text-xl font-bold mb-3" for="name"> <!-- Incrementé el margen inferior -->
         Nombre y Apellido
       </label>
-      <input class="shadow appearance-none border rounded-lg w-full py-3 px-3 text-2xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text">
+      <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text">
     </div>
-    <div class="mb-6"> <!-- Incrementé el margen inferior -->
-      <label class="block text-gray-700 text-2xl font-bold mb-3" for="email"> <!-- Incrementé el margen inferior -->
+    <div class="mb-2"> <!-- Incrementé el margen inferior -->
+      <label class="block text-gray-700 text-xl font-bold mb-3" for="email"> <!-- Incrementé el margen inferior -->
         Mail
       </label>
-      <input class="shadow appearance-none border rounded-lg w-full py-3 px-3 text-2xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email">
+      <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email">
     </div>
-    <div class="mb-6"> <!-- Incrementé el margen inferior -->
-      <label class="block text-gray-700 text-2xl font-bold mb-3" for="company"> <!-- Incrementé el margen inferior -->
+    <div class="mb-2"> <!-- Incrementé el margen inferior -->
+      <label class="block text-gray-700 text-xl font-bold mb-3" for="company"> <!-- Incrementé el margen inferior -->
         Empresa
       </label>
-      <input class="shadow appearance-none border rounded-lg w-full py-3 px-3 text-2xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="company" type="text">
+      <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="company" type="text">
     </div>
-    <div class="mb-8"> <!-- Incrementé el margen inferior -->
-      <label class="block text-gray-700 text-2xl font-bold mb-3" for="message"> <!-- Incrementé el margen inferior -->
+    <div class="mb-2"> <!-- Incrementé el margen inferior -->
+      <label class="block text-gray-700 text-xl font-bold mb-3" for="message"> <!-- Incrementé el margen inferior -->
         Mensaje
       </label>
-      <textarea class="shadow appearance-none border rounded-lg w-full py-3 px-3 text-2xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" rows="4"></textarea>
+      <textarea class="shadow appearance-none border rounded-lg w-full py-1 text-xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" rows="4"></textarea>
     </div>
-    <div class="flex items-center justify-between mb-8">
-      <button class="bg-custom-green hover:bg-green-700 text-white font-bold py-2 px-10 rounded-lg focus:outline-none focus:shadow-outline text-2xl" type="button">
+    <div class="flex items-center justify-between mb-4">
+      <button class="bg-custom-green hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg focus:outline-none focus:shadow-outline text-xl" type="button">
         Contactar
       </button>
     </div>
@@ -560,10 +567,9 @@
 </main>
 
 <footer class="text-black p-4 mx-auto text-center">
-  <img src="images/LOGO ROXIA-02.png" alt="Roxia Logo" class="w-2/12 h-auto mx-auto mb-16 mt-10">
+  <img src="images/LOGO ROXIA-02.png" alt="Roxia Logo" class="w-2/12 h-auto mx-auto mb-16">
   <p class="mb-20 text-2xl">©ROXIA Representante Argentina, All rights reserved.</p>
 </footer>
-
 
 <!-- Link to external JavaScript file -->
 <script src="main.js"></script>

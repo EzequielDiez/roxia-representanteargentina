@@ -8,7 +8,8 @@
   box-sizing: border-box;
 }
 
-html,body {
+html,
+body {
   scroll-behavior: smooth;
 }
 
@@ -51,21 +52,8 @@ html,body {
   font-style: normal;
 }
 
-/* Estilo personalizado para animación */
-nav::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 60%;
-  height: 100%;
-  width: 50%;
-  background-color: #5E8A5A;
-  transition: width 0.3s ease;
-  z-index: -1;
-}
-
 #inicio {
-  background-image: url('/images/filter-img-background2.png');
+  background-image: url('./images/filter-img-background2.png');
 }
 
 /* #first-section {
@@ -75,7 +63,7 @@ nav::before {
 #first-section {
   background:
     linear-gradient(to bottom, white 5%, transparent 20%, white 40%),
-    url('/images/return-img-background.png') no-repeat center top;
+    url('./images/return-img-background.png') no-repeat center top;
   background-size: contain;
   height: 100vh;
   /* Ajusta según el tamaño de la sección */

@@ -24,6 +24,9 @@ module.exports = {
         myriad: ["MyriadPro", "sans-serif"],
         noto: ["NotoSansBlack", "sans-serif"],
       },
+      backgroundSize: {
+        'custom-width': '75% auto',
+      },
     },
   },
   plugins: [],
