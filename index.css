@@ -54,10 +54,11 @@ body {
 
 @font-face {
   font-family: "BebasNeueRegular";
-  src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+  src: url("./fonts/BebasNeue-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+
 
 #first-section {
   background:
