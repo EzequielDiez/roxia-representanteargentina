@@ -19,28 +19,28 @@ body {
 /* Importación de fuentes */
 @font-face {
   font-family: "AcuminVariableConcept";
-  src: url("/fonts/AcuminVariableConcept.otf") format("opentype");
+  src: url("../fonts/AcuminVariableConcept.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Consola";
-  src: url("/fonts/consola.ttf") format("truetype");
+  src: url("../fonts/consola.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "ConsolaBold";
-  src: url("/fonts/consolab.ttf") format("truetype");
+  src: url("../fonts/consolab.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "MyriadPro";
-  src: url("/fonts/MyriadPro-Regular.otf") format("opentype");
+  src: url("../fonts/MyriadPro-Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
