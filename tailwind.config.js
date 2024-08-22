@@ -16,6 +16,8 @@ module.exports = {
     extend: {
       colors: {
         'custom-green': '#5E8A5A',
+        'custom-gray-font': '#282828',
+        'custom-red-font': '#C42A2A',
       },
       fontFamily: {
         acumin: ["AcuminVariableConcept", "sans-serif"],
@@ -23,6 +25,7 @@ module.exports = {
         consolaBold: ["ConsolaBold", "monospace"],
         myriad: ["MyriadPro", "sans-serif"],
         noto: ["NotoSansBlack", "sans-serif"],
+        bebasNeue: ["BebasNeueRegular", "sans-serif"],
       },
       backgroundSize: {
         'custom-width': '75% auto',

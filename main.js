@@ -55,4 +55,37 @@ document.addEventListener('DOMContentLoaded', () => {
   updateNavbarBackground();
   document.addEventListener('scroll', updateNavbarBackground);
 
+  // Aquí está la lógica del observer para la rayita blanca
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll("nav a");
+  let activeLink = null;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const targetLink = document.querySelector(
+            `nav a[href="#${entry.target.id}"]`
+          );
+
+          console.log(`Sección activa: ${entry.target.id}`); // Verifica qué sección está detectando
+
+          if (targetLink !== activeLink) {
+            // Desactivar el enlace anterior
+            if (activeLink) activeLink.classList.remove("active-link");
+
+            // Activar el nuevo enlace
+            targetLink.classList.add("active-link");
+            activeLink = targetLink;
+          }
+        }
+      });
+    },
+    {
+      rootMargin: "-50% 0px -50% 0px", // Activa cuando el centro de la sección es visible
+      threshold: 0.1, // Puedes ajustar según la precisión que desees
+    }
+  );
+
+  sections.forEach((section) => observer.observe(section));
 });
