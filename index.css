@@ -47,7 +47,7 @@ body {
 
 @font-face {
   font-family: "NotoSansBlack";
-  src: url("./fonts/NotoSans-Black.ttf") format("truetype");
+  src: url("../fonts/NotoSans-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
