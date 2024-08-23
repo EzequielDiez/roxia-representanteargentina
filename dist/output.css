@@ -665,6 +665,10 @@ video {
   top: 15% !important;
 }
 
+.top-5 {
+  top: 1.25rem !important;
+}
+
 .isolate {
   isolation: isolate !important;
 }
@@ -679,10 +683,6 @@ video {
 
 .z-20 {
   z-index: 20 !important;
-}
-
-.order-1 {
-  order: 1 !important;
 }
 
 .mx-auto {
@@ -830,6 +830,10 @@ video {
   height: 20rem !important;
 }
 
+.h-96 {
+  height: 24rem !important;
+}
+
 .h-\[15\%\] {
   height: 15% !important;
 }
@@ -854,28 +858,8 @@ video {
   height: 100vh !important;
 }
 
-.h-96 {
-  height: 24rem !important;
-}
-
-.h-2\/3 {
-  height: 66.666667% !important;
-}
-
-.h-2\/4 {
-  height: 50% !important;
-}
-
-.h-5\/6 {
-  height: 83.333333% !important;
-}
-
-.h-2\/6 {
-  height: 33.333333% !important;
-}
-
-.h-1\/6 {
-  height: 16.666667% !important;
+.min-h-screen {
+  min-height: 100vh !important;
 }
 
 .w-0 {
@@ -954,18 +938,6 @@ video {
   max-width: 20rem !important;
 }
 
-.max-w-5 {
-  max-width: 1.25rem !important;
-}
-
-.max-w-2xl {
-  max-width: 42rem !important;
-}
-
-.max-w-xl {
-  max-width: 36rem !important;
-}
-
 .flex-1 {
   flex: 1 1 0% !important;
 }
@@ -986,10 +958,6 @@ video {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
 }
 
 .flex-col {
@@ -1066,6 +1034,12 @@ video {
   --tw-space-y-reverse: 0 !important;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse))) !important;
   margin-bottom: calc(1rem * var(--tw-space-y-reverse)) !important;
+}
+
+.space-y-14 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0 !important;
+  margin-top: calc(3.5rem * calc(1 - var(--tw-space-y-reverse))) !important;
+  margin-bottom: calc(3.5rem * var(--tw-space-y-reverse)) !important;
 }
 
 .self-center {
@@ -1148,6 +1122,14 @@ video {
 
 .border-t-4 {
   border-top-width: 4px !important;
+}
+
+.border-r-2 {
+  border-right-width: 2px !important;
+}
+
+.border-t-2 {
+  border-top-width: 2px !important;
 }
 
 .border-black {
@@ -1356,6 +1338,11 @@ video {
   padding-right: 3.5rem !important;
 }
 
+.px-16 {
+  padding-left: 4rem !important;
+  padding-right: 4rem !important;
+}
+
 .px-2 {
   padding-left: 0.5rem !important;
   padding-right: 0.5rem !important;
@@ -1411,11 +1398,6 @@ video {
   padding-bottom: 2rem !important;
 }
 
-.px-28 {
-  padding-left: 7rem !important;
-  padding-right: 7rem !important;
-}
-
 .pb-20 {
   padding-bottom: 5rem !important;
 }
@@ -1456,6 +1438,10 @@ video {
   padding-top: 15% !important;
 }
 
+.pt-32 {
+  padding-top: 8rem !important;
+}
+
 .text-left {
   text-align: left !important;
 }
@@ -1486,6 +1472,10 @@ video {
 
 .font-sans {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+.font-notoSansJP {
+  font-family: NotoSansJPBlack, sans-serif !important;
 }
 
 .text-2xl {
@@ -1543,6 +1533,14 @@ video {
 
 .font-semibold {
   font-weight: 600 !important;
+}
+
+.font-thin {
+  font-weight: 100 !important;
+}
+
+.font-light {
+  font-weight: 300 !important;
 }
 
 .leading-8 {
@@ -1719,6 +1717,26 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "BebasNeueRegular";
+
+  src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NotoSansJPBlack";
+
+  src: url("../fonts/NotoSansJP-Black.ttf") format("truetype");
+
+  font-weight: 900;
+
+  font-style: normal;
+}
+
 #first-section {
   background:
     linear-gradient(to bottom, white 5%, transparent 12%, white 38%),
@@ -1806,6 +1824,10 @@ section {
     margin-right: 0px !important;
   }
 
+  .sm\:mb-12 {
+    margin-bottom: 3rem !important;
+  }
+
   .sm\:ml-4 {
     margin-left: 1rem !important;
   }
@@ -1828,6 +1850,14 @@ section {
 
   .sm\:hidden {
     display: none !important;
+  }
+
+  .sm\:w-4\/12 {
+    width: 33.333333% !important;
+  }
+
+  .sm\:w-6\/12 {
+    width: 50% !important;
   }
 
   .sm\:grid-cols-2 {
@@ -1887,6 +1917,14 @@ section {
 }
 
 @media (min-width: 768px) {
+  .md\:mb-16 {
+    margin-bottom: 4rem !important;
+  }
+
+  .md\:mb-20 {
+    margin-bottom: 5rem !important;
+  }
+
   .md\:mb-6 {
     margin-bottom: 1.5rem !important;
   }
@@ -1935,12 +1973,20 @@ section {
     height: 100vh !important;
   }
 
+  .md\:w-2\/12 {
+    width: 16.666667% !important;
+  }
+
   .md\:w-3\/12 {
     width: 25% !important;
   }
 
   .md\:w-5\/12 {
     width: 41.666667% !important;
+  }
+
+  .md\:w-4\/12 {
+    width: 33.333333% !important;
   }
 
   .md\:max-w-lg {
@@ -2073,14 +2119,6 @@ section {
 }
 
 @media (min-width: 1024px) {
-  .lg\:left-0 {
-    left: 0px !important;
-  }
-
-  .lg\:order-2 {
-    order: 2 !important;
-  }
-
   .lg\:mt-0 {
     margin-top: 0px !important;
   }
@@ -2097,20 +2135,8 @@ section {
     width: 25% !important;
   }
 
-  .lg\:max-w-2xl {
-    max-width: 42rem !important;
-  }
-
-  .lg\:max-w-3xl {
-    max-width: 48rem !important;
-  }
-
-  .lg\:max-w-7xl {
-    max-width: 80rem !important;
-  }
-
-  .lg\:max-w-xl {
-    max-width: 36rem !important;
+  .lg\:w-4\/12 {
+    width: 33.333333% !important;
   }
 
   .lg\:grid-cols-3 {
@@ -2123,10 +2149,6 @@ section {
 
   .lg\:flex-row {
     flex-direction: row !important;
-  }
-
-  .lg\:flex-nowrap {
-    flex-wrap: nowrap !important;
   }
 
   .lg\:items-start {
@@ -2199,6 +2221,16 @@ section {
   .lg\:text-7xl {
     font-size: 4.5rem !important;
     line-height: 1 !important;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem !important;
+    line-height: 1.75rem !important;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem !important;
+    line-height: 1.75rem !important;
   }
 }
 

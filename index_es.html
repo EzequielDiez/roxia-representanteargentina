@@ -43,53 +43,56 @@
           </div>
         </div>
       </div>
-      
+  
       <!-- Mobile menu -->
       <div class="hidden sm:hidden" id="mobile-menu">
         <div class="space-y-1 px-2 pb-3 pt-2 flex flex-col items-center justify-center">
-          <a href="#" class="block rounded-md hover:bg-green-800 hover:text-white px-3 py-2 text-sm font-medium text-gray-300">INICIO</a>
-          <a href="#" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-green-800 hover:text-white">NOSOTROS</a>
-          <a href="#" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-green-800 hover:text-white">EQUIPOS</a>
-          <a href="#" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-green-800 hover:text-white">REPUESTOS</a>
-          <a href="#" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-green-800 hover:text-white">CONTACTO</a>
+          <a href="#inicio" class="block rounded-md hover:bg-green-800 hover:text-white px-3 py-2 text-sm font-medium text-gray-300">INICIO</a>
+          <a href="#nosotros" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-green-800 hover:text-white">NOSOTROS</a>
+          <a href="#equipos" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-green-800 hover:text-white">EQUIPOS</a>
+          <a href="#repuestos" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-green-800 hover:text-white">REPUESTOS</a>
+          <a href="#contacto" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-green-800 hover:text-white">CONTACTO</a>
           <div class="flex justify-around w-full">
-            <a href="index_es.html" id="es-flag-mobile" class="flex items-center rounded-lg px-2 py-1"></a>
-            <a href="index_en.html" id="en-flag-mobile" class="flex items-center rounded-lg px-2 py-1"></a>
+            <a href="index_es.html" id="es-flag-mobile" class="flex items-center rounded-lg px-2 py-1">ES</a>
+            <a href="index_en.html" id="en-flag-mobile" class="flex items-center rounded-lg px-2 py-1">EN</a>
           </div>
         </div>
       </div>
     </nav>
   </header>
   
+  
 
   <main>
     <section id="inicio" class="relative isolate bg-[url('../images/filter-img-background2.jpg')] bg-cover bg-center h-screen">
-      <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
-        <img src="images/LOGO ROXIA-02.png" alt="Roxia Logo" class="w-4/12 h-auto">
-        <p class="mt-4 text-custom-gray-font text-xl font-semibold">EMPRESA FINLANDESA ESPECIALISTA EN</p>
-        <p class="mt-2 text-custom-gray-font text-5xl font-bebasNeue">SEPARACIÓN DE SÓLIDOS-LÍQUIDOS</p>
-        <p class="text-custom-gray-font text-xl font-noto">-DEWATERING & AUTOMATION-</p>
+      <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+        <img src="images/LOGO ROXIA-02.png" alt="Roxia Logo" class="w-8/12 sm:w-6/12 md:w-4/12 lg:w-4/12 h-auto">
+        <p class="mt-4 text-custom-gray-font text-lg sm:text-xl lg:text-xl font-semibold">EMPRESA FINLANDESA ESPECIALISTA EN</p>
+        <p class="mt-2 text-custom-gray-font text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bebasNeue">SEPARACIÓN DE SÓLIDOS-LÍQUIDOS</p>
+        <p class="text-custom-gray-font text-lg sm:text-xl lg:text-2xl font-noto">-DEWATERING & AUTOMATION-</p>
       </div>
     </section>
+    
 
-  <section id="first-section" class="relative isolate px-4 pb-20 lg:px-16 h-screen">
-    <div class="absolute inset-0 flex flex-col justify-start items-center text-center">
-      <img src="images/LOGO ROXIA-02.png" alt="Roxia Logo" class="w-8/12 md:w-5/12 lg:w-3/12 h-auto mt-32">
-      <p class="text-custom-gray-font text-6xl md:text-5xl lg:text-7xl font-bebasNeue mt-14">
-        MARCA EL RETORNO AL MERCADO MUNDIAL
-      </p>
-      <p class="text-custom-gray-font text-lg md:text-2xl lg:text-2xl font-sans">
-        del fabricante finlandés Creador del 1er Filtro Torre de Prensa Vertical (1977), con su <br>
-        nueva marca y con una alianza estratégica con
-      </p>
-      <img src="images/aquachem-logo.svg" alt="Aquachem Logo" class="w-8/12 md:w-5/12 lg:w-3/12 h-auto mt-6">
-      <div class="shadow_box rounded-xl p-4 lg:px-20 mt-12">
-        <p class="text-custom-red-font text-2xl md:text-4xl lg:text-6xl font-bebasNeue px-4 lg:px-10">
-          PARA LIDERAR UNA NUEVA GENERACIÓN <br> DE EQUIPOS DE FILTRADO
+    <section id="first-section" class="relative isolate px-4 pb-20 lg:px-16 h-auto min-h-screen">
+      <div class="flex flex-col justify-start items-center text-center pt-32 space-y-14">
+        <img src="images/LOGO ROXIA-02.png" alt="Roxia Logo" class="w-8/12 md:w-5/12 lg:w-3/12 h-auto">
+        <p class="text-custom-gray-font text-6xl md:text-5xl lg:text-7xl font-bebasNeue">
+          MARCA EL RETORNO AL MERCADO MUNDIAL
         </p>
+        <p class="text-custom-gray-font text-lg md:text-xl lg:text-xl font-notoSansJP">
+          del fabricante finlandés Creador del 1er Filtro Torre de Prensa Vertical (1977), con su <br>
+          nueva marca y con una alianza estratégica con
+        </p>
+        <img src="images/aquachem-logo.svg" alt="Aquachem Logo" class="w-8/12 md:w-5/12 lg:w-3/12 h-auto">
+        <div class="shadow_box rounded-xl p-4 lg:px-20">
+          <p class="text-custom-red-font text-2xl md:text-4xl lg:text-6xl font-bebasNeue px-4 lg:px-10">
+            PARA LIDERAR UNA NUEVA GENERACIÓN <br> DE EQUIPOS DE FILTRADO
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+    
   
   
     
@@ -125,13 +128,13 @@
   <section class="h-auto bg-white">
     <div class="max-w-5xl mx-auto h-auto md:h-1/2 flex flex-col justify-center items-start px-4 py-6 md:py-0">
       <div class="text-left">
-        <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-custom-gray-font">
+        <h1 class="text-3xl md:text-5xl lg:text-6xl font-notoSansJP mb-4 md:mb-6 text-custom-gray-font">
           El filtrado de tu empresa <br class="hidden md:block"> en nuestras manos
         </h1>
         <p class="text-base md:text-lg lg:text-3xl mb-4 md:mb-6 text-custom-gray-font">
           Vendemos equipos nuevos de filtrado tanto automáticos como manuales. <br class="hidden md:block">
-          También <strong class="font-noto">ACTUALIZAMOS / ACONDICIONAMOS</strong> sus viejos equipos, <br class="hidden md:block">
-          <strong class="font-noto">SOLUCIONES A MEDIDA</strong>.
+          También <strong class="font-notoSansJP">ACTUALIZAMOS / ACONDICIONAMOS</strong> sus viejos equipos, <br class="hidden md:block">
+          <strong class="font-notoSansJP">SOLUCIONES A MEDIDA</strong>.
         </p>
         <div class="flex justify-start">
           <a href="#contacto" class="bg-custom-green text-white text-lg md:text-3xl px-5 py-1 rounded-md shadow-lg hover:bg-green-600">
@@ -148,8 +151,8 @@
           <iframe class="flex-1 h-72 border-0 md:rounded-l-lg rounded-t-lg md:rounded-tr-none" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
           <!-- Cuadrado gris oscuro con texto -->
           <div class="relative flex-1 h-72 bg-custom-gray-font text-white flex items-center justify-center text-center p-4 md:rounded-r-lg rounded-b-lg md:rounded-bl-none">
-            <div class="relative bg-custom-gray-font border-t-4 border-r-4 border-custom-green p-4 md:p-8 ml-0 md:ml-8 flex flex-col justify-between h-full">
-              <p class="text-base md:text-lg lg:text-2xl mb-4">
+            <div class="relative bg-custom-gray-font border-t-2 border-r-2 border-custom-green p-4 md:p-8 ml-0 md:ml-8 flex flex-col justify-between h-full">
+              <p class="text-base md:text-lg lg:text-2xl mb-4 font-notoSansJP text-right">
                 Nos encargamos de los procesos de separación SÓLIDOS / LÍQUIDOS
               </p>
               <img src="images/roxia-logo.svg" alt="Roxia Logo" class="self-center md:self-end w-1/4 h-auto mt-4">
@@ -165,7 +168,7 @@
           <div class="inline-block border-custom-green border-b-2">
             <h2 class="text-custom-green text-2xl md:text-3xl font-semibold z-10">Nosotros</h2>
           </div>
-          <h1 class="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold text-custom-gray-font mt-0 z-10 border-l-2 border-custom-green pl-4">
+          <h1 class="text-4xl sm:text-5xl md:text-5xl lg:text-6xl text-custom-gray-font mt-0 z-10 border-l-2 border-custom-green pl-4 font-notoSansJP">
             Con más <br> de 40 años <br> de experiencia
           </h1>
           <p class="text-custom-gray-font text-lg sm:text-xl md:text-xl leading-8 md:leading-10 mt-0 z-10 max-w-4xl border-l-2 border-custom-green pl-4">
@@ -188,7 +191,7 @@
     <section class="h-auto">
       <div class="bg-custom-gray-section">
         <div class="max-w-5xl mx-auto">
-          <p class="text-right text-custom-gray-font text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold py-8">Roxia en Argentina</p>
+          <p class="text-right text-custom-gray-font text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-notoSansJP py-8">Roxia en Argentina</p>
         </div>
       </div>
       <div class="bg-white">
@@ -199,7 +202,7 @@
               <!-- Card 1 -->
               <div class="bg-gradient-to-tr from-custom-blue-card-30 via-white to-custom-blue-card-30 shadow_box rounded-xl p-6 flex flex-col items-center justify-evenly h-80 mb-6">
                 <img src="images/icons2.png" alt="" class="w-11/12 h-auto object-contain">
-                <p class="text-custom-gray-font text-center text-lg mt-4">
+                <p class="text-custom-gray-font text-center text-md mt-4 font-notoSansJP">
                   Test de filtración, con el fluido real a procesar, para asegurar el diseño y equipo adecuado.
                 </p>
               </div>
@@ -208,7 +211,7 @@
               <!-- Card 2 -->
               <div class="bg-gradient-to-tr from-custom-blue-card-30 via-white to-custom-blue-card-30 shadow_box rounded-xl p-6 flex flex-col items-center justify-evenly h-80 mb-6">
                 <img src="images/icons3.png" alt="" class="w-6/12 h-auto object-contain">
-                <p class="text-custom-gray-font text-center text-lg mt-4">
+                <p class="text-custom-gray-font text-center text-md mt-4 font-notoSansJP">
                   Frecuentes inspecciones planificadas para prevención de fallas y mejora de performance.
                 </p>
               </div>
@@ -216,7 +219,7 @@
               <!-- Card 3 -->
               <div class="bg-gradient-to-tr from-custom-red-card-30 via-white to-custom-red-card-30 shadow_box rounded-xl p-6 flex flex-col items-center justify-evenly h-80 mb-6">
                 <img src="images/icons4.png" alt="" class="w-6/12 h-auto object-contain">
-                <p class="text-custom-gray-font text-center text-lg mt-4">
+                <p class="text-custom-gray-font text-center text-md mt-4 font-notoSansJP">
                   Reducir tiempos de espera de repuestos y tiempos de parada de plantas.
                 </p>
               </div>
@@ -224,7 +227,7 @@
               <!-- Card 4 -->
               <div class="bg-gradient-to-tr from-custom-blue-card-30 via-white to-custom-blue-card-30 shadow_box rounded-xl p-6 flex flex-col items-center justify-evenly h-80 mb-6">
                 <img src="images/icons1.png" alt="" class="w-6/12 h-auto object-contain">
-                <p class="text-custom-gray-font text-center text-lg mt-4">
+                <p class="text-custom-gray-font text-center text-md mt-4 font-notoSansJP">
                   Entrenamientos al personal de nuestros clientes para mejorar la operación de filtrado.
                 </p>
               </div>
@@ -242,92 +245,81 @@
             <h3 class="text-custom-green underline mb-4 text-xl md:text-3xl md:text-left md:ml-36 text-center">Equipos</h3>
             <!-- Contenedor de la imagen -->
             <div class="flex items-center justify-center md:justify-end h-full">
-              <img src="images/tower-press-roxia.png" alt="" class="max-w-xs md:max-w-lg h-auto md:mr-20"> <!-- Imagen alineada a la derecha -->
+              <img src="images/tower-press-roxia.png" alt="" class="w-full max-w-xs md:max-w-lg h-auto md:mr-20"> <!-- Imagen alineada a la derecha -->
             </div>
           </div>
           <!-- Columna derecha (gris) -->
-          <div class="bg-custom-gray-section p-4 flex flex-col justify-center space-y-4 md:space-y-8 pt-4 md:pt-8"">
+          <div class="bg-custom-gray-section p-4 flex flex-col justify-center space-y-4 md:space-y-8 pt-4 md:pt-8">
             <div class="max-w-lg">
               <h3 class="text-lg md:text-xl text-center md:text-right">
-                <span class="border border-black inline-block px-2 text-custom-gray-font">TP60 - TP16</span>
+                <span class="border border-black inline-block px-2 text-custom-gray-font font-notoSansJP">TP60 - TP16</span>
               </h3>
               <h2 class="text center md:text-right text-2xl md:text-4xl font-bold max-w-xs ml-auto mt-4">
-                <span class="inline-block p-1 text-custom-gray-font">Tecnología de filtración horizontal a presión</span>
+                <span class="inline-block p-1 text-custom-gray-font font-notoSansJP">Tecnología de filtración horizontal a presión</span>
               </h2>
-              <p class="text-center md:text-right text-lg md:text-base mt-4 text-custom-gray-font">El Tower Press™ de Roxia es un filtro de presión completamente automático, excelente para cualquier proceso que requiera de una separación eficiente de sólidos y líquidos. El diseño tiene 40 años de respetable experiencia en el campo. El filtro Tower Press de Roxia es una máquina confiable de producción que ofrece un alto rendimiento. Roxia tiene dos tipos de Tower Press: <strong>TP60, más grande, con un área de filtración de 48m² a 156m², y TP16, más pequeña, con un área de filtración de 16m² a 44m².</strong></p>
+              <p class="text-center md:text-right text-lg md:text-base mt-4 text-custom-gray-font">El Tower Press™ de Roxia es un filtro de presión completamente automático, excelente para cualquier proceso que requiera de una separación eficiente de sólidos y líquidos...</p>
               <div class="flex flex-wrap gap-4 justify-center md:justify-start mt-4 md:mt-8">
-                <button class="bg-custom-green text-white rounded-lg px-2 py-2 text-lg md:text-lg">Tower Press TP60</button>
-                <button class="bg-custom-green text-white rounded-lg px-2 py-2 text-lg md:text-lg">Tower Press TP16</button>
+                <button class="bg-custom-green text-white rounded-lg px-2 py-2 text-lg md:text-base font-notoSansJP">Tower Press TP60</button>
+                <button class="bg-custom-green text-white rounded-lg px-2 py-2 text-lg md:text-base font-notoSansJP">Tower Press TP16</button>
               </div>
             </div>
           </div>
         </div>
     
         <!-- Contenedor 2 -->
-        <div class="grid grid-cols-1 md:grid-cols-2 mx-auto gap-0 mt-0">
+        <div class="grid grid-cols-1 md:grid-cols-2 mx-auto gap-0 mt-0 overflow-hidden">
           <!-- Columna izquierda (blanco) -->
           <div class="bg-white p-4 flex flex-col justify-between h-full">
             <!-- Contenedor de la imagen -->
             <div class="flex items-center justify-center md:justify-end h-full">
-              <img src="images/filter2.png" alt="" class="max-w-lg h-auto md:mr-10"> <!-- Imagen alineada a la derecha -->
+              <img src="images/filter2.png" alt="" class="w-full max-w-lg h-auto md:mr-10"> <!-- Imagen alineada a la derecha -->
             </div>
           </div>
           <!-- Columna derecha (gris) -->
           <div class="bg-custom-gray-section p-4 flex flex-col justify-center pt-8 md:pt-20">
             <div class="max-w-lg">
               <h3 class="text-xl text-right">
-                <span class="border border-black inline-block px-2 text-custom-gray-font">SFP - SMART FILTER PRESS</span>
+                <span class="border border-black inline-block px-2 text-custom-gray-font font-notoSansJP">SFP - SMART FILTER PRESS</span>
               </h3>
               <h2 class="text-right text-2xl md:text-4xl font-bold max-w-sm ml-auto mt-4">
-                <span class="inline-block p-1 text-custom-gray-font">Filtro prensa Totalmente Automático, sin necesidad de operadores (solo una revisión semanal)</span>
+                <span class="inline-block p-1 text-custom-gray-font font-notoSansJP">Filtro prensa Totalmente Automático, sin necesidad de operadores...</span>
               </h2>
-              <p class="text-right text-xl md:text-base mt-4 text-custom-gray-font">La SFP corresponde a la nueva generación de filtros prensa: filtro autolimpiante totalmente automático. Brinda funcionamiento libre de problemas sin participación de operadores.
-                <br><br>
-                Disponibilidad sin personal sobre el 98% <br>
-                Baja necesidad de mantenimiento <br>
-                <strong>Superficie de filtración entre 1,2 - 22,3 m²<br>
-                Completamente sellado para un ambiente limpio <br>
-                Producción de hasta 1 t/hora</strong></p>
+              <p class="text-right text-xl md:text-base mt-4 text-custom-gray-font">La SFP corresponde a la nueva generación de filtros prensa: filtro autolimpiante totalmente automático...</p>
               <div class="flex flex-wrap gap-4 justify-start mt-8">
-                <button class="bg-custom-green text-white rounded-lg px-2 py-2 text-lg md:text-lg">Smart Filter Press</button>
+                <button class="bg-custom-green text-white rounded-lg px-2 py-2 text-lg md:text-base font-notoSansJP">Smart Filter Press</button>
               </div>
             </div>
           </div>
         </div>
     
         <!-- Contenedor 3 -->
-        <div class="grid grid-cols-1 md:grid-cols-2 mx-auto gap-0 mt-0">
+        <div class="grid grid-cols-1 md:grid-cols-2 mx-auto gap-0 mt-0 overflow-hidden">
           <!-- Columna izquierda (blanco) -->
           <div class="bg-white p-4 flex flex-col justify-between h-full">
             <!-- Contenedor de la imagen -->
             <div class="flex items-center justify-center md:justify-end h-full">
-              <img src="images/filter3.png" alt="" class="max-w-lg h-auto md:mr-10"> <!-- Imagen alineada a la derecha -->
+              <img src="images/filter3.png" alt="" class="w-full max-w-lg h-auto md:mr-10"> <!-- Imagen alineada a la derecha -->
             </div>
           </div>
           <!-- Columna derecha (gris) -->
           <div class="bg-custom-gray-section p-4 flex flex-col justify-center pt-8 md:pt-20">
             <div class="max-w-lg">
               <h3 class="text-xl text-right">
-                <span class="border border-black inline-block px-2 text-custom-gray-font">CERAMIC DISC FILTER</span>
+                <span class="border border-black inline-block px-2 text-custom-gray-font font-notoSansJP">CERAMIC DISC FILTER</span>
               </h3>
               <h2 class="text-right text-2xl md:text-4xl font-bold max-w-sm ml-auto mt-4">
-                <span class="inline-block p-1 text-custom-gray-font">Consume hasta 90% menos de energía</span>
+                <span class="inline-block p-1 text-custom-gray-font font-notoSansJP">Consume hasta 90% menos de energía</span>
               </h2>
-              <p class="text-right text-xl md:text-base mt-4 text-custom-gray-font">
-              El filtro de disco cerámico Roxia Ceramic Disc Filter requiere una baja inversión, brinda un filtrado limpio con una torta seca y opera continuamente a alta capacidad.
-              <br><br>
-              Filtrado más limpio con el menor consumo eléctrico. <br>
-              Operación continua visible. <br>
-              <strong>Superficie de filtración de 15 - 120 m². <br>
-              Producción de hasta 200 t/hora.</strong>
-            </p>
-            <div class="flex flex-wrap gap-4 justify-start mt-8">
-              <button class="bg-custom-green text-white rounded-lg px-2 py-2 text-lg md:text-lg">Ceramic Disc Filter</button>
+              <p class="text-right text-xl md:text-base mt-4 text-custom-gray-font">El filtro de disco cerámico Roxia Ceramic Disc Filter requiere una baja inversión, brinda un filtrado limpio con una torta seca y opera continuamente a alta capacidad...</p>
+              <div class="flex flex-wrap gap-4 justify-start mt-8">
+                <button class="bg-custom-green text-white rounded-lg px-2 py-2 text-lg md:text-base font-notoSansJP">Ceramic Disc Filter</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    
     
     
     
@@ -346,21 +338,21 @@
           <svg class="w-6 h-6 mr-2" fill="none" stroke="green" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
           </svg>
-          <span class="font-bold text-xl text-custom-gray-font">Calidad OEM y rendimientos mejorado</span>
+          <span class="font-bold text-xl text-custom-gray-font font-notoSansJP">Calidad OEM y rendimientos mejorado</span>
         </li>
         <li class="flex items-center">
           <!-- Ícono de tilde verde -->
           <svg class="w-6 h-6 mr-2" fill="none" stroke="green" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
           </svg>
-          <span class="font-bold text-xl text-custom-gray-font">Costo más bajo por tonelada</span>
+          <span class="font-bold text-xl text-custom-gray-font font-notoSansJP">Costo más bajo por tonelada</span>
         </li>
         <li class="flex items-center">
           <!-- Ícono de tilde verde -->
           <svg class="w-6 h-6 mr-2" fill="none" stroke="green" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
           </svg>
-          <span class="font-bold text-xl text-custom-gray-font">Plazos de entrega breves</span>
+          <span class="font-bold text-xl text-custom-gray-font font-notoSansJP">Plazos de entrega breves</span>
         </li>
       </ul>
       <button class="bg-custom-green text-white px-6 py-1 rounded text-lg">Solicitar una cotización</button>
@@ -373,275 +365,121 @@
     <div class="shadow_box flex flex-col h-full">
       <img src="images/diafragmas-goma.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
       <div class="p-3 flex-grow flex flex-col bg-white">
-        <h3 class="text-sm text-gray-500">PIEZA DE REPUESTO</h3>
-        <h2 class="text-lg font-bold mb-2 text-custom-gray-font">DIAFRAGMAS DE GOMA</h2>
+        <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
+        <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">DIAFRAGMAS DE GOMA</h2>
         <p class="text-custom-gray-font mb-2 text-sm">Los diafragmas de caucho Roxia para filtros de torre combinan la fabricación profesional de moldes y los beneficios de más …</p>
       </div>
-      <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto">LEÉ MÁS</button>
+      <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto font-bebasNeue text-lg">LEÉ MÁS</button>
     </div>
   
     <!-- Card 2 -->
     <div class="shadow_box flex flex-col h-full">
       <img src="images/placas-y-sellos-de-filtro.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
       <div class="p-3 flex-grow flex flex-col bg-white">
-        <h3 class="text-sm text-gray-500">PIEZA DE REPUESTO</h3>
-        <h2 class="text-lg font-bold mb-2 text-custom-gray-font">PLACAS DE FILTRO Y SELLOS DE FILTRO</h2>
+        <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
+        <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">PLACAS DE FILTRO Y SELLOS DE FILTRO</h2>
         <p class="text-custom-gray-font mb-2 text-sm">El corazón de cada prensa de torre son las placas de filtro y los marcos de filtros. Basándose en las …</p>
       </div>
-      <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto">LEÉ MÁS</button>
+      <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto font-bebasNeue text-lg">LEÉ MÁS</button>
     </div>
   
     <!-- Card 3 -->
     <div class="shadow_box flex flex-col h-full">
       <img src="images/rodillos-y-raspadores.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
       <div class="p-3 flex-grow flex flex-col bg-white">
-        <h3 class="text-sm text-gray-500">PIEZA DE REPUESTO</h3>
-        <h2 class="text-lg font-bold mb-2 text-custom-gray-font">RODILLOS Y RASPADORES</h2>
+        <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
+        <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">RODILLOS Y RASPADORES</h2>
         <p class="text-custom-gray-font mb-2 text-sm">Los rodillos Roxia se fabrican según el diseño más reciente. El doble cierre radial del eje y el cromado hacen …</p>
       </div>
-      <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto">LEÉ MÁS</button>
+      <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto font-bebasNeue text-lg">LEÉ MÁS</button>
     </div>
   
     <!-- Card 4 -->
     <div class="shadow_box flex flex-col h-full">
       <img src="images/parrillas-filtrantes.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
       <div class="p-3 flex-grow flex flex-col bg-white">
-        <h3 class="text-sm text-gray-500">PIEZA DE REPUESTO</h3>
-        <h2 class="text-lg font-bold mb-2 text-custom-gray-font">PARRILLAS FILTRANTES</h2>
+        <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
+        <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">PARRILLAS FILTRANTES</h2>
         <p class="text-custom-gray-font mb-2 text-sm">Las parrillas filtrantes Roxia para filtros de torre tienen una vida útil más larga porque están fabricadas con polipropileno con …</p>
       </div>
-      <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto">LEÉ MÁS</button>
+      <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto font-bebasNeue text-lg">LEÉ MÁS</button>
     </div>
   
     <!-- Card 5 -->
     <div class="shadow_box flex flex-col h-full">
       <img src="images/mangueras-de-alimentacion.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
       <div class="p-3 flex-grow flex flex-col bg-white">
-        <h3 class="text-sm text-gray-500">PIEZA DE REPUESTO</h3>
-        <h2 class="text-lg font-bold mb-2 text-custom-gray-font">MANGUERAS DE ALIMENTACIÓN PARA EL PAQUETE COMPLETO DE PLACAS DE FILTRO</h2>
+        <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
+        <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">MANGUERAS DE ALIMENTACIÓN PARA EL PAQUETE COMPLETO DE PLACAS DE FILTRO</h2>
         <p class="text-custom-gray-font mb-2 text-sm">Las mangueras Roxia se utilizan en los filtros prensa de torre para la alimentación de lodos, el filtrado, el aire …</p>
       </div>
-      <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto">LEÉ MÁS</button>
+      <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto font-bebasNeue text-lg">LEÉ MÁS</button>
     </div>
   
     <!-- Card 6 -->
     <div class="shadow_box flex flex-col h-full">
       <img src="images/bateas-filtrantes.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
       <div class="p-3 flex-grow flex flex-col bg-white">
-        <h3 class="text-sm text-gray-500">PIEZA DE REPUESTO</h3>
-        <h2 class="text-lg font-bold mb-2 text-custom-gray-font">BATEAS FILTRANTES</h2>
+        <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
+        <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">BATEAS FILTRANTES</h2>
         <p class="text-custom-gray-font mb-2 text-sm">Las bateas filtrantes son componentes constructivos importantes en las placas de filtros de torre. Su función principal es recoger el …</p>
       </div>
-      <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto">LEÉ MÁS</button>
+      <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto font-bebasNeue text-lg">LEÉ MÁS</button>
     </div>
   
     <!-- Card 7 -->
     <div class="shadow_box flex flex-col h-full">
       <img src="images/sellos-de-placa-para-prensas.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
       <div class="p-3 flex-grow flex flex-col bg-white">
-        <h3 class="text-sm text-gray-500">PIEZA DE REPUESTO</h3>
-        <h2 class="text-lg font-bold mb-2 text-custom-gray-font">SELLOS DE PLACA PARA PRENSAS TIPO TORRE</h2>
+        <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
+        <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">SELLOS DE PLACA PARA PRENSAS TIPO TORRE</h2>
         <p class="text-custom-gray-font mb-2 text-sm">El propósito principal de los sellos de placa de filtro es sellar herméticamente las cámaras de filtración de la prensa …</p>
       </div>
-      <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto">LEÉ MÁS</button>
+      <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto font-bebasNeue text-lg">LEÉ MÁS</button>
     </div>
   
     <!-- Card 8 -->
     <div class="shadow_box flex flex-col h-full">
       <img src="images/paquetes-de-placa-para-filtro.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
       <div class="p-3 flex-grow flex flex-col bg-white">
-        <h3 class="text-sm text-gray-500">PIEZA DE REPUESTO</h3>
-        <h2 class="text-lg font-bold mb-2 text-custom-gray-font">PAQUETES DE PLACA PARA FILTROS PRENSA TIPO TORRE</h2>
+        <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
+        <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">PAQUETES DE PLACA PARA FILTROS PRENSA TIPO TORRE</h2>
         <p class="text-custom-gray-font mb-2 text-sm">Los expertos en filtración de Roxia han rediseñado los paquetes de placas completos para los filtros de prensa tipo torre: …</p>
       </div>
-      <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto">LEÉ MÁS</button>
+      <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto font-bebasNeue text-lg">LEÉ MÁS</button>
     </div>
   
     <!-- Card 9 -->
     <div class="shadow_box flex flex-col h-full">
       <img src="images/telas-de-filtro-para-prensas.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
       <div class="p-3 flex-grow flex flex-col bg-white">
-        <h3 class="text-sm text-gray-500">PIEZA DE REPUESTO</h3>
-        <h2 class="text-lg font-bold mb-2 text-custom-gray-font">TELAS DE FILTRO PARA PRENSAS TIPO TORRE</h2>
+        <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
+        <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">TELAS DE FILTRO PARA PRENSAS TIPO TORRE</h2>
         <p class="text-custom-gray-font mb-2 text-sm">Una amplia gama de telas filtrantes Roxia para filtros prensa de torre permite elegir el tipo de tela adecuado para …</p>
       </div>
-      <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto">LEÉ MÁS</button>
+      <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto font-bebasNeue text-lg">LEÉ MÁS</button>
     </div>
   
     <!-- Card 10 -->
     <div class="shadow_box flex flex-col h-full">
       <img src="images/componentes-de-montaje.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
       <div class="p-3 flex-grow flex flex-col bg-white">
-        <h3 class="text-sm text-gray-500">PIEZA DE REPUESTO</h3>
-        <h2 class="text-lg font-bold mb-2 text-custom-gray-font">COMPONENTES DE MONTAJE</h2>
+        <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
+        <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">COMPONENTES DE MONTAJE</h2>
         <p class="text-custom-gray-font mb-2 text-sm">Los componentes de montaje Roxia incluyen sujetadores y herrajes como pernos, tuercas, arandelas y mucho más para asegurar las placas …</p>
       </div>
-      <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto">LEÉ MÁS</button>
+      <button class="bg-custom-green text-white py-1 px-4 text-left mt-auto font-bebasNeue text-lg">LEÉ MÁS</button>
     </div>
   </div>
   </div>
 </section>
 
-<section class="h-screen relative mt-20" id="contacto">
-  <!-- Fondo dividido en 30% verde y 70% blanco -->
-  <div class="h-[40%] w-full bg-custom-green p-4 flex justify-center relative">
-    <div class="max-w-7xl w-full text-left">
-      <h2 class="text-white font-bold text-5xl pt-4">Contactanos</h2>
-    </div>
-    <!-- Imagen que va desde la mitad hacia la izquierda con degradado de blanco a transparente -->
-    <div class="absolute bottom-0 left-0 right-1/2">
-      <div class="relative w-full">
-        <img src="images/contacto.jpg" alt="Imagen de contacto" class="h-64 w-full object-cover">
-        <div class="absolute inset-0 " style="background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 40%);"></div>
-      </div>
-    </div>
-  </div>
-  <div class="h-[55%] w-full bg-white p-4 flex justify-center mt-4">
-    <div class="max-w-7xl w-full text-left">
-        <div class="bg-custom-green w-full max-w-sm rounded-2xl mb-4 pl-8 pr-16 py-6 relative">
-            <p class="text-white text-2xl font-bold">LUIS ALBANESE</p>
-            <p class="text-white text-lg">Representante en Argentina</p>
-            <!-- Triángulo/flecha en el cuadrado verde -->
-            <div class="absolute top-[-14px] left-10 w-0 h-0 border-l-[24px] border-l-transparent border-r-[24px] border-r-transparent border-b-[24px] border-b-custom-green"></div>
-        </div>
-        <a href="https://wa.link/sec10o" class="text-xl text-gray-800 mb-4 flex items-center" target="_blank">
-          <i class="fab fa-whatsapp mr-2 text-2xl text-custom-gray-font"></i> WhatsApp
-        </a> 
-        <a href="tel:+5491124818238" class="text-xl text-gray-800 mb-4 flex items-center" target="_blank">
-          <i class="fas fa-phone-alt mr-2 text-2xl text-custom-gray-font"></i> +54 9 1124818238
-        </a>
-        <a href="mailto:roxiaagentarg.luisalbanese@gmail.com" class="text-xl text-gray-800 mb-4 flex items-center" target="_blank">
-          <i class="fas fa-envelope mr-2 text-2xl text-custom-gray-font"></i> roxiaagentarg.luisalbanese@gmail.com
-        </a>
-        <a href="https://www.google.com/maps?q=Buenos+Aires,+Argentina" class="text-xl text-gray-800 flex items-center" target="_blank">
-          <i class="fas fa-map-marker-alt mr-2 text-2xl text-custom-gray-font"></i> Buenos Aires, Argentina
-        </a>
-    </div>
-</div>
-
-<!-- Contenido que se superpone sobre los dos fondos -->
-<div class="absolute top-0 left-1/2 w-4/12 mt-16">
-  <form class="bg-white p-6 shadow_box rounded-3xl px-14">
-    <h3 class="text-custom-gray-font text-3xl font-bold mb-3 mt-2">Envianos tu mensaje</h3> <!-- Incrementé el margen inferior -->
-    <!-- Campos del formulario -->
-    <div class="mb-2"> <!-- Incrementé el margen inferior -->
-      <label class="block text-custom-gray-font text-xl font-bold mb-3" for="name"> <!-- Incrementé el margen inferior -->
-        Nombre y Apellido
-      </label>
-      <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="name" type="text">
-    </div>
-    <div class="mb-2"> <!-- Incrementé el margen inferior -->
-      <label class="block text-custom-gray-font text-xl font-bold mb-3" for="email"> <!-- Incrementé el margen inferior -->
-        Mail
-      </label>
-      <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="email" type="email">
-    </div>
-    <div class="mb-2"> <!-- Incrementé el margen inferior -->
-      <label class="block text-custom-gray-font text-xl font-bold mb-3" for="company"> <!-- Incrementé el margen inferior -->
-        Empresa
-      </label>
-      <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="company" type="text">
-    </div>
-    <div class="mb-2"> <!-- Incrementé el margen inferior -->
-      <label class="block text-custom-gray-font text-xl font-bold mb-3" for="message"> <!-- Incrementé el margen inferior -->
-        Mensaje
-      </label>
-      <textarea class="shadow appearance-none border rounded-lg w-full py-1 text-xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="message" rows="4"></textarea>
-    </div>
-    <div class="flex items-center justify-between mb-4">
-      <button class="bg-custom-green hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg focus:outline-none focus:shadow-outline text-xl" type="button">
-        Contactar
-      </button>
-    </div>
-  </form>
-</div>
-</section>
-
-<section class="h-auto relative mt-20" id="contacto">
-  <!-- Fondo dividido en 30% verde y 70% blanco -->
-  <div class="h-[40%] w-full bg-custom-green p-4 flex justify-center relative">
-    <div class="max-w-7xl w-full text-left">
-      <h2 class="text-white font-bold text-5xl pt-4">Contactanos</h2>
-    </div>
-    <!-- Imagen que va desde la mitad hacia la izquierda con degradado de blanco a transparente -->
-    <div class="absolute bottom-0 left-0 right-1/2">
-      <div class="relative w-full">
-        <img src="images/contacto.jpg" alt="Imagen de contacto" class="h-64 w-full object-cover">
-        <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 40%);"></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="h-[55%] w-full bg-white p-4 flex justify-center mt-4">
-    <div class="max-w-7xl w-full flex flex-wrap lg:flex-nowrap text-left gap-4">
-      <!-- Datos de contacto -->
-      <div class="flex-1">
-        <div class="bg-custom-green w-full max-w-sm rounded-2xl mb-4 pl-8 pr-16 py-6 relative">
-          <p class="text-white text-2xl font-bold">LUIS ALBANESE</p>
-          <p class="text-white text-lg">Representante en Argentina</p>
-          <!-- Triángulo/flecha en el cuadrado verde -->
-          <div class="absolute top-[-14px] left-10 w-0 h-0 border-l-[24px] border-l-transparent border-r-[24px] border-r-transparent border-b-[24px] border-b-custom-green"></div>
-        </div>
-        <a href="https://wa.link/sec10o" class="text-xl text-gray-800 mb-4 flex items-center" target="_blank">
-          <i class="fab fa-whatsapp mr-2 text-2xl text-custom-gray-font"></i> WhatsApp
-        </a> 
-        <a href="tel:+5491124818238" class="text-xl text-gray-800 mb-4 flex items-center" target="_blank">
-          <i class="fas fa-phone-alt mr-2 text-2xl text-custom-gray-font"></i> +54 9 1124818238
-        </a>
-        <a href="mailto:roxiaagentarg.luisalbanese@gmail.com" class="text-xl text-gray-800 mb-4 flex items-center" target="_blank">
-          <i class="fas fa-envelope mr-2 text-2xl text-custom-gray-font"></i> roxiaagentarg.luisalbanese@gmail.com
-        </a>
-        <a href="https://www.google.com/maps?q=Buenos+Aires,+Argentina" class="text-xl text-gray-800 flex items-center" target="_blank">
-          <i class="fas fa-map-marker-alt mr-2 text-2xl text-custom-gray-font"></i> Buenos Aires, Argentina
-        </a>
-      </div>
-
-      <!-- Formulario de contacto -->
-      <div class="flex-1 order-1 lg:order-2">
-        <form class="bg-white p-6 shadow_box rounded-3xl px-14">
-          <h3 class="text-custom-gray-font text-3xl font-bold mb-3 mt-2">Envianos tu mensaje</h3>
-          <!-- Campos del formulario -->
-          <div class="mb-2">
-            <label class="block text-custom-gray-font text-xl font-bold mb-3" for="name">
-              Nombre y Apellido
-            </label>
-            <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="name" type="text">
-          </div>
-          <div class="mb-2">
-            <label class="block text-custom-gray-font text-xl font-bold mb-3" for="email">
-              Mail
-            </label>
-            <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="email" type="email">
-          </div>
-          <div class="mb-2">
-            <label class="block text-custom-gray-font text-xl font-bold mb-3" for="company">
-              Empresa
-            </label>
-            <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="company" type="text">
-          </div>
-          <div class="mb-2">
-            <label class="block text-custom-gray-font text-xl font-bold mb-3" for="message">
-              Mensaje
-            </label>
-            <textarea class="shadow appearance-none border rounded-lg w-full py-1 text-xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="message" rows="4"></textarea>
-          </div>
-          <div class="flex items-center justify-between mb-4">
-            <button class="bg-custom-green hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg focus:outline-none focus:shadow-outline text-xl" type="button">
-              Contactar
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
+<section id="contacto">
   <div class="flex flex-col lg:flex-row">
     <!-- Primer cuadrante (columna) -->
     <div class="flex-1 flex flex-col items-center lg:w-1/2">
       <div id="primer-cuadrante" class="bg-custom-green w-full flex flex-col items-center">
-        <h2 class="text-white font-bold text-5xl mb-4 mt-8">Contactanos</h2>
+        <h2 class="text-white font-notoSansJP text-5xl mb-4 mt-8">Contactanos</h2>
         <div class="relative w-full">
           <!-- Contenedor para la imagen con degradado -->
           <img src="images/contacto.jpg" alt="Imagen de contacto" class="h-64 w-full object-cover">
@@ -676,50 +514,47 @@
     </div>
 
     <!-- Segundo cuadrante (columna) -->
-    <div class="flex-1 flex flex-col items-start justify-center lg:w-1/2">
-      <div id="segundo-cuadrante" class="bg-custom-green w-full flex flex-col items-start h-96">
-        <form class="bg-white p-6 shadow_box rounded-3xl px-14 w-full max-w-xl lg:max-w-2xl mt-12">
-          <h3 class="text-custom-gray-font text-3xl font-bold mb-3 mt-2">Envianos tu mensaje</h3>
-          <!-- Campos del formulario -->
-          <div class="mb-2">
-            <label class="block text-custom-gray-font text-xl font-bold mb-3" for="name">Nombre y Apellido</label>
-            <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="name" type="text">
-          </div>
-          <div class="mb-2">
-            <label class="block text-custom-gray-font text-xl font-bold mb-3" for="email">Email</label>
-            <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="email" type="email">
-          </div>
-          <div class="mb-2">
-            <label class="block text-custom-gray-font text-xl font-bold mb-3" for="company">Empresa</label>
-            <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="company" type="text">
-          </div>
-          <div class="mb-2">
-            <label class="block text-custom-gray-font text-xl font-bold mb-3" for="message">Mensaje</label>
-            <textarea class="shadow appearance-none border rounded-lg w-full py-1 text-xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="message" rows="4"></textarea>
-          </div>
-          <div class="flex items-center justify-between mb-4">
-            <button class="bg-custom-green hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg focus:outline-none focus:shadow-outline text-xl" type="button">
-              Contactar
-            </button>
-          </div>
-        </form>
+<div class="flex-1 flex flex-col items-start justify-center lg:w-1/2">
+  <div id="segundo-cuadrante" class="bg-custom-green w-full flex flex-col lg:items-start items-center h-96">
+    <form class="bg-white p-6 shadow_box rounded-3xl px-16 w-11/12 mt-12">
+      <h3 class="text-custom-gray-font text-3xl font-notoSansJP mb-3 mt-2">Envianos tu mensaje</h3>
+      <!-- Campos del formulario -->
+      <div class="mb-2">
+        <label class="block text-custom-gray-font text-xl font-sans mb-3" for="name">Nombre y Apellido</label>
+        <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="name" type="text">
       </div>
-      <div class="bg-white flex flex-col items-start h-80">
+      <div class="mb-2">
+        <label class="block text-custom-gray-font text-xl font-sans mb-3" for="email">Email</label>
+        <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="email" type="email">
       </div>
-    </div>
+      <div class="mb-2">
+        <label class="block text-custom-gray-font text-xl font-sans mb-3" for="company">Empresa</label>
+        <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="company" type="text">
+      </div>
+      <div class="mb-2">
+        <label class="block text-custom-gray-font text-xl font-sans mb-3" for="message">Mensaje</label>
+        <textarea class="shadow appearance-none border rounded-lg w-full py-1 text-xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="message" rows="4"></textarea>
+      </div>
+      <div class="flex items-center justify-between mb-4">
+        <button class="bg-custom-green hover:bg-green-700 text-white font-sans py-2 px-6 rounded-lg focus:outline-none focus:shadow-outline text-xl" type="button">
+          Contactar
+        </button>
+      </div>
+    </form>
+  </div>
+  <div class="bg-white flex flex-col items-start h-80"></div>
+</div>
   </div>
 </section>
-
-
-
-
-
 </main>
 
-<footer class="p-4 mx-auto text-center">
-  <img src="images/LOGO ROXIA-02.png" alt="Roxia Logo" class="w-2/12 h-auto mx-auto mb-16">
-  <p class="mb-20 text-2xl text-custom-gray-font">©ROXIA Representante Argentina, All rights reserved.</p>
+<footer class="p-4 text-center">
+  <img src="images/LOGO ROXIA-02.png" alt="Roxia Logo" class="w-8/12 sm:w-4/12 md:w-2/12 h-auto mx-auto mb-8 sm:mb-12 md:mb-16">
+  <p class="text-base sm:text-lg md:text-2xl text-custom-gray-font mb-8 sm:mb-12 md:mb-20">
+    ©ROXIA Representante Argentina, All rights reserved.
+  </p>
 </footer>
+
 
 <!-- Link to external JavaScript file -->
 <script src="main.js"></script>

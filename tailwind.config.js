@@ -37,6 +37,7 @@ module.exports = {
         myriad: ["MyriadPro", "sans-serif"],
         noto: ["NotoSansBlack", "sans-serif"],
         bebasNeue: ["BebasNeueRegular", "sans-serif"],
+        notoSansJP: ["NotoSansJPBlack", "sans-serif"],
       },
       backgroundSize: {
         'custom-width': '75% auto',
