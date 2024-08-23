@@ -11,6 +11,8 @@ module.exports = {
     {
       pattern: /bg-\[url\(.*\)\]/,
     },
+    'animate__animated',
+    'animate__fadeIn',
   ],
   theme: {
     extend: {

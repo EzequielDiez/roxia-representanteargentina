@@ -1,3 +1,5 @@
+import 'animate.css';
+
 document.addEventListener('DOMContentLoaded', () => {
   // Menú móvil
   const menuButton = document.getElementById('mobile-menu-button');

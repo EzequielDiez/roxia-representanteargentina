@@ -26,8 +26,8 @@
             <a href="#equipos" class="rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">EQUIPOS</a>
             <a href="#repuestos" class="rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">REPUESTOS</a>
             <a href="#contacto" class="rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">CONTACTO</a>
-            <a href="index_es.html" id="es-flag" class="flex items-center rounded-md px-3 py-1.5 text-base font-medium hover:bg-white hover:text-black">ES</a>
-            <a href="index_en.html" id="en-flag" class="flex items-center rounded-md px-3 py-1.5 text-base font-medium hover:bg-white hover:text-black">EN</a>
+            <a href="index_es.html" id="es-flag" class="flex items-center rounded-md px-3 py-1.5 text-base font-medium  text-white hover:bg-white hover:text-black">ES</a>
+            <a href="index_en.html" id="en-flag" class="flex items-center rounded-md px-3 py-1.5 text-base font-medium  text-white hover:bg-white hover:text-black">EN</a>
           </div>
           <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
             <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
@@ -66,10 +66,10 @@
   <main>
     <section id="inicio" class="relative isolate bg-[url('../images/filter-img-background2.jpg')] bg-cover bg-center h-screen">
       <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
-        <img src="images/LOGO ROXIA-02.png" alt="Roxia Logo" class="w-8/12 sm:w-6/12 md:w-4/12 lg:w-4/12 h-auto">
-        <p class="mt-4 text-custom-gray-font text-lg sm:text-xl lg:text-xl font-semibold">EMPRESA FINLANDESA ESPECIALISTA EN</p>
-        <p class="mt-2 text-custom-gray-font text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bebasNeue">SEPARACIÓN DE SÓLIDOS-LÍQUIDOS</p>
-        <p class="text-custom-gray-font text-lg sm:text-xl lg:text-2xl font-noto">-DEWATERING & AUTOMATION-</p>
+        <img src="images/LOGO ROXIA-02.png" alt="Roxia Logo" class="animate__animated animate__fadeIn animate__slow w-8/12 sm:w-6/12 md:w-4/12 lg:w-4/12 h-auto">
+        <p class="animate__animated animate__fadeIn animate__slow animate__delay-1s mt-4 text-custom-gray-font text-lg sm:text-xl lg:text-xl font-semibold">EMPRESA FINLANDESA ESPECIALISTA EN</p>
+        <p class="animate__animated animate__fadeIn animate__slow animate__delay-1s mt-2 text-custom-gray-font text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bebasNeue">SEPARACIÓN DE SÓLIDOS-LÍQUIDOS</p>
+        <p class="animate__animated animate__fadeIn animate__slow animate__delay-1s text-custom-gray-font text-lg sm:text-xl lg:text-2xl font-noto">-DEWATERING & AUTOMATION-</p>
       </div>
     </section>
     
@@ -92,9 +92,6 @@
         </div>
       </div>
     </section>
-    
-  
-  
     
   <section id="clientes" class="py-8 bg-custom-gray-section">
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-5xl mx-auto text-center">
@@ -516,31 +513,33 @@
     <!-- Segundo cuadrante (columna) -->
 <div class="flex-1 flex flex-col items-start justify-center lg:w-1/2">
   <div id="segundo-cuadrante" class="bg-custom-green w-full flex flex-col lg:items-start items-center h-96">
-    <form class="bg-white p-6 shadow_box rounded-3xl px-16 w-11/12 mt-12">
+    <form class="bg-white p-6 shadow_box rounded-3xl px-16 w-11/12 mt-12" action="https://formsubmit.co/ezequieldiez.emd@gmail.com" method="POST">
       <h3 class="text-custom-gray-font text-3xl font-notoSansJP mb-3 mt-2">Envianos tu mensaje</h3>
       <!-- Campos del formulario -->
       <div class="mb-2">
         <label class="block text-custom-gray-font text-xl font-sans mb-3" for="name">Nombre y Apellido</label>
-        <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="name" type="text">
+        <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="name" name="name" type="text" required>
       </div>
       <div class="mb-2">
         <label class="block text-custom-gray-font text-xl font-sans mb-3" for="email">Email</label>
-        <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="email" type="email">
+        <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="email" name="email" type="email" required>
       </div>
       <div class="mb-2">
         <label class="block text-custom-gray-font text-xl font-sans mb-3" for="company">Empresa</label>
-        <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="company" type="text">
+        <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="company" name="company" type="text">
       </div>
       <div class="mb-2">
         <label class="block text-custom-gray-font text-xl font-sans mb-3" for="message">Mensaje</label>
-        <textarea class="shadow appearance-none border rounded-lg w-full py-1 text-xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="message" rows="4"></textarea>
+        <textarea class="shadow appearance-none border rounded-lg w-full py-1 text-xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="message" name="message" rows="4" required></textarea>
       </div>
       <div class="flex items-center justify-between mb-4">
-        <button class="bg-custom-green hover:bg-green-700 text-white font-sans py-2 px-6 rounded-lg focus:outline-none focus:shadow-outline text-xl" type="button">
+        <button class="bg-custom-green hover:bg-green-700 text-white font-sans py-2 px-6 rounded-lg focus:outline-none focus:shadow-outline text-xl" type="submit">
           Contactar
         </button>
       </div>
+      <input type="hidden" name="_captcha" value="false">
     </form>
+    
   </div>
   <div class="bg-white flex flex-col items-start h-80"></div>
 </div>
