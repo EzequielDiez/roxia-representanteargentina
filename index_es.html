@@ -636,100 +636,81 @@
   </div>
 </section>
 
-<section class="h-auto">
-  <div class="grid grid-cols-2">
-    <div class="relative bg-custom-green flex flex-col items-center justify-center">
-      <h2 class="text-white font-bold text-5xl mb-4">Contactanos</h2>
-      <div class="relative w-full">
-        <!-- Contenedor para la imagen con degradado -->
-        <img src="images/contacto.jpg" alt="Imagen de contacto" class="h-64 w-full object-cover">
-        <!-- Overlay con el degradado -->
-        <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 40%);"></div>
+<section>
+  <div class="flex flex-col lg:flex-row">
+    <!-- Primer cuadrante (columna) -->
+    <div class="flex-1 flex flex-col items-center lg:w-1/2">
+      <div id="primer-cuadrante" class="bg-custom-green w-full flex flex-col items-center">
+        <h2 class="text-white font-bold text-5xl mb-4 mt-8">Contactanos</h2>
+        <div class="relative w-full">
+          <!-- Contenedor para la imagen con degradado -->
+          <img src="images/contacto.jpg" alt="Imagen de contacto" class="h-64 w-full object-cover">
+          <!-- Overlay con el degradado -->
+          <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 40%);"></div>
+        </div>
       </div>
-    </div>
-    <div class="bg-custom-green flex items-center justify-center">
-      
-    </div>
-    <div class="bg-white flex items-center justify-center mt-6">
-      <div class="max-w-5xl w-full flex flex-wrap lg:flex-nowrap gap-4 justify-center">
-        <!-- Datos de contacto -->
-        <div class="flex-1 max-w-sm text-center lg:text-left">
-          <div class="bg-custom-green w-full rounded-2xl mb-4 px-8 py-2 relative">
-            <p class="text-white text-2xl font-bold">LUIS ALBANESE</p>
-            <p class="text-white text-lg">Representante en Argentina</p>
-            <!-- Triángulo/flecha en el cuadrado verde -->
-            <div class="absolute top-[-14px] left-10 w-0 h-0 border-l-[24px] border-l-transparent border-r-[24px] border-r-transparent border-b-[24px] border-b-custom-green"></div>
+      <div class="bg-white flex flex-col items-center lg:items-start mt-6 lg:mt-0">
+        <div class="max-w-5xl w-full flex flex-wrap gap-4 justify-center lg:justify-start">
+          <div class="flex-1 max-w-sm text-center lg:text-left">
+            <div class="bg-custom-green w-full rounded-2xl mb-4 px-8 py-2 mt-6 relative">
+              <p class="text-white text-2xl font-bold">LUIS ALBANESE</p>
+              <p class="text-white text-lg">Representante en Argentina</p>
+              <!-- Triángulo/flecha en el cuadrado verde -->
+              <div class="absolute top-[-14px] left-10 w-0 h-0 border-l-[24px] border-l-transparent border-r-[24px] border-r-transparent border-b-[24px] border-b-custom-green"></div>
+            </div>
+            <a href="https://wa.link/sec10o" class="text-xl text-gray-800 mb-4 flex items-center justify-center lg:justify-start" target="_blank">
+              <i class="fab fa-whatsapp mr-2 text-xl text-custom-gray-font"></i> WhatsApp
+            </a>
+            <a href="tel:+5491124818238" class="text-xl text-gray-800 mb-4 flex items-center justify-center lg:justify-start" target="_blank">
+              <i class="fas fa-phone-alt mr-2 text-xl text-custom-gray-font"></i> +54 9 1124818238
+            </a>
+            <a href="mailto:roxiaagentarg.luisalbanese@gmail.com" class="text-xl text-gray-800 mb-4 flex items-center justify-center lg:justify-start" target="_blank">
+              <i class="fas fa-envelope mr-2 text-xl text-custom-gray-font"></i> roxiaagentarg.luisalbanese@gmail.com
+            </a>
+            <a href="https://www.google.com/maps?q=Buenos+Aires,+Argentina" class="text-xl text-gray-800 flex items-center justify-center lg:justify-start" target="_blank">
+              <i class="fas fa-map-marker-alt mr-2 text-xl text-custom-gray-font"></i> Buenos Aires, Argentina
+            </a>
           </div>
-          <a href="https://wa.link/sec10o" class="text-xl text-gray-800 mb-4 flex items-center justify-center lg:justify-start" target="_blank">
-            <i class="fab fa-whatsapp mr-2 text-xl text-custom-gray-font"></i> WhatsApp
-          </a> 
-          <a href="tel:+5491124818238" class="text-xl text-gray-800 mb-4 flex items-center justify-center lg:justify-start" target="_blank">
-            <i class="fas fa-phone-alt mr-2 text-xl text-custom-gray-font"></i> +54 9 1124818238
-          </a>
-          <a href="mailto:roxiaagentarg.luisalbanese@gmail.com" class="text-xl text-gray-800 mb-4 flex items-center justify-center lg:justify-start" target="_blank">
-            <i class="fas fa-envelope mr-2 text-xl text-custom-gray-font"></i> roxiaagentarg.luisalbanese@gmail.com
-          </a>
-          <a href="https://www.google.com/maps?q=Buenos+Aires,+Argentina" class="text-xl text-gray-800 flex items-center justify-center lg:justify-start" target="_blank">
-            <i class="fas fa-map-marker-alt mr-2 text-xl text-custom-gray-font"></i> Buenos Aires, Argentina
-          </a>
         </div>
       </div>
     </div>
-    
-    <div class="bg-white flex items-center justify-center">Cuadrante 4</div>
+
+    <!-- Segundo cuadrante (columna) -->
+    <div class="flex-1 flex flex-col items-start justify-center lg:w-1/2">
+      <div id="segundo-cuadrante" class="bg-custom-green w-full flex flex-col items-start h-96">
+        <form class="bg-white p-6 shadow_box rounded-3xl px-14 w-full max-w-xl lg:max-w-2xl mt-12">
+          <h3 class="text-custom-gray-font text-3xl font-bold mb-3 mt-2">Envianos tu mensaje</h3>
+          <!-- Campos del formulario -->
+          <div class="mb-2">
+            <label class="block text-custom-gray-font text-xl font-bold mb-3" for="name">Nombre y Apellido</label>
+            <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="name" type="text">
+          </div>
+          <div class="mb-2">
+            <label class="block text-custom-gray-font text-xl font-bold mb-3" for="email">Email</label>
+            <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="email" type="email">
+          </div>
+          <div class="mb-2">
+            <label class="block text-custom-gray-font text-xl font-bold mb-3" for="company">Empresa</label>
+            <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="company" type="text">
+          </div>
+          <div class="mb-2">
+            <label class="block text-custom-gray-font text-xl font-bold mb-3" for="message">Mensaje</label>
+            <textarea class="shadow appearance-none border rounded-lg w-full py-1 text-xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="message" rows="4"></textarea>
+          </div>
+          <div class="flex items-center justify-between mb-4">
+            <button class="bg-custom-green hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg focus:outline-none focus:shadow-outline text-xl" type="button">
+              Contactar
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="bg-white flex flex-col items-start h-80">
+      </div>
+    </div>
   </div>
 </section>
 
 
-<div class="flex flex-col lg:flex-row">
-  <!-- Primer cuadrante (columna) -->
-  <div class="flex-1 flex flex-col items-center justify-center lg:w-1/2">
-    <div id="primer cuadrado" class="bg-custom-green w-full flex flex-col items-center">
-        <h2 class="text-white font-bold text-5xl mb-4">Contactanos</h2>
-        <div class="relative w-full">
-            <!-- Contenedor para la imagen con degradado -->
-            <img src="images/contacto.jpg" alt="Imagen de contacto" class="h-64 w-full object-cover">
-            <!-- Overlay con el degradado -->
-            <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 40%);"></div>
-        </div>
-    </div>
-    <div class="bg-white flex flex-col items-center lg:items-start mt-6 lg:mt-0">
-        <div class="max-w-5xl w-full flex flex-wrap gap-4 justify-center lg:justify-start">
-            <div class="flex-1 max-w-sm text-center lg:text-left">
-                <div class="bg-custom-green w-full rounded-2xl mb-4 px-8 py-2 mt-6 relative">
-                    <p class="text-white text-2xl font-bold">LUIS ALBANESE</p>
-                    <p class="text-white text-lg">Representante en Argentina</p>
-                    <!-- Triángulo/flecha en el cuadrado verde -->
-                    <div class="absolute top-[-14px] left-10 w-0 h-0 border-l-[24px] border-l-transparent border-r-[24px] border-r-transparent border-b-[24px] border-b-custom-green"></div>
-                </div>
-                <a href="https://wa.link/sec10o" class="text-xl text-gray-800 mb-4 flex items-center justify-center lg:justify-start" target="_blank">
-                    <i class="fab fa-whatsapp mr-2 text-xl text-custom-gray-font"></i> WhatsApp
-                </a> 
-                <a href="tel:+5491124818238" class="text-xl text-gray-800 mb-4 flex items-center justify-center lg:justify-start" target="_blank">
-                    <i class="fas fa-phone-alt mr-2 text-xl text-custom-gray-font"></i> +54 9 1124818238
-                </a>
-                <a href="mailto:roxiaagentarg.luisalbanese@gmail.com" class="text-xl text-gray-800 mb-4 flex items-center justify-center lg:justify-start" target="_blank">
-                    <i class="fas fa-envelope mr-2 text-xl text-custom-gray-font"></i> roxiaagentarg.luisalbanese@gmail.com
-                </a>
-                <a href="https://www.google.com/maps?q=Buenos+Aires,+Argentina" class="text-xl text-gray-800 flex items-center justify-center lg:justify-start" target="_blank">
-                    <i class="fas fa-map-marker-alt mr-2 text-xl text-custom-gray-font"></i> Buenos Aires, Argentina
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-  
-
-  <!-- Segundo cuadrante (columna) -->
-  <div class="flex-1 flex flex-col items-center justify-center lg:w-1/2">
-    <div id="segundo cuadrado" class="bg-custom-green w-full flex flex-col items-center">
-      asegurar
-    </div>
-    <div class="bg-white flex flex-col items-center lg:items-start mt-6 lg:mt-0">
-
-    </div>
-</div>
 
 
 
