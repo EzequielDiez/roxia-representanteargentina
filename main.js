@@ -1,5 +1,3 @@
-import 'animate.css';
-
 document.addEventListener('DOMContentLoaded', () => {
   // Menú móvil
   const menuButton = document.getElementById('mobile-menu-button');
@@ -46,48 +44,35 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Animación de fondo del navbar
-  const navbar = document.querySelector('nav');
-  function updateNavbarBackground() {
-    const scrollPercentage = Math.min(window.scrollY / (document.body.scrollHeight - window.innerHeight), 1);
-    navbar.style.background = `linear-gradient(to left, #5E8A5A ${(scrollPercentage * 100) + 40}%, transparent ${(scrollPercentage * 100) + 50}%)`;
-  }
+  // Animación de enlaces del navbar
+  const navbarLinks = document.querySelectorAll('.nav-link');
+  setTimeout(() => {
+    navbarLinks.forEach((link, index) => {
+      link.style.animationDelay = `${1.2 + index * 0.1}s`; // Establece un pequeño retraso para cada enlace
+      link.classList.add('animate');
+    });
+  }, 1000); // Ajusta el tiempo según la duración de la animación de fondo
 
-  // Ejecuta la animación inmediatamente al cargar la página y al hacer scroll
-  updateNavbarBackground();
-  document.addEventListener('scroll', updateNavbarBackground);
-
-  // Aquí está la lógica del observer para la rayita blanca
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll("nav a");
-  let activeLink = null;
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const targetLink = document.querySelector(
-            `nav a[href="#${entry.target.id}"]`
-          );
-
-          console.log(`Sección activa: ${entry.target.id}`); // Verifica qué sección está detectando
-
-          if (targetLink !== activeLink) {
-            // Desactivar el enlace anterior
-            if (activeLink) activeLink.classList.remove("active-link");
-
-            // Activar el nuevo enlace
-            targetLink.classList.add("active-link");
-            activeLink = targetLink;
-          }
-        }
-      });
-    },
-    {
-      rootMargin: "-50% 0px -50% 0px", // Activa cuando el centro de la sección es visible
-      threshold: 0.1, // Puedes ajustar según la precisión que desees
+  // Mostrar el logo en el scroll con efecto de degradado
+  const navbarLogo = document.getElementById('navbar-logo');
+  const inicioScreen = document.getElementById('contentInicio');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) { // Cambia 50 por el valor que necesites
+      navbarLogo.classList.add('visible');
+      inicioScreen.classList.add('oculto');
+    } else {
+      navbarLogo.classList.remove('visible');
+      inicioScreen.classList.remove('oculto');
     }
-  );
+  });
 
-  sections.forEach((section) => observer.observe(section));
+/*   // Ocultar el inicio en el scroll con efecto de degradado
+  const inicioScreen = document.getElementById('contentInicio');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) { // Cambia 50 por el valor que necesites
+      
+    } else {
+      
+    }
+  }); */
 });

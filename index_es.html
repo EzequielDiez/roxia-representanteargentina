@@ -16,18 +16,21 @@
   <header>
     <nav class="fixed top-0 w-full z-20 bg-custom-green" id="navbar">
       <div class="mx-auto px-2 sm:px-6 lg:px-8 w-full">
-        <div class="relative flex h-14 items-center justify-between">
+        <div class="relative flex h-12 items-center justify-between">
           <div class="flex items-center">
-            <div class="flex-shrink-0" id="navbar-logo"></div>
+            <!-- Logo oculto inicialmente -->
+            <div class="flex-shrink-0" id="navbar-logo">
+              <img src="images/LOGO ROXIA-02.png" alt="Logo" class="h-8 w-auto">
+            </div>
           </div>
           <div class="hidden sm:flex sm:ml-auto space-x-3">
-            <a href="#inicio" class="rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">INICIO</a>
-            <a href="#nosotros" class="rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">NOSOTROS</a>
-            <a href="#equipos" class="rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">EQUIPOS</a>
-            <a href="#repuestos" class="rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">REPUESTOS</a>
-            <a href="#contacto" class="rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">CONTACTO</a>
-            <a href="index_es.html" id="es-flag" class="flex items-center rounded-md px-3 py-1.5 text-base font-medium  text-white hover:bg-white hover:text-black">ES</a>
-            <a href="index_en.html" id="en-flag" class="flex items-center rounded-md px-3 py-1.5 text-base font-medium  text-white hover:bg-white hover:text-black">EN</a>
+            <a href="#inicio" class="nav-link.animate rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">INICIO</a>
+            <a href="#nosotros" class="nav-link.animate rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">NOSOTROS</a>
+            <a href="#equipos" class="nav-link.animate rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">EQUIPOS</a>
+            <a href="#repuestos" class="nav-link.animate rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">REPUESTOS</a>
+            <a href="#contacto" class="nav-link.animate rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">CONTACTO</a>
+            <a href="index_es.html" id="es-flag" class="nav-link.animate flex items-center rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">ES</a>
+            <a href="index_en.html" id="en-flag" class="nav-link.animate flex items-center rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">EN</a>
           </div>
           <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
             <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
@@ -61,11 +64,10 @@
     </nav>
   </header>
   
-  
 
   <main>
     <section id="inicio" class="relative isolate bg-[url('../images/filter-img-background2.jpg')] bg-cover bg-center h-screen">
-      <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+      <div id="contentInicio" class="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
         <img src="images/LOGO ROXIA-02.png" alt="Roxia Logo" class="animate__animated animate__fadeIn animate__slow w-8/12 sm:w-6/12 md:w-4/12 lg:w-4/12 h-auto">
         <p class="animate__animated animate__fadeIn animate__slow animate__delay-1s mt-4 text-custom-gray-font text-lg sm:text-xl lg:text-xl font-semibold">EMPRESA FINLANDESA ESPECIALISTA EN</p>
         <p class="animate__animated animate__fadeIn animate__slow animate__delay-1s mt-2 text-custom-gray-font text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bebasNeue">SEPARACIÓN DE SÓLIDOS-LÍQUIDOS</p>

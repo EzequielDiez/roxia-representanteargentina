@@ -796,6 +796,10 @@ video {
   height: 0px !important;
 }
 
+.h-12{
+  height: 3rem !important;
+}
+
 .h-14{
   height: 3.5rem !important;
 }
@@ -818,6 +822,10 @@ video {
 
 .h-72{
   height: 18rem !important;
+}
+
+.h-8{
+  height: 2rem !important;
 }
 
 .h-80{
@@ -890,6 +898,10 @@ video {
 
 .w-8\/12{
   width: 66.666667% !important;
+}
+
+.w-auto{
+  width: auto !important;
 }
 
 .w-full{
@@ -3866,6 +3878,59 @@ nav a.active-link {
 section {
   padding-top: 4rem;
   /* Ajuste para que el contenido no quede oculto detrás del navbar */
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+#navbar {
+  transform: translateX(100%);
+  opacity: 0;
+  animation: slideIn 2s ease-out forwards;
+}
+
+.nav-link {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.nav-link.animate {
+  animation: slideIn 0.8s ease-out forwards;
+  animation-delay: 1s;
+  /* Retarda la animación de los links */
+}
+
+#navbar-logo {
+  opacity: 0;
+  /* Inicialmente oculto */
+  transition: opacity 1s ease-in-out;
+  /* Cambia la opacidad de forma gradual */
+}
+
+#navbar-logo.visible {
+  opacity: 1;
+  /* Totalmente visible */
+}
+
+#contentInicio {
+  opacity: 1;
+  /* Inicialmente oculto */
+  transition: opacity 1s ease-in-out;
+  /* Cambia la opacidad de forma gradual */
+}
+
+#contentInicio.oculto {
+  opacity: 0;
+  /* Totalmente visible */
 }
 
 .hover\:bg-gray-700:hover{
