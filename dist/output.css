@@ -602,6 +602,10 @@ video {
   border-width: 0 !important;
 }
 
+.pointer-events-none{
+  pointer-events: none !important;
+}
+
 .visible{
   visibility: visible !important;
 }
@@ -686,6 +690,11 @@ video {
 .mx-auto{
   margin-left: auto !important;
   margin-right: auto !important;
+}
+
+.my-8{
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
 }
 
 .mb-16{
@@ -944,6 +953,10 @@ video {
   max-width: 20rem !important;
 }
 
+.max-w-full{
+  max-width: 100% !important;
+}
+
 .flex-1{
   flex: 1 1 0% !important;
 }
@@ -1034,12 +1047,6 @@ video {
   --tw-space-y-reverse: 0 !important;
   margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse))) !important;
   margin-bottom: calc(2.5rem * var(--tw-space-y-reverse)) !important;
-}
-
-.space-y-14 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0 !important;
-  margin-top: calc(3.5rem * calc(1 - var(--tw-space-y-reverse))) !important;
-  margin-bottom: calc(3.5rem * var(--tw-space-y-reverse)) !important;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]){
@@ -1215,6 +1222,10 @@ video {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops)) !important;
 }
 
+.bg-gradient-to-r{
+  background-image: linear-gradient(to right, var(--tw-gradient-stops)) !important;
+}
+
 .from-blue-100{
   --tw-gradient-from: #dbeafe var(--tw-gradient-from-position) !important;
   --tw-gradient-to: rgb(219 234 254 / 0) var(--tw-gradient-to-position) !important;
@@ -1251,6 +1262,18 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 
+.from-white\/80{
+  --tw-gradient-from: rgb(255 255 255 / 0.8) var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.from-white\/70{
+  --tw-gradient-from: rgb(255 255 255 / 0.7) var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
 .via-white{
   --tw-gradient-to: rgb(255 255 255 / 0)  var(--tw-gradient-to-position) !important;
   --tw-gradient-stops: var(--tw-gradient-from), #fff var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
@@ -1259,6 +1282,11 @@ video {
 .via-white\/90{
   --tw-gradient-to: rgb(255 255 255 / 0)  var(--tw-gradient-to-position) !important;
   --tw-gradient-stops: var(--tw-gradient-from), rgb(255 255 255 / 0.9) var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
+}
+
+.via-white\/0{
+  --tw-gradient-to: rgb(255 255 255 / 0)  var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(255 255 255 / 0) var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
 }
 
 .to-blue-100{
@@ -1283,6 +1311,10 @@ video {
 
 .to-white{
   --tw-gradient-to: #fff var(--tw-gradient-to-position) !important;
+}
+
+.to-white\/0{
+  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position) !important;
 }
 
 .bg-cover{
@@ -1620,6 +1652,14 @@ video {
 
 .underline{
   text-decoration-line: underline !important;
+}
+
+.opacity-0{
+  opacity: 0 !important;
+}
+
+.opacity-100{
+  opacity: 1 !important;
 }
 
 .opacity-40{
@@ -3873,6 +3913,10 @@ body {
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
+.shadow_box2 {
+  box-shadow: 0px 0px 30px 8px rgba(0, 0, 0, 0.5);
+}
+
 nav a.active-link {
   position: relative;
   border-bottom: 2px solid white;
@@ -3936,6 +3980,29 @@ section {
 #contentInicio.oculto {
   opacity: 0;
   /* Totalmente visible */
+}
+
+.boton-verde {
+  color: #fff;
+  background: #5E8A5A;
+  border: 2px solid;
+  border-color: #5E8A5A;
+  position: relative;
+}
+
+.boton-verde:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 1s ease;
+}
+
+.boton-verde:hover:before {
+  width: 100%;
 }
 
 .hover\:bg-gray-700:hover{
@@ -4156,12 +4223,12 @@ section {
     width: 25% !important;
   }
 
-  .md\:w-4\/12{
-    width: 33.333333% !important;
-  }
-
   .md\:w-5\/12{
     width: 41.666667% !important;
+  }
+
+  .md\:w-6\/12{
+    width: 50% !important;
   }
 
   .md\:max-w-lg{

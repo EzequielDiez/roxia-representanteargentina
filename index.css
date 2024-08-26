@@ -14,9 +14,6 @@ body {
   scroll-behavior: smooth;
 }
 
-
-
-
 /* Importación de fuentes */
 @font-face {
   font-family: "AcuminVariableConcept";
@@ -83,13 +80,19 @@ body {
   background-position: center 1rem;
   /* Ajusta la posición del fondo */
   background-attachment: scroll;
-  position: relative; /* Necesario para la posición fija cuando se aplica el JS */
-  overflow: hidden; /* Para evitar que el contenido desborde el contenedor */
+  position: relative;
+  /* Necesario para la posición fija cuando se aplica el JS */
+  overflow: hidden;
+  /* Para evitar que el contenido desborde el contenedor */
 }
 
 
 .shadow_box {
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.shadow_box2 {
+  box-shadow: 0px 0px 30px 8px rgba(0, 0, 0, 0.5);
 }
 
 nav a.active-link {
@@ -109,6 +112,7 @@ section {
     transform: translateX(100%);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0%);
     opacity: 1;
@@ -128,23 +132,53 @@ section {
 
 .nav-link.animate {
   animation: slideIn 0.8s ease-out forwards;
-  animation-delay: 1s; /* Retarda la animación de los links */
+  animation-delay: 1s;
+  /* Retarda la animación de los links */
 }
 
 #navbar-logo {
-  opacity: 0; /* Inicialmente oculto */
-  transition: opacity 1s ease-in-out; /* Cambia la opacidad de forma gradual */
+  opacity: 0;
+  /* Inicialmente oculto */
+  transition: opacity 1s ease-in-out;
+  /* Cambia la opacidad de forma gradual */
 }
 
 #navbar-logo.visible {
-  opacity: 1; /* Totalmente visible */
+  opacity: 1;
+  /* Totalmente visible */
 }
 
 #contentInicio {
-  opacity: 1; /* Inicialmente oculto */
-  transition: opacity 1s ease-in-out; /* Cambia la opacidad de forma gradual */
+  opacity: 1;
+  /* Inicialmente oculto */
+  transition: opacity 1s ease-in-out;
+  /* Cambia la opacidad de forma gradual */
 }
 
 #contentInicio.oculto {
-  opacity: 0; /* Totalmente visible */
+  opacity: 0;
+  /* Totalmente visible */
+}
+
+.boton-verde {
+  color: #fff;
+  background: #5E8A5A;
+  border: 2px solid;
+  border-color: #5E8A5A;
+  position: relative;
+}
+
+.boton-verde:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 1s ease;
+}
+
+.boton-verde:hover:before {
+  width: 100%;
 }
