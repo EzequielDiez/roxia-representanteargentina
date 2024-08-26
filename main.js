@@ -66,13 +66,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-/*   // Ocultar el inicio en el scroll con efecto de degradado
-  const inicioScreen = document.getElementById('contentInicio');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 200) { // Cambia 50 por el valor que necesites
-      
+  document.addEventListener('scroll', function() {
+    const section = document.getElementById('first-section');
+    const scrollPosition = window.scrollY || window.pageYOffset;
+  
+    if (scrollPosition >= section.offsetTop) {
+      section.style.backgroundAttachment = 'fixed';
     } else {
-      
+      section.style.backgroundAttachment = 'scroll';
     }
-  }); */
+  });
+  
 });
