@@ -17,7 +17,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'custom-green': '#5E8A5A',
+        'custom-green': {
+          DEFAULT: '#5E8A5A',
+          '50': 'rgba(94, 138, 90, 0.5)', // 50% de opacidad
+          '30': 'rgba(94, 138, 90, 0.3)', // 30% de opacidad
+        },
         'custom-gray-font': '#282828',
         'custom-red-font': '#C42A2A',
         'custom-gray-section': '#EFEFEF',
@@ -25,7 +29,6 @@ module.exports = {
           DEFAULT: '#FF1D25',
           '50': 'rgba(255, 29, 37, 0.5)', // 50% de opacidad
           '30': 'rgba(255, 29, 37, 0.3)', // 30% de opacidad
-          // Puedes agregar más niveles de opacidad si lo necesitas
         },
         'custom-blue-card': {
           DEFAULT: '#1572FF',
