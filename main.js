@@ -169,11 +169,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 500); // Duración de la transición en milisegundos
   });
 
+  document.addEventListener('scroll', function () {
+    const button = document.getElementById('scrollToTop');
+    if (window.scrollY > window.innerHeight) {
+      button.classList.remove('hidden');
+    } else {
+      button.classList.add('hidden');
+    }
+  });
+
   document.getElementById('scrollToTop').addEventListener('click', function () {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
   });
+
 
 });
