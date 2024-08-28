@@ -168,4 +168,12 @@ document.addEventListener('DOMContentLoaded', () => {
       modal.classList.add('hidden');
     }, 500); // Duración de la transición en milisegundos
   });
+
+  document.getElementById('scrollToTop').addEventListener('click', function () {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
 });
