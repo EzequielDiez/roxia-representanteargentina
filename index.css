@@ -75,16 +75,48 @@ body {
   background:
     linear-gradient(to bottom, white 5%, transparent 10%, white 35%),
     url('../images/return-img-background.png') no-repeat center center;
-  background-size: contain;
-  /* Mantiene la imagen completa visible */
+  background-size: auto;
   background-position: center 1rem;
-  /* Ajusta la posición del fondo */
   background-attachment: scroll;
   position: relative;
-  /* Necesario para la posición fija cuando se aplica el JS */
   overflow: hidden;
-  /* Para evitar que el contenido desborde el contenedor */
 }
+
+@media (max-width: 1200px) {
+  #first-section {
+    background:
+      linear-gradient(to bottom, white 5%, transparent 15%, white 40%),
+      url('../images/return-img-background.png') no-repeat center center;
+    background-size: contain 60vh;
+    background-position: center 2rem;
+    /* Ajuste de posición */
+  }
+}
+
+@media (max-width: 768px) {
+  #first-section {
+    background:
+      linear-gradient(to bottom, white 5%, transparent 20%, white 45%),
+      url('../images/return-img-background.png') no-repeat center center;
+    background-size: contain 70vh;
+    background-position: center 3rem;
+    /* Ajuste de posición */
+  }
+}
+
+@media (max-width: 480px) {
+  #first-section {
+    background:
+      linear-gradient(to bottom, white 5%, transparent 25%, white 50%),
+      url('../images/return-img-background.png') no-repeat center center;
+    background-size: cover 80vh;
+    background-position: center 4rem;
+    /* Ajuste de posición */
+  }
+}
+
+
+
 
 
 .shadow_box {
@@ -181,4 +213,18 @@ section {
 
 .boton-verde:hover:before {
   width: 100%;
+}
+
+#modal-content {
+  padding: 16px;
+  /* Espacio interno en el modal */
+  box-sizing: border-box;
+  /* Asegura que el padding no afecte el tamaño del modal */
+}
+
+#modal-image {
+  margin: 0 auto;
+  /* Centrar la imagen dentro del modal */
+  display: block;
+  /* Asegura que el margen automático funcione */
 }

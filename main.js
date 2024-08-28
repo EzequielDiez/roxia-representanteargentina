@@ -100,30 +100,72 @@ document.addEventListener('DOMContentLoaded', () => {
   const targets = [
     document.getElementById('boxFirstSection'),
     document.getElementById('first-client-box'),
-    document.getElementById('second-client-box')
+    document.getElementById('second-client-box'),
+    document.getElementById('tituloRepuestos')
   ];
 
   // Clases de animación para cada elemento
   const animationClasses = {
     'boxFirstSection': ['animate__animated', 'animate__fadeInUp'],
     'first-client-box': ['animate__fadeInLeft'],
-    'second-client-box': ['animate__fadeInRight']
+    'second-client-box': ['animate__fadeInRight'],
+    'tituloRepuestos': ['animate__fadeInLeft']
   };
 
   handleObserver(targets, animationClasses);
 
-  // Inicialización de Swiper
-  var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    loop: true,
+  // Modal
+  const modal = document.getElementById('image-modal');
+  const modalImage = document.getElementById('modal-image');
+  const modalContent = document.getElementById('modal-content');
+  const modalTriggers = document.querySelectorAll('.modal-trigger');
+  const closeButton = document.getElementById('modal-close-button');
+
+  const adjustModalSize = () => {
+    if (modalImage.naturalWidth > modalImage.naturalHeight) {
+      // Imagen horizontal
+      modalContent.classList.remove('max-w-3xl', 'max-h-[90vh]');
+      modalContent.classList.add('max-w-[70vw]', 'max-h-[70vw]');
+    } else {
+      // Imagen vertical o cuadrada
+      modalContent.classList.remove('max-w-[70vw]', 'max-h-[70vw]');
+      modalContent.classList.add('max-w-3xl', 'max-h-[90vh]');
+    }
+
+    // Aplicar padding o margen adicional si es necesario
+    modalImage.style.margin = '16px auto';
+    modalContent.style.padding = '16px';
+  };
+
+  modalTriggers.forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const imageSrc = trigger.getAttribute('data-image');
+      modalImage.src = imageSrc;
+
+      // Mostrar modal con transición
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        modal.classList.remove('opacity-0');
+        modal.classList.add('opacity-100');
+        modalContent.classList.remove('scale-75');
+        modalContent.classList.add('scale-100');
+      }, 10); // Pequeño delay para que se aplique la transición
+
+      // Ajustar tamaño del modal según la imagen
+      modalImage.onload = adjustModalSize;
+    });
+  });
+
+  closeButton.addEventListener('click', () => {
+    // Ocultar modal con transición
+    modal.classList.remove('opacity-100');
+    modal.classList.add('opacity-0');
+    modalContent.classList.remove('scale-100');
+    modalContent.classList.add('scale-75');
+
+    // Esperar la duración de la transición para ocultar completamente el modal
+    setTimeout(() => {
+      modal.classList.add('hidden');
+    }, 500); // Duración de la transición en milisegundos
   });
 });

@@ -44,6 +44,12 @@ module.exports = {
         bebasNeue: ["BebasNeueRegular", "sans-serif"],
         notoSansJP: ["NotoSansJPBlack", "sans-serif"],
       },
+      maxWidth: {
+        '70vw': '70vw',
+      },
+      maxHeight: {
+        '70vw': '70vw',
+      },
       backgroundSize: {
         'custom-width': '75% auto',
       },
