@@ -228,3 +228,36 @@ section {
   display: block;
   /* Asegura que el margen automático funcione */
 }
+
+.hole-effect {
+  position: relative;
+  display: inline-block;
+  font-size: 2rem;
+  /* Ajusta el tamaño del texto según sea necesario */
+  color: transparent;
+  /* Hacemos el texto transparente para aplicar el fondo en el texto */
+  background: #00a859;
+  /* Color de fondo verde */
+  background-clip: text;
+  /* Clipa el fondo al texto */
+  -webkit-background-clip: text;
+  /* Soporte para WebKit */
+}
+
+.hole-effect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00a859;
+  /* Color de fondo verde */
+  z-index: -1;
+  /* Coloca el fondo detrás del texto */
+}
+
+.hole-effect-container {
+  position: relative;
+  display: inline-block;
+}
