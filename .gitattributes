@@ -1,1 +1,5 @@
 *.mp4 filter=lfs diff=lfs merge=lfs -text
+videos/video-1-espanol.mp4 filter=lfs diff=lfs merge=lfs -text
+videos/video-1-ingles.mp4 filter=lfs diff=lfs merge=lfs -text
+videos/video-3.mp4 filter=lfs diff=lfs merge=lfs -text
+videos/video-4.mp4 filter=lfs diff=lfs merge=lfs -text
