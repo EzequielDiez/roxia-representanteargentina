@@ -74,7 +74,7 @@ body {
 #first-section-en {
   background:
     linear-gradient(to bottom, white 5%, transparent 10%, white 35%),
-    url('../images/return-img-background.png') no-repeat center center;
+    url('./images/return-img-background.png') no-repeat center center;
   background-size: auto;
   background-position: center 1rem;
   background-attachment: scroll;
@@ -86,7 +86,7 @@ body {
   #first-section-en {
     background:
       linear-gradient(to bottom, white 5%, transparent 15%, white 40%),
-      url('../images/return-img-background.png') no-repeat center center;
+      url('/images/return-img-background.png') no-repeat center center;
     background-size: contain 60vh;
     background-position: center 2rem;
     /* Ajuste de posición */
@@ -97,7 +97,7 @@ body {
   #first-section-en {
     background:
       linear-gradient(to bottom, white 5%, transparent 20%, white 45%),
-      url('../images/return-img-background.png') no-repeat center center;
+      url('images/return-img-background.png') no-repeat center center;
     background-size: contain 70vh;
     background-position: center 3rem;
     /* Ajuste de posición */
