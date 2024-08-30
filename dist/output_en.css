@@ -4000,10 +4000,10 @@ body {
   font-style: normal;
 }
 
-#first-section {
+#first-section-en {
   background:
     linear-gradient(to bottom, white 5%, transparent 10%, white 35%),
-    url('../images/return-img-background.png') no-repeat center center;
+    url('./images/return-img-background.png') no-repeat center center;
   background-size: auto;
   background-position: center 1rem;
   background-attachment: scroll;
@@ -4012,10 +4012,10 @@ body {
 }
 
 @media (max-width: 1200px) {
-  #first-section {
+  #first-section-en {
     background:
       linear-gradient(to bottom, white 5%, transparent 15%, white 40%),
-      url('../images/return-img-background.png') no-repeat center center;
+      url('/images/return-img-background.png') no-repeat center center;
     background-size: contain 60vh;
     background-position: center 2rem;
     /* Ajuste de posición */
@@ -4023,10 +4023,10 @@ body {
 }
 
 @media (max-width: 768px) {
-  #first-section {
+  #first-section-en {
     background:
       linear-gradient(to bottom, white 5%, transparent 20%, white 45%),
-      url('../images/return-img-background.png') no-repeat center center;
+      url('images/return-img-background.png') no-repeat center center;
     background-size: contain 70vh;
     background-position: center 3rem;
     /* Ajuste de posición */
@@ -4034,7 +4034,7 @@ body {
 }
 
 @media (max-width: 480px) {
-  #first-section {
+  #first-section-en {
     background:
       linear-gradient(to bottom, white 5%, transparent 25%, white 50%),
       url('../images/return-img-background.png') no-repeat center center;
@@ -4076,48 +4076,48 @@ section {
   }
 }
 
-#navbar {
+#navbar-en {
   transform: translateX(100%);
   opacity: 0;
   animation: slideIn 2s ease-out forwards;
 }
 
-.nav-link {
+.nav-link-en {
   opacity: 0;
   transform: translateX(100%);
 }
 
-.nav-link.animate {
+.nav-link-en.animate {
   animation: slideIn 0.8s ease-out forwards;
   animation-delay: 1s;
   /* Retarda la animación de los links */
 }
 
-#navbar-logo {
+#navbar-logo-en {
   opacity: 0;
   /* Inicialmente oculto */
   transition: opacity 1s ease-in-out;
   /* Cambia la opacidad de forma gradual */
 }
 
-#navbar-logo.visible {
+#navbar-logo-en.visible {
   opacity: 1;
   /* Totalmente visible */
 }
 
-#contentInicio {
+#contentHome {
   opacity: 1;
   /* Inicialmente oculto */
   transition: opacity 1s ease-in-out;
   /* Cambia la opacidad de forma gradual */
 }
 
-#contentInicio.oculto {
+#contentHome.oculto {
   opacity: 0;
   /* Totalmente visible */
 }
 
-.boton-verde {
+.green-button {
   color: #fff;
   background: #5E8A5A;
   border: 2px solid;
@@ -4125,7 +4125,7 @@ section {
   position: relative;
 }
 
-.boton-verde:before {
+.green-button:before {
   content: "";
   position: absolute;
   top: 0px;
@@ -4136,55 +4136,22 @@ section {
   transition: all 1s ease;
 }
 
-.boton-verde:hover:before {
+.green-button:hover:before {
   width: 100%;
 }
 
-#modal-content {
+#modal-content-en {
   padding: 16px;
   /* Espacio interno en el modal */
   box-sizing: border-box;
   /* Asegura que el padding no afecte el tamaño del modal */
 }
 
-#modal-image {
+#modal-image-en {
   margin: 0 auto;
   /* Centrar la imagen dentro del modal */
   display: block;
   /* Asegura que el margen automático funcione */
-}
-
-.hole-effect {
-  position: relative;
-  display: inline-block;
-  font-size: 2rem;
-  /* Ajusta el tamaño del texto según sea necesario */
-  color: transparent;
-  /* Hacemos el texto transparente para aplicar el fondo en el texto */
-  background: #00a859;
-  /* Color de fondo verde */
-  background-clip: text;
-  /* Clipa el fondo al texto */
-  -webkit-background-clip: text;
-  /* Soporte para WebKit */
-}
-
-.hole-effect::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #00a859;
-  /* Color de fondo verde */
-  z-index: -1;
-  /* Coloca el fondo detrás del texto */
-}
-
-.hole-effect-container {
-  position: relative;
-  display: inline-block;
 }
 
 .hover\:translate-x-2:hover{
