@@ -185,5 +185,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  const videos = document.querySelectorAll('.myVideo');
+
+videos.forEach(video => {
+    video.addEventListener('click', () => {
+        video.setAttribute('controls', 'controls'); // Muestra los controles
+        video.play(); // Intenta reproducir el video
+    });
+
+    // Captura el evento de play para intentar iniciar la reproducción si no comienza inmediatamente
+    video.addEventListener('play', () => {
+        if (video.paused) {
+            video.play();
+        }
+    });
+});
 
 });

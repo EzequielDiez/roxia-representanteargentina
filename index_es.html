@@ -1,791 +1,824 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roxia - Representante Argentina</title>
-  <!-- CSS CDN -->
-  <link href="index.css" rel="stylesheet">
-  <!-- Tailwind CSS CDN -->
-  <link href="dist/output.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!--Swiper-->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <!--Favicon-->
-  <link rel="icon" href="https://roxia.com/wp-content/uploads/2022/03/cropped-roxia-favicon-150x150.png" sizes="32x32">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roxia - Representante Argentina</title>
+    <!-- CSS -->
+    <link href="index.css" rel="stylesheet">
+    <link href="dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="icon" href="https://roxia.com/wp-content/uploads/2022/03/cropped-roxia-favicon-150x150.png" sizes="32x32">
+  </head>
 
-<body class="bg-white overflow-x-hidden">
-  <header>
-    <nav class="fixed top-0 w-full z-20 bg-custom-green" id="navbar">
-      <div class="mx-auto px-2 sm:px-6 lg:px-8 w-full">
-        <div class="relative flex h-12 items-center justify-between">
-          <div class="flex items-center">
-            <!-- Logo oculto inicialmente -->
-            <div class="flex-shrink-0" id="navbar-logo">
-              <img src="images/logo-roxia-blanco.png" alt="Logo" class="h-8 w-auto">
+  <body class="bg-white overflow-x-hidden">
+    <header>
+      <nav class="fixed top-0 w-full z-20 bg-custom-green" id="navbar">
+        <div class="mx-auto px-2 sm:px-6 lg:px-8 w-full">
+          <div class="relative flex h-12 items-center justify-between">
+            <div class="flex items-center">
+              <!-- Logo oculto inicialmente -->
+              <div class="flex-shrink-0" id="navbar-logo">
+                <img src="images/logo-roxia-blanco.png" alt="Logo" class="h-8 w-auto">
+              </div>
+            </div>
+            <div class="hidden sm:flex sm:ml-auto space-x-3">
+              <a href="#inicio" class="nav-link.animate rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">INICIO</a>
+              <a href="#nosotros" class="nav-link.animate rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">NOSOTROS</a>
+              <a href="#equipos" class="nav-link.animate rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">EQUIPOS</a>
+              <a href="#repuestos" class="nav-link.animate rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">REPUESTOS</a>
+              <a href="#contacto" class="nav-link.animate rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">CONTACTO</a>
+              <a href="index_es.html" id="es-flag" class="nav-link.animate flex items-center rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">ES</a>
+              <a href="index_en.html" id="en-flag" class="nav-link.animate flex items-center rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">EN</a>
+            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <svg class="block h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" id="menu-open-icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <svg class="hidden h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" id="menu-close-icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
             </div>
           </div>
-          <div class="hidden sm:flex sm:ml-auto space-x-3">
-            <a href="#inicio" class="nav-link.animate rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">INICIO</a>
-            <a href="#nosotros" class="nav-link.animate rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">NOSOTROS</a>
-            <a href="#equipos" class="nav-link.animate rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">EQUIPOS</a>
-            <a href="#repuestos" class="nav-link.animate rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">REPUESTOS</a>
-            <a href="#contacto" class="nav-link.animate rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">CONTACTO</a>
-            <a href="index_es.html" id="es-flag" class="nav-link.animate flex items-center rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">ES</a>
-            <a href="index_en.html" id="en-flag" class="nav-link.animate flex items-center rounded-md px-3 py-1.5 text-base font-medium text-white hover:bg-white hover:text-black">EN</a>
-          </div>
-          <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
-            <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
-              <span class="absolute -inset-0.5"></span>
-              <span class="sr-only">Open main menu</span>
-              <svg class="block h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" id="menu-open-icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-              <svg class="hidden h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" id="menu-close-icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
+        </div>
+    
+        <!-- Mobile menu -->
+        <div class="hidden sm:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2 flex flex-col items-center justify-center">
+            <a href="#inicio" class="block rounded-md hover:bg-white hover:text-black px-3 py-2 text-sm font-medium text-white">INICIO</a>
+            <a href="#nosotros" class="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white hover:text-black">NOSOTROS</a>
+            <a href="#equipos" class="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white hover:text-black">EQUIPOS</a>
+            <a href="#repuestos" class="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white hover:text-black">REPUESTOS</a>
+            <a href="#contacto" class="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white hover:text-black">CONTACTO</a>
+            <div class="flex justify-around w-full">
+              <a href="index_es.html" id="es-flag-mobile" class="flex items-center rounded-lg px-2 py-1">ES</a>
+              <a href="index_en.html" id="en-flag-mobile" class="flex items-center rounded-lg px-2 py-1">EN</a>
+            </div>
           </div>
         </div>
-      </div>
-  
-      <!-- Mobile menu -->
-      <div class="hidden sm:hidden" id="mobile-menu">
-        <div class="space-y-1 px-2 pb-3 pt-2 flex flex-col items-center justify-center">
-          <a href="#inicio" class="block rounded-md hover:bg-green-800 hover:text-white px-3 py-2 text-sm font-medium text-gray-300">INICIO</a>
-          <a href="#nosotros" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-green-800 hover:text-white">NOSOTROS</a>
-          <a href="#equipos" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-green-800 hover:text-white">EQUIPOS</a>
-          <a href="#repuestos" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-green-800 hover:text-white">REPUESTOS</a>
-          <a href="#contacto" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-green-800 hover:text-white">CONTACTO</a>
-          <div class="flex justify-around w-full">
-            <a href="index_es.html" id="es-flag-mobile" class="flex items-center rounded-lg px-2 py-1">ES</a>
-            <a href="index_en.html" id="en-flag-mobile" class="flex items-center rounded-lg px-2 py-1">EN</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-  
-
-  <main>
-    <section id="inicio" class="relative isolate bg-[url('../images/filter-img-background2.jpg')] bg-cover bg-center h-screen">
-      <div id="contentInicio" class="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
-        <img src="images/LOGO ROXIA-02.png" alt="Roxia Logo" class="animate__animated animate__fadeIn animate__slow w-8/12 sm:w-6/12 md:w-6/12 lg:w-4/12 h-auto">
-        <p class="animate__animated animate__fadeIn animate__slow animate__delay-1s mt-4 text-custom-gray-font text-lg sm:text-xl lg:text-xl font-semibold">EMPRESA FINLANDESA ESPECIALISTA EN</p>
-        <p class="animate__animated animate__fadeIn animate__slow animate__delay-1s mt-2 text-custom-gray-font text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bebasNeue">SEPARACIÓN DE SÓLIDOS-LÍQUIDOS</p>
-        <p class="animate__animated animate__fadeIn animate__slow animate__delay-1s text-custom-gray-font text-lg sm:text-xl lg:text-2xl font-noto">-DEWATERING & AUTOMATION-</p>
-      </div>
-    </section>
+      </nav>
+    </header>
     
 
-    <section id="first-section" class="relative isolate px-4 pb-20 lg:px-16 h-auto min-h-screen">
-      <div class="flex flex-col justify-start items-center text-center pt-32 space-y-10">
-        <a href="https://roxia.com/" target="_blank" rel="noopener noreferrer" class="block w-9/12 sm:w-7/12 md:w-6/12 lg:w-6/12 xl:w-5/12 2xl:w-4/12">
-          <img src="images/LOGO ROXIA-02.png" alt="Roxia Logo" class="w-full h-auto">
-        </a>
-        <p class="text-custom-gray-font text-6xl md:text-5xl lg:text-7xl font-bebasNeue">
-          MARCA EL RETORNO AL MERCADO MUNDIAL
-        </p>
-        <p class="text-custom-gray-font text-lg md:text-xl lg:text-xl font-notoSansJP">
-          del fabricante finlandés Creador del 1er Filtro Torre de Prensa Vertical (1977), con su <br>
-          nueva marca y con una alianza estratégica con
-        </p>
-        <div class="my-8"></div> <!-- Espacio adicional -->
-        <a href="https://www.aquachem.de/" target="_blank" rel="noopener noreferrer" class="block w-9/12 sm:w-7/12 md:w-6/12 lg:w-6/12 xl:w-5/12 2xl:w-4/12">
-          <img src="images/aquachem-logo.svg" alt="Aquachem Logo" class="w-full h-auto">
-        </a>
-        <div id="boxFirstSection" class="shadow_box rounded-xl p-4 lg:px-20 opacity-0">
-          <p class="text-custom-red-font text-3xl md:text-4xl lg:text-6xl font-bebasNeue px-4 lg:px-10">
-            PARA LIDERAR UNA NUEVA GENERACIÓN <br> DE EQUIPOS DE FILTRADO
+    <main>
+      <section id="inicio" class="relative isolate bg-[url('../images/filter-img-background2.jpg')] bg-cover bg-center h-screen">
+        <div id="contentInicio" class="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+          <img src="images/LOGO ROXIA-02.png" alt="Roxia Logo" class="animate__animated animate__fadeIn animate__slow w-8/12 sm:w-6/12 md:w-6/12 lg:w-4/12 h-auto">
+          <p class="animate__animated animate__fadeIn animate__slow animate__delay-1s mt-4 text-custom-gray-font text-lg sm:text-xl lg:text-xl font-semibold">
+            EMPRESA FINLANDESA ESPECIALISTA EN
+          </p>
+          <p class="animate__animated animate__fadeIn animate__slow animate__delay-1s mt-2 text-custom-gray-font text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bebasNeue">
+            SEPARACIÓN DE SÓLIDOS-LÍQUIDOS
+          </p>
+          <p class="animate__animated animate__fadeIn animate__slow animate__delay-1s text-custom-gray-font text-lg sm:text-xl lg:text-2xl font-noto">
+            -DEWATERING & AUTOMATION-
           </p>
         </div>
-      </div>
-    </section>
+      </section>
     
-    
-    
-    <section id="clientes" class="py-8 bg-custom-gray-section">
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-5xl mx-auto text-center">
-        <!-- Primera columna -->
-        <div id="first-client-box" class="opacity-0 animate__animated">
-          <div class="flex flex-col sm:flex-row items-center justify-center">
-            <!-- Icono persona -->
-            <i class="fas fa-user text-custom-red-font text-4xl"></i>
-            <!-- Número de clientes -->
-            <p class="text-4xl sm:text-5xl text-custom-gray-font font-bold mt-4 sm:mt-0 sm:ml-4">221</p>
-          </div>
-          <!-- Descripción -->
-          <p class="text-xl sm:text-2xl mt-2 text-custom-gray-font">CLIENTES GLOBALES</p>
-        </div>
-    
-        <!-- Segunda columna -->
-        <div id="second-client-box" class="opacity-0 animate__animated">
-          <div class="flex flex-col sm:flex-row items-center justify-center">
-            <!-- Icono paquete -->
-            <i class="fas fa-box text-custom-red-font text-4xl"></i>
-            <!-- Número de productos -->
-            <p class="text-4xl sm:text-5xl text-custom-gray-font font-bold mt-4 sm:mt-0 sm:ml-4">56757</p>
-          </div>
-          <!-- Descripción -->
-          <p class="text-xl sm:text-2xl mt-2 text-custom-gray-font">PRODUCTOS ENTREGADOS</p>
-        </div>
-      </div>
-    </section>
-    
-    
-    
-  <section class="h-auto bg-white">
-    <div class="max-w-5xl mx-auto h-auto md:h-1/2 flex flex-col justify-center items-start px-4 py-6 md:py-0">
-      <div class="text-left">
-        <h1 class="text-3xl md:text-5xl lg:text-6xl font-notoSansJP mb-4 md:mb-6 text-custom-gray-font">
-          El filtrado de tu empresa <br class="hidden md:block"> en nuestras manos
-        </h1>
-        <p class="text-base md:text-lg lg:text-3xl mb-4 md:mb-6 text-custom-gray-font">
-          Vendemos equipos nuevos de filtrado, tanto automáticos como manuales. <br class="hidden md:block">
-          También <strong class="font-notoSansJP">ACTUALIZAMOS / ACONDICIONAMOS</strong> sus viejos equipos, <br class="hidden md:block">
-          <strong class="font-notoSansJP">SOLUCIONES A MEDIDA</strong>.
-        </p>
-        <div class="flex justify-start">
-          <a href="#contacto" class=" boton-verde text-lg md:text-3xl px-5 py-1 rounded-md shadow-lg">
-            Contactate con nosotros
+      <section id="first-section" class="relative isolate px-4 pb-20 lg:px-16 h-auto min-h-screen">
+        <div class="flex flex-col justify-start items-center text-center pt-32 space-y-10">
+          <a href="https://roxia.com/" target="_blank" rel="noopener noreferrer" class="block w-9/12 sm:w-7/12 md:w-6/12 lg:w-6/12 xl:w-5/12 2xl:w-4/12">
+            <img src="images/LOGO ROXIA-02.png" alt="Roxia Logo" class="w-full h-auto">
           </a>
-        </div>
-      </div>
-    </div>
-    
-      <!-- Parte inferior (50%) -->
-      <div class="h-auto flex flex-col md:flex-row justify-center items-center mt-14">
-        <div class="flex flex-col md:flex-row w-full max-w-screen-lg h-full pb-8 md:pb-20 px-4">
-          <!-- Video de YouTube con animación -->
-          <iframe class="flex-1 h-72 border-0 md:rounded-l-lg rounded-t-lg md:rounded-tr-none shadow_box2" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-          <!-- Cuadrado gris oscuro con texto y animación -->
-          <div class="relative flex-1 h-72 bg-custom-gray-font text-white flex items-center justify-center text-center p-4 md:rounded-r-lg rounded-b-lg md:rounded-bl-none shadow_box2">
-            <div class="relative bg-custom-gray-font border-t-2 border-r-2 border-custom-green p-4 md:p-8 ml-0 md:ml-8 flex flex-col justify-between h-full">
-              <p class="text-base md:text-lg lg:text-2xl mb-4 font-notoSansJP text-right">
-                Nos encargamos de los procesos de separación SÓLIDOS / LÍQUIDOS
-              </p>
-              <img src="images/roxia-logo.svg" alt="Roxia Logo" class="self-center md:self-end w-1/4 h-auto mt-4">
-            </div>
+          <p class="text-custom-gray-font text-6xl md:text-5xl lg:text-7xl font-bebasNeue">
+            MARCA EL RETORNO AL MERCADO MUNDIAL
+          </p>
+          <p class="text-custom-gray-font text-lg md:text-xl lg:text-xl font-notoSansJP">
+            del fabricante finlandés Creador del 1er Filtro Torre de Prensa Vertical (1977), con su <br>
+            nueva marca y con una alianza estratégica con
+          </p>
+          <div class="my-8"></div> <!-- Espacio adicional -->
+          <a href="https://www.aquachem.de/" target="_blank" rel="noopener noreferrer" class="block w-9/12 sm:w-7/12 md:w-6/12 lg:w-6/12 xl:w-5/12 2xl:w-4/12">
+            <img src="images/aquachem-logo.svg" alt="Aquachem Logo" class="w-full h-auto">
+          </a>
+          <div id="boxFirstSection" class="shadow_box rounded-xl p-4 lg:px-20 opacity-0">
+            <p class="text-custom-red-font text-3xl md:text-4xl lg:text-6xl font-bebasNeue px-4 lg:px-10">
+              PARA LIDERAR UNA NUEVA GENERACIÓN <br> DE EQUIPOS DE FILTRADO
+            </p>
           </div>
         </div>
-      </div>
+      </section>
+    
+      <section id="clientes" class="py-8 bg-custom-gray-section">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-5xl mx-auto text-center">
+          <!-- Primera columna -->
+          <div id="first-client-box" class="opacity-0 animate__animated">
+            <div class="flex flex-col sm:flex-row items-center justify-center">
+              <!-- Icono persona -->
+              <i class="fas fa-user text-custom-red-font text-4xl"></i>
+              <!-- Número de clientes -->
+              <p class="text-4xl sm:text-5xl text-custom-gray-font font-bold mt-4 sm:mt-0 sm:ml-4">221</p>
+            </div>
+            <!-- Descripción -->
+            <p class="text-xl sm:text-2xl mt-2 text-custom-gray-font">CLIENTES GLOBALES</p>
+          </div>
+    
+          <!-- Segunda columna -->
+          <div id="second-client-box" class="opacity-0 animate__animated">
+            <div class="flex flex-col sm:flex-row items-center justify-center">
+              <!-- Icono paquete -->
+              <i class="fas fa-box text-custom-red-font text-4xl"></i>
+              <!-- Número de productos -->
+              <p class="text-4xl sm:text-5xl text-custom-gray-font font-bold mt-4 sm:mt-0 sm:ml-4">56757</p>
+            </div>
+            <!-- Descripción -->
+            <p class="text-xl sm:text-2xl mt-2 text-custom-gray-font">PRODUCTOS ENTREGADOS</p>
+          </div>
+        </div>
+      </section>
       
-    </section>
-
-    <section id="nosotros" class="py-16 relative bg-gradient-to-b from-white to-gray-200">
-      <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
-        <div class="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
-          <!-- Texto primero en todos los dispositivos -->
-          <div class="w-full flex-col justify-center gap-10 inline-flex order-first">
-            <div class="w-full flex-col justify-center gap-8 flex">
-              <div class="w-full flex-col justify-start gap-6 flex">
-                <h3 class="text-custom-green text-4xl md:text-4xl font-semibold leading-normal lg:text-start text-center underline">
-                  Nosotros
-                </h3>
-                <h2 class="text-custom-gray-font text-4xl sm:text-5xl md:text-5xl lg:text-5xl font-notoSansJP leading-normal lg:text-start text-center">
-                  Con más <br> de 40 años <br> de experiencia
-                </h2>
-                <div class="text-gray-500 text-base font-normal lg:text-start text-center bg-gradient-to-br from-white via-custom-green-30 to-white border-custom-green border-solid border-4 p-2 rounded-lg shadow-lg leading-tight">
-                  <p>
-                    <span class="flex items-center justify-center lg:justify-start">
-                      <img src="https://roxia.com/wp-content/uploads/2022/03/cropped-roxia-favicon-150x150.png" alt="" class="h-auto w-5 mr-2">
-                      <strong class="text-custom-green text-lg lg:text-xl">BREVE HISTORIA</strong>
-                    </span>
-                    En 1977 fundamos la empresa <strong>LAROX Oy</strong> para especializarnos en Filtros Prensa y Válvulas Pinch. Después de convertirnos en líderes de ese mercado,
-                    en 2009 se vendió la marca <strong>LAROX Oy a Outotec</strong> y se creó <strong>FLOWROX</strong> para dedicarse a Bombas y Válvulas pinch. <br>
-                    <strong>FLOWROX</strong> se desempeñó exitosamente hasta que en 2021, se tomó la decisión de retornar al Negocio de los Filtros Prensa, causa por la cual, se vendió
-                    a Neles Oy.
-                  </p>
-                
-                  <p class="mt-4 text-black border-2 border-gray-300 p-3 rounded-lg text-lg shadow_box">
-                    <span class="flex items-center justify-center lg:justify-start">
-                      <img src="https://roxia.com/wp-content/uploads/2022/03/cropped-roxia-favicon-150x150.png" alt="" class="h-auto w-5 mr-2">
-                      <strong class="text-custom-gray-font text-lg lg:text-xl">HOY</strong>
-                    </span>
-                    En 2021 con la misma Planta en Lappeenranta, Finlandia y prácticamente el mismo personal de nuestros comienzos en 1977, se decidió crear <strong>ROXIA Oy</strong>
-                    para REENFOCARSE en el Negocio de Filtros Prensa - Separación Sólidos / Líquidos - Dewatering. Además se compró el 50 % de AQUACHEM para convertirla en:
-                    a <strong>ROXIA Brand</strong> e iniciar una <strong>NUEVA GENERACIÓN</strong> de Filtros Prensa.
-                  </p>
-                </div>           
-              </div>
-            </div>
-          </div>
-          <!-- Imágenes después en todos los dispositivos -->
-          <div class="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 order-last">
-            <div class="pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
-              <img class="rounded-xl" src="images/about-us-section.jpg" alt="about Us image" />
-            </div>
-            <img class="sm:ml-0 ml-auto rounded-xl" src="images/Filter-service-inspection-Roxia-media-bank.png" alt="about Us image" />
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- PRUEBA -->
-    
-    <section class="h-auto bg-gray-200 pt-32">
-      <div class="max-w-5xl mx-auto">
-        <p class="text-right text-custom-gray-font text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-notoSansJP py-8">Roxia en Argentina</p>
-      </div>
-    
-      <!-- Separador con patrón -->
-      <div class="relative">
-        <div class="w-full h-4 bg-custom-green border-t border-gray-300 relative">
-          <!-- Agrega una imagen de patrón -->
-          <div class="absolute inset-0 bg-[url('/path-to-pattern.png')] bg-repeat"></div>
-        </div>
-      </div>
-    
-      <div class="bg-white">
-        <div class="max-w-6xl mx-auto">
-          <p class="text-right text-custom-gray-font text-base sm:text-lg md:text-xl lg:text-2xl p-6">
-            Roxia ha establecido una Cobertura Global con Oficinas en muchos países del mundo. En Argentina, contamos con una Oficina Roxia con Ingenieros Especializados y un Depósito
-            local de Repuestos OEM en Stock en Santiago, Chile, <strong>dirigida por el experto Ing. Sebastián Alcaino</strong> y a solo una hora de vuelo de cualquier punto de nuestro país.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="pb-8 pt-8 relative bg-gradient-to-b from-white via-custom-gray-section to-gray-200">
-      <div class="w-full max-w-7xl px-4 md:px-6 lg:px-8 mx-auto">
-        <div class="w-full flex flex-col items-center gap-10">
-          <div class="w-full flex flex-col lg:flex-row lg:justify-between gap-8">
-            <!-- Bloque 1 -->
-            <div class="flex items-start gap-4 p-6 bg-gradient-to-r from-white via-custom-gray-section to-gray-100 border border-gray-300 rounded-lg shadow-xl w-full lg:w-1/3 transition-transform transform hover:scale-105 hover:bg-gray-50 hover:shadow-2xl">
-              <img src="https://roxia.com/wp-content/uploads/2022/03/cropped-roxia-favicon-150x150.png" alt="" class="h-20 w-20 opacity-80 transition-opacity hover:opacity-100">
-              <div>
-                <p class="text-gray-700 text-lg font-normal leading-relaxed">
-                  En procesos de separación sólido-líquido, ofrecemos <strong class="font-black text-xl tracking-wide text-custom-green">soluciones integrales</strong>
-                  que destacan por su calidad y eficacia.
-                </p>
-              </div>
-            </div>
-    
-            <!-- Bloque 2 -->
-            <div class="flex items-start gap-4 p-6 bg-gradient-to-r from-white via-custom-gray-section to-gray-100 border border-gray-300 rounded-lg shadow-xl w-full lg:w-1/3 transition-transform transform hover:scale-105 hover:bg-gray-50 hover:shadow-2xl">
-              <img src="https://roxia.com/wp-content/uploads/2022/03/cropped-roxia-favicon-150x150.png" alt="" class="h-20 w-20 opacity-80 transition-opacity hover:opacity-100">
-              <div>
-                <p class="text-gray-700 text-lg font-normal leading-relaxed">
-                  Nuestros servicios abarcan desde un exhaustivo <strong class="font-black text-xl tracking-wide text-custom-green">análisis de procesos</strong> y pruebas de filtrado, hasta la entrega e <strong class="font-black text-xl tracking-wide text-custom-green">instalación del filtro</strong> correspondiente.
-                </p>
-              </div>
-            </div>
-    
-            <!-- Bloque 3 -->
-            <div class="flex items-start gap-4 p-6 bg-gradient-to-r from-white via-custom-gray-section to-gray-100 border border-gray-300 rounded-lg shadow-xl w-full lg:w-1/3 transition-transform transform hover:scale-105 hover:bg-gray-50 hover:shadow-2xl">
-              <img src="https://roxia.com/wp-content/uploads/2022/03/cropped-roxia-favicon-150x150.png" alt="" class="h-20 w-20 opacity-80 transition-opacity hover:opacity-100">
-              <div>
-                <p class="text-gray-700 text-lg font-normal leading-relaxed">
-                  Asimismo, brindamos <strong class="font-black text-xl tracking-wide text-custom-green">entrenamiento especializado</strong> y acompañamiento continuo durante todo el <strong class="font-black text-xl tracking-wide text-custom-green">ciclo de vida del equipo</strong>, garantizando una <strong class="font-black text-xl tracking-wide text-custom-green">rápida entrega de repuestos</strong> y <strong class="font-black text-xl tracking-wide text-custom-green">soporte técnico eficiente</strong>.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
- 
-    <section class="h-auto bg-gradient-to-b from-gray-200 via-white to-white pt-32">
-      <div>
-        <div class="relative text-center py-4">
-          <p class="text-4xl sm:text-5xl md:text-5xl lg:text-7xl font-extrabold leading-tight text-custom-green">RESUMEN DE SERVICIOS
-          </p>
-        </div>
-      </div>
-
-      <div class="bg-white">
-        <div class="max-w-6xl mx-auto">
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12 sm:mt-8 px-4 md:px-8 lg:px-0">
-            <!-- Card 1 -->
-            <div class="bg-gradient-to-tr from-yellow-200 via-white to-yellow-200 shadow_box rounded-xl p-6 flex flex-col items-center justify-between h-80 transform transition-transform duration-300 hover:translate-x-2">
-              <div class="flex-grow flex items-center justify-center">
-                <img src="images/mismo ancho y alto 1.png" alt="" class="w-11/12 h-auto object-contain">
-              </div>
-              <div class="flex-grow flex items-center justify-center mt-4">
-                <p class="text-custom-gray-font text-center text-md font-notoSansJP">
-                  Test de filtración, con el fluido real a procesar, para asegurar el diseño y equipo adecuado.
-                </p>
-              </div>
-            </div>
-    
-            <!-- Card 2 -->
-            <div class="bg-gradient-to-tr from-custom-green-50 via-white to-custom-green-50 shadow_box rounded-xl p-6 flex flex-col items-center justify-between h-80 transform transition-transform duration-300 hover:translate-x-2">
-              <div class="flex-grow flex items-center justify-center">
-                <img src="images/mismo ancho y alto 2.png" alt="" class="w-11/12 h-auto object-contain">
-              </div>
-              <div class="flex-grow flex items-center justify-center mt-4">
-                <p class="text-custom-gray-font text-center text-md font-notoSansJP">
-                  Frecuentes inspecciones planificadas para prevención de fallas y mejora de performance.
-                </p>
-              </div>
-            </div>
-    
-            <!-- Card 3 -->
-            <div class="bg-gradient-to-tr from-custom-red-card via-white to-custom-red-card shadow_box rounded-xl p-6 flex flex-col items-center justify-between h-80 transform transition-transform duration-300 hover:translate-x-2">
-              <div class="flex-grow flex items-center justify-center">
-                <img src="images/mismo ancho y alto 3.png" alt="" class="w-11/12 h-auto object-contain">
-              </div>
-              <div class="flex-grow flex items-center justify-center mt-4">
-                <p class="text-custom-gray-font text-center text-md font-notoSansJP">
-                  Reducir tiempos de espera de repuestos y tiempos de parada de plantas.
-                </p>
-              </div>
-            </div>
-    
-            <!-- Card 4 -->
-            <div class="bg-gradient-to-tr from-blue-300 via-white to-blue-300 shadow_box rounded-xl p-6 flex flex-col items-center justify-between h-80 transform transition-transform duration-300 hover:translate-x-2">
-              <div class="flex-grow flex items-center justify-center">
-                <img src="images/mismo ancho y alto 4.png" alt="" class="w-11/12 h-auto object-contain">
-              </div>
-              <div class="flex-grow flex items-center justify-center mt-4">
-                <p class="text-custom-gray-font text-center text-md font-notoSansJP">
-                  Entrenamientos al personal de nuestros clientes para mejorar la operación de filtrado.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    
-
-    <section id="equipos" class="mt-20">
-      <div class="w-full">
-        <!-- Contenedor 1 -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-0 mx-auto">
-          <!-- Columna izquierda (blanco) -->
-          <div class="bg-white p-4 flex flex-col justify-between h-full pb-28">
-            <h1 class="text-5xl mb-6 text-custom-green font-extrabold leading-tight">
-              EQUIPOS
+      
+      
+      <section class="h-auto bg-white">
+        <div class="max-w-5xl mx-auto h-auto md:h-1/2 flex flex-col justify-center items-start px-4 py-6 md:py-0">
+          <div class="text-left">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-notoSansJP mb-4 md:mb-6 text-custom-gray-font">
+              El filtrado de tu empresa <br class="hidden md:block"> en nuestras manos
             </h1>
-            <!-- Contenedor de la imagen -->
-            <div class="flex items-center justify-center md:justify-end h-full">
-              <img src="images/tower-press-roxia-hd.png" alt="" class="w-full max-w-xs md:max-w-lg h-auto md:mr-20 modal-trigger cursor-pointer" data-image="images/tower-press-roxia-hd.png">            </div>
-              <p class="text-lg text-custom-gray-font mt-2 text-right md:mr-20">Haz click para ampliar la imagen</p> <!-- Leyenda -->
-            </div>
-          <!-- Columna derecha (gris) -->
-          <div class="bg-custom-gray-section p-4 flex flex-col justify-center space-y-4 md:space-y-8 pt-4 md:pt-8 pb-28">
-            <div class="md:max-w-lg">
-              <h3 class="text-2xl md:text-4xl text-center md:text-right font-bold">
-                <span class="border-4 border-custom-green rounded-2xl bg-white text-custom-green inline-block px-2 py-2 font-notoSansJP">
-                  TP60 - TP16
-                </span>
-              </h3>
-              <h2 class="text center md:text-right text-2xl md:text-4xl font-bold max-w-lg ml-auto mt-4">
-                <span class="inline-block p-1 text-custom-gray-font font-notoSansJP">Tecnología de filtración horizontal a presión</span>
-              </h2>
-              <p class="text-center md:text-right text-lg md:text-base mt-4 text-custom-gray-font">El Tower Press™ de Roxia es un filtro de presión completamente automático, excelente para cualquier proceso que requiera de una separación eficiente de sólidos y líquidos. El diseño tiene 40 años de respetable experiencia en el campo. El filtro Tower Press de Roxia es una máquina confiable de producción que ofrece un alto rendimiento. Roxia tiene dos tipos de Tower Press: <strong>TP60, más grande, con un área de filtración de 48m² a 156m², y TP16, más pequeña, con un área de filtración de 16m² a 44m².</strong></p>
-              <div class="flex flex-wrap gap-4 justify-center md:justify-start mt-4 md:mt-8">
-                <a href="https://roxia.com/es/deshidratacion/productos-y-soluciones-2/filtro-de-torre-tp60/" target="_blank">
-                  <button class="boton-verde rounded-lg px-2 py-2 text-lg md:text-base font-notoSansJP">
-                    Tower Press TP60
-                  </button>
-                </a>
-                <a href="https://roxia.com/es/deshidratacion/productos-y-soluciones-2/filtro-de-torre-tp16/" target="_blank">
-                  <button class="boton-verde rounded-lg px-2 py-2 text-lg md:text-base font-notoSansJP">
-                    Tower Press TP16
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>        
-
-        <!-- Divisor con logo -->
-<div class="w-full flex items-center justify-center relative">
-  <!-- Línea horizontal izquierda -->
-  <hr class="absolute top-1/2 w-1/4 border-solid border-2 border-custom-green-50 -translate-x-[calc(50%+100px)]">
-
-  <!-- Logo -->
-  <img src="https://roxia.com/wp-content/uploads/2022/03/cropped-roxia-favicon-150x150.png" alt="Logo" class="opacity-50 h-14 w-14 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-
-  <!-- Línea horizontal derecha -->
-  <hr class="absolute top-1/2 w-1/4 border-solid border-2 border-custom-green-50 translate-x-[calc(50%+100px)]">
-</div>
-
-
-
-
-
-        
-
-        <!-- Contenedor 2 -->
-        <div class="grid grid-cols-1 md:grid-cols-2 mx-auto gap-0 mt-0 overflow-hidden">
-          <!-- Columna izquierda (blanco) -->
-          <div class="bg-white p-4 flex flex-col justify-between h-full md:pt-28 md:pb-28">
-            <!-- Contenedor de la imagen -->
-            <div class="flex items-center justify-center md:justify-end h-full">
-              <img src="images/Roxia-SFP-1200-front_web.webp" alt="" class="w-full max-w-xl h-auto md:mr-10 modal-trigger cursor-pointer" data-image="images/Roxia-SFP-1200-front_web.webp">            </div>
-              <p class="text-lg text-custom-gray-font mt-2 text-right md:mr-20">Haz click para ampliar la imagen</p> <!-- Leyenda -->
-            </div>
-          <!-- Columna derecha (gris) -->
-          <div class="bg-custom-gray-section p-4 flex flex-col justify-center pt-8 md:pt-28 md:pb-28">
-            <div class="max-w-lg">
-              <h3 class="text-2xl md:text-4xl text-center md:text-right font-bold">
-                <span class="border-4 border-custom-green rounded-2xl bg-white text-custom-green inline-block px-2 py-2 font-notoSansJP">
-                  SFP - SMART FILTER PRESS
-                </span>
-              </h3>
-              <h2 class="text-right text-2xl md:text-4xl font-bold max-w-md ml-auto mt-4">
-                <span class="inline-block p-1 text-custom-gray-font font-notoSansJP">
-                  Filtro prensa <br> Totalmente Automático <br> Autolimpiante <br> No necesita operadores <br> <span class="text-right text-xl md:text-3xl font-bold">(solo una revisión semanal)</span></span>
-              </h2>
-              <p class="text-right text-xl md:text-base mt-4 text-custom-gray-font">La SFP corresponde a la nueva generación de filtros prensa: filtro autolimpiante totalmente automático. Brinda funcionamiento libre de problemas sin participación de operadores.
-                <br><br>
-                Baja necesidad de mantenimiento <br>
-                <strong>Superficie de filtración entre 1,2 - 22,3 m²<br>
-                Completamente sellado para un ambiente limpio <br>
-                Producción de hasta 1 t/hora</strong></p>
-              <div class="flex flex-wrap gap-4 justify-start mt-8">
-                <a href="https://roxia.com/es/deshidratacion/productos-y-soluciones-2/filtro-prensa-intelligente/" target="_blank">
-                  <button class="boton-verde rounded-lg px-2 py-2 text-lg md:text-base font-notoSansJP">
-                    Smart Filter Press
-                  </button>
-                </a>
-              </div>
+            <p class="text-base md:text-lg lg:text-3xl mb-4 md:mb-6 text-custom-gray-font">
+              Vendemos equipos nuevos de filtrado, tanto automáticos como manuales. <br class="hidden md:block">
+              También <strong class="font-notoSansJP">ACTUALIZAMOS / ACONDICIONAMOS</strong> sus viejos equipos, <br class="hidden md:block">
+              <strong class="font-notoSansJP">SOLUCIONES A MEDIDA</strong>.
+            </p>
+            <div class="flex justify-start">
+              <a href="#contacto" class="boton-verde text-lg md:text-3xl px-5 py-1 rounded-md shadow-lg">
+                Contáctate con nosotros
+              </a>
             </div>
           </div>
         </div>
-    
-        <!-- Divisor con logo -->
-<div class="w-full flex items-center justify-center relative">
-  <!-- Línea horizontal izquierda -->
-  <hr class="absolute top-1/2 w-1/4 border-solid border-2 border-custom-green-50 -translate-x-[calc(50%+100px)]">
-
-  <!-- Logo -->
-  <img src="https://roxia.com/wp-content/uploads/2022/03/cropped-roxia-favicon-150x150.png" alt="Logo" class="opacity-50 h-14 w-14 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-
-  <!-- Línea horizontal derecha -->
-  <hr class="absolute top-1/2 w-1/4 border-solid border-2 border-custom-green-50 translate-x-[calc(50%+100px)]">
-</div>
-
-        <!-- Contenedor 3 -->
-<div class="grid grid-cols-1 md:grid-cols-2 mx-auto gap-0 mt-0 overflow-hidden">
-  <!-- Columna izquierda (blanco) -->
-  <div class="bg-white p-4 flex flex-col justify-between h-full md:pt-28">
-    <!-- Contenedor de la imagen -->
-    <div class="flex items-center justify-center md:justify-end h-full">
-      <img src="images/Ceramic-Disc-Filter-Roxia-media-bankhd.png" alt="" class="w-full max-w-xl h-auto md:mr-10 modal-trigger cursor-pointer" data-image="images/Ceramic-Disc-Filter-Roxia-media-bankhd.png">
-    </div>
-    <p class="text-lg text-custom-gray-font mt-2 text-right md:mr-20">Haz click para ampliar la imagen</p> <!-- Leyenda -->
-  </div>
-  <!-- Columna derecha (gris) -->
-  <div class="bg-custom-gray-section p-4 flex flex-col justify-center pt-8 md:pt-28">
-    <div class="max-w-lg">
-      <h3 class="text-2xl md:text-4xl text-center md:text-right font-bold">
-        <span class="border-4 border-custom-green rounded-2xl bg-white text-custom-green inline-block px-2 py-2 font-notoSansJP">
-          CERAMIC DISC FILTER
-        </span>
-      </h3>
-      <h2 class="text-right text-2xl md:text-4xl font-bold max-w-sm ml-auto mt-4">
-        <span class="inline-block p-1 text-custom-gray-font font-notoSansJP">Consume hasta 90% menos de energía</span>
-      </h2>
-      <p class="text-right text-xl md:text-base mt-4 text-custom-gray-font">El filtro de disco cerámico Roxia Ceramic Disc Filter requiere una baja inversión, brinda un filtrado limpio con una torta seca y opera continuamente a alta capacidad.
-        <br><br>
-        Filtrado más limpio con el menor consumo eléctrico. <br>
-        Operación continua visible. <br>
-        <strong>Superficie de filtración de 15 - 120 m². <br>
-        Producción de hasta 200 t/hora.</strong></p>
-      <div class="flex flex-wrap gap-4 justify-start mt-8">
-        <a href="https://roxia.com/es/deshidratacion/productos-y-soluciones-2/filtro-de-disco-ceramico/" target="_blank">
-          <button class="boton-verde rounded-lg px-2 py-2 text-lg md:text-base font-notoSansJP">
-            Ceramic Disc Filter
-          </button>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-      </div>
-      <!-- Modal -->
-<div id="image-modal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden transition-opacity duration-500 opacity-0">
-  <div id="modal-content" class="relative bg-white p-4 rounded-lg transform transition-transform duration-500 scale-75 max-w-3xl max-h-[90vh] w-full h-auto">
-    <button id="modal-close-button" class="absolute top-2 right-2 text-black text-2xl cursor-pointer">&times;</button>
-    <img id="modal-image" src="" alt="" class="max-w-full max-h-full object-contain">
-  </div>
-</div>
-
-
-
-
-    </section>
-    
-    
-    
-    
-    <section class="h-auto mt-20 relative" id="repuestos">
-      <!-- Fondo degradado y logos -->
-      <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white z-0"></div>
-      <div class="absolute inset-0 bg-[url('../images/logo-roxia-fondo.png')] bg-repeat-y bg-custom-width bg-top opacity-40 z-0"></div>
-
-    <div class="relative z-10 flex flex-col items-center">
-    <!-- Primer contenedor -->
-    <div id="tituloRepuestos" class="opacity-0 flex flex-col justify-center items-start p-8 w-full max-w-7xl animate__animated">
-      <h1 class="text-6xl mb-6 text-custom-green font-extrabold leading-tight underline">
-        REPUESTOS PARA FILTROS
-      </h1>
-      <ul class="space-y-4 mb-8">
-        <li class="flex items-center">
-          <!-- Ícono de tilde verde -->
-          <svg class="w-6 h-6 mr-2" fill="none" stroke="green" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
-          </svg>
-          <span class="font-bold text-xl text-custom-gray-font font-notoSansJP">Calidad OEM y rendimientos mejorado</span>
-        </li>
-        <li class="flex items-center">
-          <!-- Ícono de tilde verde -->
-          <svg class="w-6 h-6 mr-2" fill="none" stroke="green" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
-          </svg>
-          <span class="font-bold text-xl text-custom-gray-font font-notoSansJP">Costo más bajo por tonelada</span>
-        </li>
-        <li class="flex items-center">
-          <!-- Ícono de tilde verde -->
-          <svg class="w-6 h-6 mr-2" fill="none" stroke="green" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
-          </svg>
-          <span class="font-bold text-xl text-custom-gray-font font-notoSansJP">Cortos plazos de entrega</span>
-        </li>
-      </ul>
-      <a href="#contacto">
-        <button class="boton-verde px-6 py-1 rounded text-lg">
-          Solicitar una cotización
-        </button>
-      </a>
       
-    </div>
-    
-
-  <!-- Segundo contenedor -->
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-28 gap-8 p-8 w-full max-w-7xl mx-auto">
-    <!-- Card 1 -->
-    <div class="shadow_box flex flex-col h-full">
-      <img src="images/diafragmas-goma.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
-      <div class="p-3 flex-grow flex flex-col bg-white">
-        <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
-        <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">DIAFRAGMAS DE GOMA</h2>
-        <p class="text-custom-gray-font mb-2 text-sm">Los diafragmas de caucho Roxia para filtros de torre combinan la fabricación profesional de moldes y los beneficios de más …</p>
-      </div>
-      <a href="https://roxia.com/es/deshidratacion/apoyo-durante-la-vida-util/piezas-de-repuesto/repuestos-para-el-filtro-prensa-tipo-torre/diafragmas-de-goma/" class="boton-verde py-1 px-4 text-left mt-auto font-bebasNeue text-lg" target="_blank">
-        LEÉ MÁS
-      </a>    
-    </div>
-  
-    <!-- Card 2 -->
-    <div class="shadow_box flex flex-col h-full">
-      <img src="images/placas-y-sellos-de-filtro.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
-      <div class="p-3 flex-grow flex flex-col bg-white">
-        <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
-        <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">PLACAS DE FILTRO Y SELLOS DE FILTRO</h2>
-        <p class="text-custom-gray-font mb-2 text-sm">El corazón de cada prensa de torre son las placas de filtro y los marcos de filtros. Basándose en las …</p>
-      </div>
-      <a href="https://roxia.com/es/deshidratacion/apoyo-durante-la-vida-util/piezas-de-repuesto/repuestos-para-el-filtro-prensa-tipo-torre/placas-de-filtro-y-sellos-de-filtro/" class="boton-verde py-1 px-4 text-left mt-auto font-bebasNeue text-lg" target="_blank">
-        LEÉ MÁS
-      </a> 
-    </div>
-  
-    <!-- Card 3 -->
-    <div class="shadow_box flex flex-col h-full">
-      <img src="images/rodillos-y-raspadores.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
-      <div class="p-3 flex-grow flex flex-col bg-white">
-        <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
-        <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">RODILLOS Y RASPADORES</h2>
-        <p class="text-custom-gray-font mb-2 text-sm">Los rodillos Roxia se fabrican según el diseño más reciente. El doble cierre radial del eje y el cromado hacen …</p>
-      </div>
-      <a href="https://roxia.com/es/deshidratacion/apoyo-durante-la-vida-util/piezas-de-repuesto/repuestos-para-el-filtro-prensa-tipo-torre/rodillos-y-raspadores/" class="boton-verde py-1 px-4 text-left mt-auto font-bebasNeue text-lg" target="_blank">
-        LEÉ MÁS
-      </a> 
-    </div>
-  
-    <!-- Card 4 -->
-    <div class="shadow_box flex flex-col h-full">
-      <img src="images/parrillas-filtrantes.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
-      <div class="p-3 flex-grow flex flex-col bg-white">
-        <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
-        <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">PARRILLAS FILTRANTES</h2>
-        <p class="text-custom-gray-font mb-2 text-sm">Las parrillas filtrantes Roxia para filtros de torre tienen una vida útil más larga porque están fabricadas con polipropileno con …</p>
-      </div>
-      <a href="https://roxia.com/es/deshidratacion/apoyo-durante-la-vida-util/piezas-de-repuesto/repuestos-para-el-filtro-prensa-tipo-torre/parrillas-filtrantes/" class="boton-verde py-1 px-4 text-left mt-auto font-bebasNeue text-lg" target="_blank">
-        LEÉ MÁS
-      </a>
-    </div>
-  
-    <!-- Card 5 -->
-    <div class="shadow_box flex flex-col h-full">
-      <img src="images/mangueras-de-alimentacion.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
-      <div class="p-3 flex-grow flex flex-col bg-white">
-        <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
-        <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">MANGUERAS DE ALIMENTACIÓN PARA EL PAQUETE COMPLETO DE PLACAS DE FILTRO</h2>
-        <p class="text-custom-gray-font mb-2 text-sm">Las mangueras Roxia se utilizan en los filtros prensa de torre para la alimentación de lodos, el filtrado, el aire …</p>
-      </div>
-      <a href="https://roxia.com/es/deshidratacion/apoyo-durante-la-vida-util/piezas-de-repuesto/repuestos-para-el-filtro-prensa-tipo-torre/mangueras-de-alimentacion-para-el-paquete-completo-de-placas-de-filtro/" class="boton-verde py-1 px-4 text-left mt-auto font-bebasNeue text-lg" target="_blank">
-        LEÉ MÁS
-      </a>
-    </div>
-  
-    <!-- Card 6 -->
-    <div class="shadow_box flex flex-col h-full">
-      <img src="images/bateas-filtrantes.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
-      <div class="p-3 flex-grow flex flex-col bg-white">
-        <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
-        <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">BATEAS FILTRANTES</h2>
-        <p class="text-custom-gray-font mb-2 text-sm">Las bateas filtrantes son componentes constructivos importantes en las placas de filtros de torre. Su función principal es recoger el …</p>
-      </div>
-      <a href="https://roxia.com/es/deshidratacion/apoyo-durante-la-vida-util/piezas-de-repuesto/repuestos-para-el-filtro-prensa-tipo-torre/bateas-filtrantes/" class="boton-verde py-1 px-4 text-left mt-auto font-bebasNeue text-lg" target="_blank">
-        LEÉ MÁS
-      </a>
-    </div>
-  
-    <!-- Card 7 -->
-    <div class="shadow_box flex flex-col h-full">
-      <img src="images/sellos-de-placa-para-prensas.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
-      <div class="p-3 flex-grow flex flex-col bg-white">
-        <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
-        <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">SELLOS DE PLACA PARA PRENSAS TIPO TORRE</h2>
-        <p class="text-custom-gray-font mb-2 text-sm">El propósito principal de los sellos de placa de filtro es sellar herméticamente las cámaras de filtración de la prensa …</p>
-      </div>
-      <a href="https://roxia.com/es/deshidratacion/apoyo-durante-la-vida-util/piezas-de-repuesto/repuestos-para-el-filtro-prensa-tipo-torre/sellos-de-placa-para-prensas-tipo-torre/" class="boton-verde py-1 px-4 text-left mt-auto font-bebasNeue text-lg" target="_blank">
-        LEÉ MÁS
-      </a>
-    </div>
-  
-    <!-- Card 8 -->
-    <div class="shadow_box flex flex-col h-full">
-      <img src="images/paquetes-de-placa-para-filtro.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
-      <div class="p-3 flex-grow flex flex-col bg-white">
-        <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
-        <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">PAQUETES DE PLACA PARA FILTROS PRENSA TIPO TORRE</h2>
-        <p class="text-custom-gray-font mb-2 text-sm">Los expertos en filtración de Roxia han rediseñado los paquetes de placas completos para los filtros de prensa tipo torre: …</p>
-      </div>
-      <a href="https://roxia.com/es/deshidratacion/apoyo-durante-la-vida-util/piezas-de-repuesto/repuestos-para-el-filtro-prensa-tipo-torre/complete-plate-packs/" class="boton-verde py-1 px-4 text-left mt-auto font-bebasNeue text-lg" target="_blank">
-        LEÉ MÁS
-      </a>
-    </div>
-  
-    <!-- Card 9 -->
-    <div class="shadow_box flex flex-col h-full">
-      <img src="images/telas-de-filtro-para-prensas.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
-      <div class="p-3 flex-grow flex flex-col bg-white">
-        <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
-        <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">TELAS DE FILTRO PARA PRENSAS TIPO TORRE</h2>
-        <p class="text-custom-gray-font mb-2 text-sm">Una amplia gama de telas filtrantes Roxia para filtros prensa de torre permite elegir el tipo de tela adecuado para …</p>
-      </div>
-      <a href="https://roxia.com/es/deshidratacion/apoyo-durante-la-vida-util/piezas-de-repuesto/repuestos-para-el-filtro-prensa-tipo-torre/telas-de-filtro-para-prensas-tipo-torre/" class="boton-verde py-1 px-4 text-left mt-auto font-bebasNeue text-lg" target="_blank">
-        LEÉ MÁS
-      </a>
-    </div>
-  
-    <!-- Card 10 -->
-    <div class="shadow_box flex flex-col h-full">
-      <img src="images/componentes-de-montaje.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
-      <div class="p-3 flex-grow flex flex-col bg-white">
-        <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
-        <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">COMPONENTES DE MONTAJE</h2>
-        <p class="text-custom-gray-font mb-2 text-sm">Los componentes de montaje Roxia incluyen sujetadores y herrajes como pernos, tuercas, arandelas y mucho más para asegurar las placas …</p>
-      </div>
-      <a href="https://roxia.com/es/deshidratacion/apoyo-durante-la-vida-util/piezas-de-repuesto/repuestos-para-el-filtro-prensa-tipo-torre/componentes-de-montaje/" class="boton-verde py-1 px-4 text-left mt-auto font-bebasNeue text-lg" target="_blank">
-        LEÉ MÁS
-      </a>
-    </div>
-  </div>
-  </div>
-</section>
-
-<section id="contacto">
-  <div class="flex flex-col lg:flex-row">
-    <!-- Primer cuadrante (columna) -->
-    <div class="flex-1 flex flex-col items-center lg:w-1/2">
-      <div id="primer-cuadrante" class="bg-custom-green w-full flex flex-col items-center">
-        <h2 class="text-white font-notoSansJP text-5xl mb-4 mt-8">Contactanos</h2>
-        <div class="relative w-full">
-          <!-- Contenedor para la imagen con degradado -->
-          <img src="images/imagen-contacto.jpg" alt="Imagen de contacto" class="h-64 w-full object-cover">
-          <!-- Overlay con el degradado -->
-          <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 40%);"></div>
-        </div>
-      </div>
-      <div class="bg-white flex flex-col items-center lg:items-start mt-6 lg:mt-0">
-        <div class="max-w-5xl w-full flex flex-wrap gap-4 justify-center lg:justify-start">
-          <div class="flex-1 max-w-sm text-center lg:text-left">
-            <div class="bg-custom-green w-full rounded-2xl mb-4 px-8 py-2 mt-6 relative">
-              <p class="text-white text-2xl font-bold">LUIS ALBANESE</p>
-              <p class="text-white text-lg">Representante en Argentina</p>
-              <!-- Triángulo/flecha en el cuadrado verde -->
-              <div class="absolute top-[-14px] left-10 w-0 h-0 border-l-[24px] border-l-transparent border-r-[24px] border-r-transparent border-b-[24px] border-b-custom-green"></div>
+        <!-- VIDEOS -->
+        <div class="flex flex-col md:flex-row justify-center items-center mt-14">
+          <div class="flex flex-col md:flex-row w-full max-w-screen-lg h-full pb-8 md:pb-20 px-4">
+            <!-- Video de YouTube con animación -->
+            <video class="myVideo flex-1 h-72 w-full object-cover border-0 md:rounded-l-lg rounded-t-lg md:rounded-tr-none shadow_box2 cursor-pointer" poster="images/portada-espanol-video-1.jpg" muted>
+              <source src="videos/video-1-espanol.mp4" type="video/mp4">
+              Tu navegador no soporta la etiqueta de video.
+            </video>
+      
+            <!-- Cuadrado gris oscuro con texto y animación -->
+            <div class="relative flex-1 h-72 w-full bg-custom-gray-font text-white flex items-center justify-center text-center p-4 md:rounded-r-lg rounded-b-lg md:rounded-bl-none shadow_box2">
+              <div class="relative bg-custom-gray-font border-t-2 border-r-2 border-custom-green p-4 md:p-8 flex flex-col justify-between h-full w-full">
+                <p class="text-base md:text-lg lg:text-2xl mb-4 font-notoSansJP text-right">
+                  Tower Press TP60
+                </p>
+                <img src="images/roxia-logo.svg" alt="Roxia Logo" class="self-center md:self-end w-1/4 h-auto mt-4">
+              </div>
             </div>
-            <a href="https://wa.link/sec10o" class="text-xl text-gray-800 mb-4 flex items-center justify-center lg:justify-start" target="_blank">
-              <i class="fab fa-whatsapp mr-2 text-xl text-custom-gray-font"></i> WhatsApp
-            </a>
-            <a href="tel:+5491124818238" class="text-xl text-gray-800 mb-4 flex items-center justify-center lg:justify-start" target="_blank">
-              <i class="fas fa-phone-alt mr-2 text-xl text-custom-gray-font"></i> +54 9 1124818238
-            </a>
-            <a href="mailto:roxiaagentarg.luisalbanese@gmail.com" class="text-xl text-gray-800 mb-4 flex items-center justify-center lg:justify-start" target="_blank">
-              <i class="fas fa-envelope mr-2 text-xl text-custom-gray-font"></i> roxiaagentarg.luisalbanese@gmail.com
-            </a>
-            <a href="https://www.google.com/maps?q=Buenos+Aires,+Argentina" class="text-xl text-gray-800 mb-4 flex items-center justify-center lg:justify-start" target="_blank">
-              <i class="fas fa-map-marker-alt mr-2 text-xl text-custom-gray-font"></i> Buenos Aires, Argentina
-            </a>
-            <a href="https://roxia.com/" class="text-xl text-gray-800 mb-4 flex items-center justify-center lg:justify-start" target="_blank">
-              <i class="fas fa-globe mr-2 text-xl text-custom-gray-font"></i> Web oficial Roxia®
-            </a>            
           </div>
         </div>
-      </div>
-    </div>
+      
+        <div class="flex flex-col md:flex-row justify-center items-center mt-2">
+          <div class="flex flex-col md:flex-row w-full max-w-screen-lg h-full pb-8 md:pb-20 px-4">
+            <!-- Cuadrado gris oscuro con texto y animación -->
+            <div class="relative flex-1 h-72 w-full bg-custom-gray-font text-white flex items-center justify-center text-center p-4 md:rounded-l-lg rounded-t-lg md:rounded-tr-none shadow_box2">
+              <div class="relative bg-custom-gray-font border-l-2 border-custom-green p-4 md:p-8 flex flex-col justify-between h-full w-full">
+                <p class="text-base md:text-lg lg:text-2xl mb-4 font-notoSansJP text-left">
+                  Tower Press TP16
+                </p>
+                <img src="images/roxia-logo.svg" alt="Roxia Logo" class="self-center md:self-start w-1/4 h-auto mt-4">
+              </div>
+            </div>
+            <!-- Video de YouTube con animación -->
+            <video class="myVideo flex-1 h-72 w-full object-cover border-0 rounded-b-lg md:rounded-r-lg md:rounded-bl-none shadow_box2 cursor-pointer" poster="images/portada-espanol-video-2.jpg" muted>
+              <source src="videos/video-2-espanol.mp4" type="video/mp4">
+              Tu navegador no soporta la etiqueta de video.
+            </video>
+          </div>
+        </div>
+      
+        <div class="flex flex-col md:flex-row justify-center items-center mt-14">
+          <div class="flex flex-col md:flex-row w-full max-w-screen-lg h-full pb-8 md:pb-20 px-4">
+            <!-- Video de YouTube con animación -->
+            <video class="myVideo flex-1 h-72 w-full object-cover border-0 md:rounded-l-lg rounded-t-lg md:rounded-tr-none shadow_box2 cursor-pointer" poster="images/portada-espanol-video-3.jpg" muted>
+              <source src="videos/video-3.mp4" type="video/mp4">
+              Tu navegador no soporta la etiqueta de video.
+            </video>
+      
+            <!-- Cuadrado gris oscuro con texto y animación -->
+            <div class="relative flex-1 h-72 w-full bg-custom-gray-font text-white flex items-center justify-center text-center p-4 md:rounded-r-lg rounded-b-lg md:rounded-bl-none shadow_box2">
+              <div class="relative bg-custom-gray-font border-r-2 border-custom-green p-4 md:p-8 flex flex-col justify-between h-full w-full">
+                <p class="text-base md:text-lg lg:text-2xl mb-4 font-notoSansJP text-right">
+                  Smart Filter Press
+                </p>
+                <img src="images/roxia-logo.svg" alt="Roxia Logo" class="self-center md:self-end w-1/4 h-auto mt-4">
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="flex flex-col md:flex-row justify-center items-center mt-2">
+          <div class="flex flex-col md:flex-row w-full max-w-screen-lg h-full pb-8 md:pb-20 px-4">
+            <!-- Cuadrado gris oscuro con texto y animación -->
+            <div class="relative flex-1 h-72 w-full bg-custom-gray-font text-white flex items-center justify-center text-center p-4 md:rounded-l-lg rounded-t-lg md:rounded-tr-none shadow_box2">
+              <div class="relative bg-custom-gray-font border-b-2 border-l-2 border-custom-green p-4 md:p-8 flex flex-col justify-between h-full w-full">
+                <p class="text-base md:text-lg lg:text-2xl mb-4 font-notoSansJP text-left">
+                  Nos encargamos de los procesos de separación SÓLIDOS / LÍQUIDOS
+                </p>
+                <img src="images/roxia-logo.svg" alt="Roxia Logo" class="self-center md:self-start w-1/4 h-auto mt-4">
+              </div>
+            </div>
+            <!-- Video de YouTube con animación -->
+            <video class="myVideo flex-1 h-72 w-full object-cover border-0 rounded-b-lg md:rounded-r-lg md:rounded-bl-none shadow_box2 cursor-pointer" poster="images/portada-espanol-video-4.jpg" muted>
+              <source src="videos/video-4.mp4" type="video/mp4">
+              Tu navegador no soporta la etiqueta de video.
+            </video>
+          </div>
+        </div>
+      </section>
+      
 
-    <!-- Segundo cuadrante (columna) -->
-<div class="flex-1 flex flex-col items-start justify-center lg:w-1/2">
-  <div id="segundo-cuadrante" class="bg-custom-green w-full flex flex-col lg:items-start items-center h-96">
-    <form class="bg-white p-6 shadow_box rounded-3xl px-16 w-11/12 mt-12" action="https://formsubmit.co/ezequieldiez.emd@gmail.com" method="POST">
-      <h3 class="text-custom-gray-font text-3xl font-notoSansJP mb-3 mt-2">Envianos tu mensaje</h3>
-      <!-- Campos del formulario -->
-      <div class="mb-2">
-        <label class="block text-custom-gray-font text-xl font-sans mb-3" for="name">Nombre y Apellido</label>
-        <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="name" name="name" type="text" required>
-      </div>
-      <div class="mb-2">
-        <label class="block text-custom-gray-font text-xl font-sans mb-3" for="email">Email</label>
-        <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="email" name="email" type="email" required>
-      </div>
-      <div class="mb-2">
-        <label class="block text-custom-gray-font text-xl font-sans mb-3" for="company">Empresa</label>
-        <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="company" name="company" type="text">
-      </div>
-      <div class="mb-2">
-        <label class="block text-custom-gray-font text-xl font-sans mb-3" for="message">Mensaje</label>
-        <textarea class="shadow appearance-none border rounded-lg w-full py-1 text-xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="message" name="message" rows="4" required></textarea>
-      </div>
-      <div class="flex items-center justify-between mb-4">
-        <button class="boton-verde font-sans py-2 px-6 rounded-lg focus:outline-none focus:shadow-outline text-xl" type="submit">
-          Contactar
-        </button>
-      </div>
-      <input type="hidden" name="_captcha" value="false">
-    </form>
+      <section id="nosotros" class="py-16 relative bg-gradient-to-b from-white to-gray-200">
+        <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
+          <div class="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
+            <!-- Texto primero en todos los dispositivos -->
+            <div class="w-full flex-col justify-center gap-10 inline-flex order-first">
+              <div class="w-full flex-col justify-center gap-8 flex">
+                <div class="w-full flex-col justify-start gap-6 flex">
+                  <h3 class="text-custom-green text-4xl md:text-4xl font-semibold leading-normal lg:text-start text-center underline">
+                    Nosotros
+                  </h3>
+                  <h2 class="text-custom-gray-font text-4xl sm:text-5xl md:text-5xl lg:text-5xl font-notoSansJP leading-normal lg:text-start text-center">
+                    Con más <br> de 40 años <br> de experiencia
+                  </h2>
+                  <div class="text-gray-500 text-base font-normal lg:text-start text-center bg-gradient-to-br from-white via-custom-green-30 to-white border-custom-green border-solid border-4 p-2 rounded-lg shadow-lg leading-tight">
+                    <p>
+                      <span class="flex items-center justify-center lg:justify-start">
+                        <img src="https://roxia.com/wp-content/uploads/2022/03/cropped-roxia-favicon-150x150.png" alt="" class="h-auto w-5 mr-2">
+                        <strong class="text-custom-green text-lg lg:text-xl">BREVE HISTORIA</strong>
+                      </span>
+                      En 1977 fundamos la empresa <strong>LAROX Oy</strong> para especializarnos en Filtros Prensa y Válvulas Pinch. Después de convertirnos en líderes de ese mercado,
+                      en 2009 se vendió la marca <strong>LAROX Oy a Outotec</strong> y se creó <strong>FLOWROX</strong> para dedicarse a Bombas y Válvulas pinch. <br>
+                      <strong>FLOWROX</strong> se desempeñó exitosamente hasta que en 2021, se tomó la decisión de retornar al Negocio de los Filtros Prensa, causa por la cual, se vendió
+                      a Neles Oy.
+                    </p>
+                    <p class="mt-4 text-black border-2 border-gray-300 p-3 rounded-lg text-lg shadow_box">
+                      <span class="flex items-center justify-center lg:justify-start">
+                        <img src="https://roxia.com/wp-content/uploads/2022/03/cropped-roxia-favicon-150x150.png" alt="" class="h-auto w-5 mr-2">
+                        <strong class="text-custom-gray-font text-lg lg:text-xl">HOY</strong>
+                      </span>
+                      En 2021 con la misma Planta en Lappeenranta, Finlandia y prácticamente el mismo personal de nuestros comienzos en 1977, se decidió crear <strong>ROXIA Oy</strong>
+                      para REENFOCARSE en el Negocio de Filtros Prensa - Separación Sólidos / Líquidos - Dewatering. Además se compró el 50 % de AQUACHEM para convertirla en:
+                      a <strong>ROXIA Brand</strong> e iniciar una <strong>NUEVA GENERACIÓN</strong> de Filtros Prensa.
+                    </p>
+                  </div>           
+                </div>
+              </div>
+            </div>
+            <!-- Imágenes después en todos los dispositivos -->
+            <div class="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 order-last">
+              <div class="pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
+                <img class="rounded-xl" src="images/about-us-section.jpg" alt="about Us image" />
+              </div>
+              <img class="sm:ml-0 ml-auto rounded-xl" src="images/Filter-service-inspection-Roxia-media-bank.png" alt="about Us image" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="h-auto bg-gray-200 pt-32">
+        <div class="max-w-5xl mx-auto">
+          <p class="text-right text-custom-gray-font text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-notoSansJP py-8">
+            Roxia en Argentina
+          </p>
+        </div>
+
+        <!-- Separador con patrón -->
+        <div class="relative">
+          <div class="w-full h-4 bg-custom-green border-t border-gray-300 relative">
+            <!-- Agrega una imagen de patrón -->
+            <div class="absolute inset-0 bg-[url('/path-to-pattern.png')] bg-repeat"></div>
+          </div>
+        </div>
+
+        <div class="bg-white">
+          <div class="max-w-6xl mx-auto">
+            <p class="text-right text-custom-gray-font text-base sm:text-lg md:text-xl lg:text-2xl p-6">
+              Roxia ha establecido una Cobertura Global con Oficinas en muchos países del mundo. En Argentina, contamos con una Oficina Roxia con Ingenieros Especializados y un Depósito
+              local de Repuestos OEM en Stock en Santiago, Chile, <strong>dirigida por el experto Ing. Sebastián Alcaino</strong> y a solo una hora de vuelo de cualquier punto de nuestro país.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="pb-8 pt-8 relative bg-gradient-to-b from-white via-custom-gray-section to-gray-200">
+        <div class="w-full max-w-7xl px-4 md:px-6 lg:px-8 mx-auto">
+          <div class="w-full flex flex-col items-center gap-10">
+            <div class="w-full flex flex-col lg:flex-row lg:justify-between gap-8">
+              <!-- Bloque 1 -->
+              <div class="flex items-start gap-4 p-6 bg-gradient-to-r from-white via-custom-gray-section to-gray-100 border border-gray-300 rounded-lg shadow-xl w-full lg:w-1/3 transition-transform transform hover:scale-105 hover:bg-gray-50 hover:shadow-2xl">
+                <img src="https://roxia.com/wp-content/uploads/2022/03/cropped-roxia-favicon-150x150.png" alt="" class="h-20 w-20 opacity-80 transition-opacity hover:opacity-100">
+                <div>
+                  <p class="text-gray-700 text-lg font-normal leading-relaxed">
+                    En procesos de separación sólido-líquido, ofrecemos <strong class="font-black text-xl tracking-wide text-custom-green">soluciones integrales</strong>
+                    que destacan por su calidad y eficacia.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Bloque 2 -->
+              <div class="flex items-start gap-4 p-6 bg-gradient-to-r from-white via-custom-gray-section to-gray-100 border border-gray-300 rounded-lg shadow-xl w-full lg:w-1/3 transition-transform transform hover:scale-105 hover:bg-gray-50 hover:shadow-2xl">
+                <img src="https://roxia.com/wp-content/uploads/2022/03/cropped-roxia-favicon-150x150.png" alt="" class="h-20 w-20 opacity-80 transition-opacity hover:opacity-100">
+                <div>
+                  <p class="text-gray-700 text-lg font-normal leading-relaxed">
+                    Nuestros servicios abarcan desde un exhaustivo <strong class="font-black text-xl tracking-wide text-custom-green">análisis de procesos</strong> y pruebas de filtrado, hasta la entrega e <strong class="font-black text-xl tracking-wide text-custom-green">instalación del filtro</strong> correspondiente.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Bloque 3 -->
+              <div class="flex items-start gap-4 p-6 bg-gradient-to-r from-white via-custom-gray-section to-gray-100 border border-gray-300 rounded-lg shadow-xl w-full lg:w-1/3 transition-transform transform hover:scale-105 hover:bg-gray-50 hover:shadow-2xl">
+                <img src="https://roxia.com/wp-content/uploads/2022/03/cropped-roxia-favicon-150x150.png" alt="" class="h-20 w-20 opacity-80 transition-opacity hover:opacity-100">
+                <div>
+                  <p class="text-gray-700 text-lg font-normal leading-relaxed">
+                    Asimismo, brindamos <strong class="font-black text-xl tracking-wide text-custom-green">entrenamiento especializado</strong> y acompañamiento continuo durante todo el <strong class="font-black text-xl tracking-wide text-custom-green">ciclo de vida del equipo</strong>, garantizando una <strong class="font-black text-xl tracking-wide text-custom-green">rápida entrega de repuestos</strong> y <strong class="font-black text-xl tracking-wide text-custom-green">soporte técnico eficiente</strong>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  
+      <section class="h-auto bg-gradient-to-b from-gray-200 via-white to-white pt-32">
+        <div>
+          <div class="relative text-center py-4">
+            <p class="text-4xl sm:text-5xl md:text-5xl lg:text-7xl font-extrabold leading-tight text-custom-green">
+              RESUMEN DE SERVICIOS
+            </p>
+          </div>
+        </div>
+      
+        <div class="bg-white">
+          <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12 sm:mt-8 px-4 md:px-8 lg:px-0">
+              <!-- Card 1 -->
+              <div class="bg-gradient-to-tr from-yellow-200 via-white to-yellow-200 shadow_box rounded-xl p-6 flex flex-col items-center justify-between h-80 transform transition-transform duration-300 hover:translate-x-2">
+                <div class="flex-grow flex items-center justify-center">
+                  <img src="images/mismo ancho y alto 1.png" alt="" class="w-11/12 h-auto object-contain">
+                </div>
+                <div class="flex-grow flex items-center justify-center mt-4">
+                  <p class="text-custom-gray-font text-center text-md font-notoSansJP">
+                    Test de filtración, con el fluido real a procesar, para asegurar el diseño y equipo adecuado.
+                  </p>
+                </div>
+              </div>
+      
+              <!-- Card 2 -->
+              <div class="bg-gradient-to-tr from-custom-green-50 via-white to-custom-green-50 shadow_box rounded-xl p-6 flex flex-col items-center justify-between h-80 transform transition-transform duration-300 hover:translate-x-2">
+                <div class="flex-grow flex items-center justify-center">
+                  <img src="images/mismo ancho y alto 2.png" alt="" class="w-11/12 h-auto object-contain">
+                </div>
+                <div class="flex-grow flex items-center justify-center mt-4">
+                  <p class="text-custom-gray-font text-center text-md font-notoSansJP">
+                    Frecuentes inspecciones planificadas para prevención de fallas y mejora de performance.
+                  </p>
+                </div>
+              </div>
+      
+              <!-- Card 3 -->
+              <div class="bg-gradient-to-tr from-custom-red-card via-white to-custom-red-card shadow_box rounded-xl p-6 flex flex-col items-center justify-between h-80 transform transition-transform duration-300 hover:translate-x-2">
+                <div class="flex-grow flex items-center justify-center">
+                  <img src="images/mismo ancho y alto 3.png" alt="" class="w-11/12 h-auto object-contain">
+                </div>
+                <div class="flex-grow flex items-center justify-center mt-4">
+                  <p class="text-custom-gray-font text-center text-md font-notoSansJP">
+                    Reducir tiempos de espera de repuestos y tiempos de parada de plantas.
+                  </p>
+                </div>
+              </div>
+      
+              <!-- Card 4 -->
+              <div class="bg-gradient-to-tr from-blue-300 via-white to-blue-300 shadow_box rounded-xl p-6 flex flex-col items-center justify-between h-80 transform transition-transform duration-300 hover:translate-x-2">
+                <div class="flex-grow flex items-center justify-center">
+                  <img src="images/mismo ancho y alto 4.png" alt="" class="w-11/12 h-auto object-contain">
+                </div>
+                <div class="flex-grow flex items-center justify-center mt-4">
+                  <p class="text-custom-gray-font text-center text-md font-notoSansJP">
+                    Entrenamientos al personal de nuestros clientes para mejorar la operación de filtrado.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="equipos" class="mt-20">
+        <!-- Contenedor 1 -->
+        <div class="w-full">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-0 mx-auto">
+            <!-- Columna izquierda (blanco) -->
+            <div class="bg-white p-4 flex flex-col justify-between h-full pb-28">
+              <h1 class="text-5xl mb-6 text-custom-green font-extrabold leading-tight">EQUIPOS</h1>
+              <!-- Contenedor de la imagen -->
+              <div class="flex items-center justify-center md:justify-end h-full">
+                <img src="images/tower-press-roxia-hd.png" alt="" class="w-full max-w-xs md:max-w-lg h-auto md:mr-20 modal-trigger cursor-pointer" data-image="images/tower-press-roxia-hd.png">
+              </div>
+              <p class="text-lg text-custom-gray-font mt-2 text-right md:mr-20">Haz click para ampliar la imagen</p> <!-- Leyenda -->
+            </div>
+            <!-- Columna derecha (gris) -->
+            <div class="bg-custom-gray-section p-4 flex flex-col justify-center space-y-4 md:space-y-8 pt-4 md:pt-8 pb-28">
+              <div class="md:max-w-lg">
+                <h3 class="text-2xl md:text-4xl text-center md:text-right font-bold">
+                  <span class="border-4 border-custom-green rounded-2xl bg-white text-custom-green inline-block px-2 py-2 font-notoSansJP">TP60 - TP16</span>
+                </h3>
+                <h2 class="text center md:text-right text-2xl md:text-4xl font-bold max-w-lg ml-auto mt-4">
+                  <span class="inline-block p-1 text-custom-gray-font font-notoSansJP">Tecnología de filtración horizontal a presión</span>
+                </h2>
+                <p class="text-center md:text-right text-lg md:text-base mt-4 text-custom-gray-font">El Tower Press™ de Roxia es un filtro de presión completamente automático, excelente para cualquier proceso que requiera de una separación eficiente de sólidos y líquidos. El diseño tiene 40 años de respetable experiencia en el campo. El filtro Tower Press de Roxia es una máquina confiable de producción que ofrece un alto rendimiento. Roxia tiene dos tipos de Tower Press: <strong>TP60, más grande, con un área de filtración de 48m² a 156m², y TP16, más pequeña, con un área de filtración de 16m² a 44m².</strong></p>
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start mt-4 md:mt-8">
+                  <a href="https://roxia.com/es/deshidratacion/productos-y-soluciones-2/filtro-de-torre-tp60/" target="_blank">
+                    <button class="boton-verde rounded-lg px-2 py-2 text-lg md:text-base font-notoSansJP">Tower Press TP60</button>
+                  </a>
+                  <a href="https://roxia.com/es/deshidratacion/productos-y-soluciones-2/filtro-de-torre-tp16/" target="_blank">
+                    <button class="boton-verde rounded-lg px-2 py-2 text-lg md:text-base font-notoSansJP">Tower Press TP16</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Divisor con logo -->
+          <div class="w-full flex items-center justify-center relative">
+            <!-- Línea horizontal izquierda -->
+            <hr class="absolute top-1/2 w-1/4 border-solid border-2 border-custom-green-50 -translate-x-[calc(50%+100px)]">
+            <!-- Logo -->
+            <img src="https://roxia.com/wp-content/uploads/2022/03/cropped-roxia-favicon-150x150.png" alt="Logo" class="opacity-50 h-14 w-14 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <!-- Línea horizontal derecha -->
+            <hr class="absolute top-1/2 w-1/4 border-solid border-2 border-custom-green-50 translate-x-[calc(50%+100px)]">
+          </div>
+
+          <!-- Contenedor 2 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 mx-auto gap-0 mt-0 overflow-hidden">
+            <!-- Columna izquierda (blanco) -->
+            <div class="bg-white p-4 flex flex-col justify-between h-full md:pt-28 md:pb-28">
+              <!-- Contenedor de la imagen -->
+              <div class="flex items-center justify-center md:justify-end h-full">
+                <img src="images/Roxia-SFP-1200-front_web.webp" alt="" class="w-full max-w-xl h-auto md:mr-10 modal-trigger cursor-pointer" data-image="images/Roxia-SFP-1200-front_web.webp">
+              </div>
+              <p class="text-lg text-custom-gray-font mt-2 text-right md:mr-20">Haz click para ampliar la imagen</p> <!-- Leyenda -->
+            </div>
+            <!-- Columna derecha (gris) -->
+            <div class="bg-custom-gray-section p-4 flex flex-col justify-center pt-8 md:pt-28 md:pb-28">
+              <div class="max-w-lg">
+                <h3 class="text-2xl md:text-4xl text-center md:text-right font-bold">
+                  <span class="border-4 border-custom-green rounded-2xl bg-white text-custom-green inline-block px-2 py-2 font-notoSansJP">SFP - SMART FILTER PRESS</span>
+                </h3>
+                <h2 class="text-right text-2xl md:text-4xl font-bold max-w-md ml-auto mt-4">
+                  <span class="inline-block p-1 text-custom-gray-font font-notoSansJP">
+                    Filtro prensa <br> Totalmente Automático <br> Autolimpiante <br> No necesita operadores <br> <span class="text-right text-xl md:text-3xl font-bold">(solo una revisión semanal)</span>
+                  </span>
+                </h2>
+                <p class="text-right text-xl md:text-base mt-4 text-custom-gray-font">La SFP corresponde a la nueva generación de filtros prensa: filtro autolimpiante totalmente automático. Brinda funcionamiento libre de problemas sin participación de operadores.
+                  <br><br>
+                  Baja necesidad de mantenimiento <br>
+                  <strong>Superficie de filtración entre 1,2 - 22,3 m²<br>
+                  Completamente sellado para un ambiente limpio <br>
+                  Producción de hasta 1 t/hora</strong>
+                </p>
+                <div class="flex flex-wrap gap-4 justify-start mt-8">
+                  <a href="https://roxia.com/es/deshidratacion/productos-y-soluciones-2/filtro-prensa-intelligente/" target="_blank">
+                    <button class="boton-verde rounded-lg px-2 py-2 text-lg md:text-base font-notoSansJP">Smart Filter Press</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Divisor con logo -->
+          <div class="w-full flex items-center justify-center relative">
+            <!-- Línea horizontal izquierda -->
+            <hr class="absolute top-1/2 w-1/4 border-solid border-2 border-custom-green-50 -translate-x-[calc(50%+100px)]">
+            <!-- Logo -->
+            <img src="https://roxia.com/wp-content/uploads/2022/03/cropped-roxia-favicon-150x150.png" alt="Logo" class="opacity-50 h-14 w-14 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <!-- Línea horizontal derecha -->
+            <hr class="absolute top-1/2 w-1/4 border-solid border-2 border-custom-green-50 translate-x-[calc(50%+100px)]">
+          </div>
+
+          <!-- Contenedor 3 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 mx-auto gap-0 mt-0 overflow-hidden">
+            <!-- Columna izquierda (blanco) -->
+            <div class="bg-white p-4 flex flex-col justify-between h-full md:pt-28">
+              <!-- Contenedor de la imagen -->
+              <div class="flex items-center justify-center md:justify-end h-full">
+                <img src="images/Ceramic-Disc-Filter-Roxia-media-bankhd.png" alt="" class="w-full max-w-xl h-auto md:mr-10 modal-trigger cursor-pointer" data-image="images/Ceramic-Disc-Filter-Roxia-media-bankhd.png">
+              </div>
+              <p class="text-lg text-custom-gray-font mt-2 text-right md:mr-20">Haz click para ampliar la imagen</p> <!-- Leyenda -->
+            </div>
+            <!-- Columna derecha (gris) -->
+            <div class="bg-custom-gray-section p-4 flex flex-col justify-center pt-8 md:pt-28">
+              <div class="max-w-lg">
+                <h3 class="text-2xl md:text-4xl text-center md:text-right font-bold">
+                  <span class="border-4 border-custom-green rounded-2xl bg-white text-custom-green inline-block px-2 py-2 font-notoSansJP">CERAMIC DISC FILTER</span>
+                </h3>
+                <h2 class="text-right text-2xl md:text-4xl font-bold max-w-sm ml-auto mt-4">
+                  <span class="inline-block p-1 text-custom-gray-font font-notoSansJP">Consume hasta 90% menos de energía</span>
+                </h2>
+                <p class="text-right text-xl md:text-base mt-4 text-custom-gray-font">El filtro de disco cerámico Roxia Ceramic Disc Filter requiere una baja inversión, brinda un filtrado limpio con una torta seca y opera continuamente a alta capacidad.
+                  <br><br>
+                  Filtrado más limpio con el menor consumo eléctrico. <br>
+                  Operación continua visible. <br>
+                  <strong>Superficie de filtración de 15 - 120 m². <br>
+                  Producción de hasta 200 t/hora.</strong>
+                </p>
+                <div class="flex flex-wrap gap-4 justify-start mt-8">
+                  <a href="https://roxia.com/es/deshidratacion/productos-y-soluciones-2/filtro-de-disco-ceramico/" target="_blank">
+                    <button class="boton-verde rounded-lg px-2 py-2 text-lg md:text-base font-notoSansJP">Ceramic Disc Filter</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Modal -->
+        <div id="image-modal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden transition-opacity duration-500 opacity-0">
+          <div id="modal-content" class="relative bg-white p-4 rounded-lg transform transition-transform duration-500 scale-75 max-w-3xl max-h-[90vh] w-full h-auto">
+            <button id="modal-close-button" class="absolute top-2 right-2 text-black text-2xl cursor-pointer">&times;</button>
+            <img id="modal-image" src="" alt="" class="max-w-[80%] max-h-[80%] object-contain mx-auto">
+          </div>
+        </div>
+      </section>
+
+      <section class="h-auto mt-20 relative" id="repuestos">
+        <!-- Fondo degradado y logos -->
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white z-0"></div>
+        <div class="absolute inset-0 bg-[url('../images/logo-roxia-fondo.png')] bg-repeat-y bg-custom-width bg-top opacity-40 z-0"></div>
+      
+        <div class="relative z-10 flex flex-col items-center">
+          <!-- Primer contenedor -->
+          <div id="tituloRepuestos" class="opacity-0 flex flex-col justify-center items-start p-8 w-full max-w-7xl animate__animated">
+            <h1 class="text-6xl mb-6 text-custom-green font-extrabold leading-tight underline">
+              REPUESTOS PARA FILTROS
+            </h1>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-center">
+                <!-- Ícono de tilde verde -->
+                <svg class="w-6 h-6 mr-2" fill="none" stroke="green" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="font-bold text-xl text-custom-gray-font font-notoSansJP">Calidad OEM y rendimientos mejorado</span>
+              </li>
+              <li class="flex items-center">
+                <!-- Ícono de tilde verde -->
+                <svg class="w-6 h-6 mr-2" fill="none" stroke="green" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="font-bold text-xl text-custom-gray-font font-notoSansJP">Costo más bajo por tonelada</span>
+              </li>
+              <li class="flex items-center">
+                <!-- Ícono de tilde verde -->
+                <svg class="w-6 h-6 mr-2" fill="none" stroke="green" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="font-bold text-xl text-custom-gray-font font-notoSansJP">Cortos plazos de entrega</span>
+              </li>
+            </ul>
+            <a href="#contacto">
+              <button class="boton-verde px-6 py-1 rounded text-lg">
+                Solicitar una cotización
+              </button>
+            </a>
+          </div>
+      
+
+          <!-- Segundo contenedor -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-28 gap-8 p-8 w-full max-w-7xl mx-auto">
+          
+            <!-- Card 1 -->
+            <div class="shadow_box flex flex-col h-full">
+              <img src="images/diafragmas-goma.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
+              <div class="p-3 flex-grow flex flex-col bg-white">
+                <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
+                <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">DIAFRAGMAS DE GOMA</h2>
+                <p class="text-custom-gray-font mb-2 text-sm">Los diafragmas de caucho Roxia para filtros de torre combinan la fabricación profesional de moldes y los beneficios de más …</p>
+              </div>
+              <a href="https://roxia.com/es/deshidratacion/apoyo-durante-la-vida-util/piezas-de-repuesto/repuestos-para-el-filtro-prensa-tipo-torre/diafragmas-de-goma/" class="boton-verde py-1 px-4 text-left mt-auto font-bebasNeue text-lg" target="_blank">
+                LEÉ MÁS
+              </a>    
+            </div>
+
+            <!-- Card 2 -->
+            <div class="shadow_box flex flex-col h-full">
+              <img src="images/placas-y-sellos-de-filtro.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
+              <div class="p-3 flex-grow flex flex-col bg-white">
+                <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
+                <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">PLACAS DE FILTRO Y SELLOS DE FILTRO</h2>
+                <p class="text-custom-gray-font mb-2 text-sm">El corazón de cada prensa de torre son las placas de filtro y los marcos de filtros. Basándose en las …</p>
+              </div>
+              <a href="https://roxia.com/es/deshidratacion/apoyo-durante-la-vida-util/piezas-de-repuesto/repuestos-para-el-filtro-prensa-tipo-torre/placas-de-filtro-y-sellos-de-filtro/" class="boton-verde py-1 px-4 text-left mt-auto font-bebasNeue text-lg" target="_blank">
+                LEÉ MÁS
+              </a> 
+            </div>
+
+            <!-- Card 3 -->
+            <div class="shadow_box flex flex-col h-full">
+              <img src="images/rodillos-y-raspadores.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
+              <div class="p-3 flex-grow flex flex-col bg-white">
+                <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
+                <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">RODILLOS Y RASPADORES</h2>
+                <p class="text-custom-gray-font mb-2 text-sm">Los rodillos Roxia se fabrican según el diseño más reciente. El doble cierre radial del eje y el cromado hacen …</p>
+              </div>
+              <a href="https://roxia.com/es/deshidratacion/apoyo-durante-la-vida-util/piezas-de-repuesto/repuestos-para-el-filtro-prensa-tipo-torre/rodillos-y-raspadores/" class="boton-verde py-1 px-4 text-left mt-auto font-bebasNeue text-lg" target="_blank">
+                LEÉ MÁS
+              </a> 
+            </div>
+
+            <!-- Card 4 -->
+            <div class="shadow_box flex flex-col h-full">
+              <img src="images/parrillas-filtrantes.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
+              <div class="p-3 flex-grow flex flex-col bg-white">
+                <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
+                <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">PARRILLAS FILTRANTES</h2>
+                <p class="text-custom-gray-font mb-2 text-sm">Las parrillas filtrantes Roxia para filtros de torre tienen una vida útil más larga porque están fabricadas con polipropileno con …</p>
+              </div>
+              <a href="https://roxia.com/es/deshidratacion/apoyo-durante-la-vida-util/piezas-de-repuesto/repuestos-para-el-filtro-prensa-tipo-torre/parrillas-filtrantes/" class="boton-verde py-1 px-4 text-left mt-auto font-bebasNeue text-lg" target="_blank">
+                LEÉ MÁS
+              </a>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="shadow_box flex flex-col h-full">
+              <img src="images/mangueras-de-alimentacion.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
+              <div class="p-3 flex-grow flex flex-col bg-white">
+                <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
+                <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">MANGUERAS DE ALIMENTACIÓN PARA EL PAQUETE COMPLETO DE PLACAS DE FILTRO</h2>
+                <p class="text-custom-gray-font mb-2 text-sm">Las mangueras Roxia se utilizan en los filtros prensa de torre para la alimentación de lodos, el filtrado, el aire …</p>
+              </div>
+              <a href="https://roxia.com/es/deshidratacion/apoyo-durante-la-vida-util/piezas-de-repuesto/repuestos-para-el-filtro-prensa-tipo-torre/mangueras-de-alimentacion-para-el-paquete-completo-de-placas-de-filtro/" class="boton-verde py-1 px-4 text-left mt-auto font-bebasNeue text-lg" target="_blank">
+                LEÉ MÁS
+              </a>
+            </div>  
     
-  </div>
-  <div class="bg-white flex flex-col items-start h-80"></div>
-</div>
-  </div>
-</section>
-</main>
+            <!-- Card 6 -->
+            <div class="shadow_box flex flex-col h-full">
+              <img src="images/bateas-filtrantes.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
+              <div class="p-3 flex-grow flex flex-col bg-white">
+                <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
+                <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">BATEAS FILTRANTES</h2>
+                <p class="text-custom-gray-font mb-2 text-sm">Las bateas filtrantes son componentes constructivos importantes en las placas de filtros de torre. Su función principal es recoger el …</p>
+              </div>
+              <a href="https://roxia.com/es/deshidratacion/apoyo-durante-la-vida-util/piezas-de-repuesto/repuestos-para-el-filtro-prensa-tipo-torre/bateas-filtrantes/" class="boton-verde py-1 px-4 text-left mt-auto font-bebasNeue text-lg" target="_blank">
+                LEÉ MÁS
+              </a>
+            </div>
 
-<footer class="p-4 text-center">
-  <img src="images/LOGO ROXIA-02.png" alt="Roxia Logo" class="w-8/12 sm:w-4/12 md:w-2/12 h-auto mx-auto mb-8 sm:mb-12 md:mb-16">
-  <p class="text-base sm:text-lg md:text-2xl text-custom-gray-font mb-8 sm:mb-12 md:mb-20">
-    ©ROXIA Representante Argentina, All rights reserved.
-  </p>
-</footer>
+            <!-- Card 7 -->
+            <div class="shadow_box flex flex-col h-full">
+              <img src="images/sellos-de-placa-para-prensas.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
+              <div class="p-3 flex-grow flex flex-col bg-white">
+                <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
+                <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">SELLOS DE PLACA PARA PRENSAS TIPO TORRE</h2>
+                <p class="text-custom-gray-font mb-2 text-sm">El propósito principal de los sellos de placa de filtro es sellar herméticamente las cámaras de filtración de la prensa …</p>
+              </div>
+              <a href="https://roxia.com/es/deshidratacion/apoyo-durante-la-vida-util/piezas-de-repuesto/repuestos-para-el-filtro-prensa-tipo-torre/sellos-de-placa-para-prensas-tipo-torre/" class="boton-verde py-1 px-4 text-left mt-auto font-bebasNeue text-lg" target="_blank">
+                LEÉ MÁS
+              </a>
+            </div>
 
-<button id="scrollToTop" class="hidden fixed bottom-10 right-10 bg-custom-green hover:bg-white text-white hover:text-custom-green hover:border-solid hover:border-2 hover:border-custom-green font-bold text-5xl px-6 py-2 rounded-full shadow-2xl">
-  <i class="fas fa-arrow-up"></i>
-</button>
+            <!-- Card 8 -->
+            <div class="shadow_box flex flex-col h-full">
+              <img src="images/paquetes-de-placa-para-filtro.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
+              <div class="p-3 flex-grow flex flex-col bg-white">
+                <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
+                <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">PAQUETES DE PLACA PARA FILTROS PRENSA TIPO TORRE</h2>
+                <p class="text-custom-gray-font mb-2 text-sm">Los expertos en filtración de Roxia han rediseñado los paquetes de placas completos para los filtros de prensa tipo torre: …</p>
+              </div>
+              <a href="https://roxia.com/es/deshidratacion/apoyo-durante-la-vida-util/piezas-de-repuesto/repuestos-para-el-filtro-prensa-tipo-torre/complete-plate-packs/" class="boton-verde py-1 px-4 text-left mt-auto font-bebasNeue text-lg" target="_blank">
+                LEÉ MÁS
+              </a>
+            </div>
 
-<!-- Link to external JavaScript file -->
-<script src="main.js"></script>
-</body>
+            <!-- Card 9 -->
+            <div class="shadow_box flex flex-col h-full">
+              <img src="images/telas-de-filtro-para-prensas.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
+              <div class="p-3 flex-grow flex flex-col bg-white">
+                <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
+                <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">TELAS DE FILTRO PARA PRENSAS TIPO TORRE</h2>
+                <p class="text-custom-gray-font mb-2 text-sm">Una amplia gama de telas filtrantes Roxia para filtros prensa de torre permite elegir el tipo de tela adecuado para …</p>
+              </div>
+              <a href="https://roxia.com/es/deshidratacion/apoyo-durante-la-vida-util/piezas-de-repuesto/repuestos-para-el-filtro-prensa-tipo-torre/telas-de-filtro-para-prensas-tipo-torre/" class="boton-verde py-1 px-4 text-left mt-auto font-bebasNeue text-lg" target="_blank">
+                LEÉ MÁS
+              </a>
+            </div>
 
+            <!-- Card 10 -->
+            <div class="shadow_box flex flex-col h-full">
+              <img src="images/componentes-de-montaje.png" alt="Imagen" class="mb-2 w-full h-52 object-cover">
+              <div class="p-3 flex-grow flex flex-col bg-white">
+                <h3 class="text-sm text-gray-500 font-notoSansJP">PIEZA DE REPUESTO</h3>
+                <h2 class="text-3xl font-bebasNeue mb-2 text-custom-gray-font">COMPONENTES DE MONTAJE</h2>
+                <p class="text-custom-gray-font mb-2 text-sm">Los componentes de montaje Roxia incluyen sujetadores y herrajes como pernos, tuercas, arandelas y mucho más para asegurar las placas …</p>
+              </div>
+              <a href="https://roxia.com/es/deshidratacion/apoyo-durante-la-vida-util/piezas-de-repuesto/repuestos-para-el-filtro-prensa-tipo-torre/componentes-de-montaje/" class="boton-verde py-1 px-4 text-left mt-auto font-bebasNeue text-lg" target="_blank">
+                LEÉ MÁS
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto">
+        <div class="flex flex-col lg:flex-row">
+          
+          <!-- Primer cuadrante (columna) -->
+          <div class="flex-1 flex flex-col items-center lg:w-1/2">
+            <div id="primer-cuadrante" class="bg-custom-green w-full flex flex-col items-center">
+              <h2 class="text-white font-notoSansJP text-5xl mb-4 mt-8">Contactanos</h2>
+              <div class="relative w-full">
+                <!-- Contenedor para la imagen con degradado -->
+                <img src="images/imagen-contacto.jpg" alt="Imagen de contacto" class="h-64 w-full object-cover">
+                <!-- Overlay con el degradado -->
+                <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 40%);"></div>
+              </div>
+            </div>
+            <div class="bg-white flex flex-col items-center lg:items-start mt-6 lg:mt-0">
+              <div class="max-w-5xl w-full flex flex-wrap gap-4 justify-center lg:justify-start">
+                <div class="flex-1 max-w-sm text-center lg:text-left">
+                  <div class="bg-custom-green w-full rounded-2xl mb-4 px-8 py-2 mt-6 relative">
+                    <p class="text-white text-2xl font-bold">LUIS ALBANESE</p>
+                    <p class="text-white text-lg">Representante en Argentina</p>
+                    <!-- Triángulo/flecha en el cuadrado verde -->
+                    <div class="absolute top-[-14px] left-10 w-0 h-0 border-l-[24px] border-l-transparent border-r-[24px] border-r-transparent border-b-[24px] border-b-custom-green"></div>
+                  </div>
+                  <a href="https://wa.link/sec10o" class="text-xl text-gray-800 mb-4 flex items-center justify-center lg:justify-start" target="_blank">
+                    <i class="fab fa-whatsapp mr-2 text-xl text-custom-gray-font"></i> WhatsApp
+                  </a>
+                  <a href="tel:+5491124818238" class="text-xl text-gray-800 mb-4 flex items-center justify-center lg:justify-start" target="_blank">
+                    <i class="fas fa-phone-alt mr-2 text-xl text-custom-gray-font"></i> +54 9 1124818238
+                  </a>
+                  <a href="mailto:roxiaagentarg.luisalbanese@gmail.com" class="text-xl text-gray-800 mb-4 flex items-center justify-center lg:justify-start" target="_blank">
+                    <i class="fas fa-envelope mr-2 text-xl text-custom-gray-font"></i> roxiaagentarg.luisalbanese@gmail.com
+                  </a>
+                  <a href="https://www.google.com/maps?q=Buenos+Aires,+Argentina" class="text-xl text-gray-800 mb-4 flex items-center justify-center lg:justify-start" target="_blank">
+                    <i class="fas fa-map-marker-alt mr-2 text-xl text-custom-gray-font"></i> Buenos Aires, Argentina
+                  </a>
+                  <a href="https://roxia.com/" class="text-xl text-gray-800 mb-4 flex items-center justify-center lg:justify-start" target="_blank">
+                    <i class="fas fa-globe mr-2 text-xl text-custom-gray-font"></i> Web oficial Roxia®
+                  </a>            
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Segundo cuadrante (columna) -->
+          <div class="flex-1 flex flex-col items-start justify-center lg:w-1/2">
+            <div id="segundo-cuadrante" class="bg-custom-green w-full flex flex-col lg:items-start items-center h-96">
+              <form class="bg-white p-6 shadow_box rounded-3xl px-16 w-11/12 mt-12" action="https://formsubmit.co/ezequieldiez.emd@gmail.com" method="POST">
+                <h3 class="text-custom-gray-font text-3xl font-notoSansJP mb-3 mt-2">Envianos tu mensaje</h3>
+                <!-- Campos del formulario -->
+                <div class="mb-2">
+                  <label class="block text-custom-gray-font text-xl font-sans mb-3" for="name">Nombre y Apellido</label>
+                  <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="name" name="name" type="text" required>
+                </div>
+                <div class="mb-2">
+                  <label class="block text-custom-gray-font text-xl font-sans mb-3" for="email">Email</label>
+                  <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="email" name="email" type="email" required>
+                </div>
+                <div class="mb-2">
+                  <label class="block text-custom-gray-font text-xl font-sans mb-3" for="company">Empresa</label>
+                  <input class="shadow appearance-none border rounded-lg w-full py-1 text-2xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="company" name="company" type="text">
+                </div>
+                <div class="mb-2">
+                  <label class="block text-custom-gray-font text-xl font-sans mb-3" for="message">Mensaje</label>
+                  <textarea class="shadow appearance-none border rounded-lg w-full py-1 text-xl text-custom-gray-font leading-tight focus:outline-none focus:shadow-outline" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="flex items-center justify-between mb-4">
+                  <button class="boton-verde font-sans py-2 px-6 rounded-lg focus:outline-none focus:shadow-outline text-xl" type="submit">
+                    Contactar
+                  </button>
+                </div>
+                <input type="hidden" name="_captcha" value="false">
+              </form>
+            </div>
+            <div class="bg-white flex flex-col items-start h-80"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+      
+    <footer class="p-4 text-center">
+      <img src="images/LOGO ROXIA-02.png" alt="Roxia Logo" class="w-8/12 sm:w-4/12 md:w-2/12 h-auto mx-auto mb-8 sm:mb-12 md:mb-16">
+      <p class="text-base sm:text-lg md:text-2xl text-custom-gray-font mb-8 sm:mb-12 md:mb-20">
+        ©ROXIA Representante Argentina, All rights reserved.
+      </p>
+    </footer>
+      
+    <button id="scrollToTop" class="hidden fixed bottom-10 right-10 bg-custom-green hover:bg-white text-white hover:text-custom-green hover:border-solid hover:border-2 hover:border-custom-green font-bold text-5xl px-6 py-2 rounded-full shadow-2xl">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+      
+      <!-- Link to external JavaScript file -->
+      <script src="main.js"></script>
+  </body>
 </html>
+    

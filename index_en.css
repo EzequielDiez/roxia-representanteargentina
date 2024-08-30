@@ -1,0 +1,230 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'animate.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+/* Importación de fuentes */
+@font-face {
+  font-family: "AcuminVariableConcept";
+  src: url("../fonts/AcuminVariableConcept.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Consola";
+  src: url("../fonts/consola.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ConsolaBold";
+  src: url("../fonts/consolab.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MyriadPro";
+  src: url("../fonts/MyriadPro-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NotoSansBlack";
+  src: url("../fonts/NotoSans-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BebasNeueRegular";
+  src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BebasNeueRegular";
+  src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NotoSansJPBlack";
+  src: url("../fonts/NotoSansJP-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+#first-section-en {
+  background:
+    linear-gradient(to bottom, white 5%, transparent 10%, white 35%),
+    url('../images/return-img-background.png') no-repeat center center;
+  background-size: auto;
+  background-position: center 1rem;
+  background-attachment: scroll;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+  #first-section-en {
+    background:
+      linear-gradient(to bottom, white 5%, transparent 15%, white 40%),
+      url('../images/return-img-background.png') no-repeat center center;
+    background-size: contain 60vh;
+    background-position: center 2rem;
+    /* Ajuste de posición */
+  }
+}
+
+@media (max-width: 768px) {
+  #first-section-en {
+    background:
+      linear-gradient(to bottom, white 5%, transparent 20%, white 45%),
+      url('../images/return-img-background.png') no-repeat center center;
+    background-size: contain 70vh;
+    background-position: center 3rem;
+    /* Ajuste de posición */
+  }
+}
+
+@media (max-width: 480px) {
+  #first-section-en {
+    background:
+      linear-gradient(to bottom, white 5%, transparent 25%, white 50%),
+      url('../images/return-img-background.png') no-repeat center center;
+    background-size: cover 80vh;
+    background-position: center 4rem;
+    /* Ajuste de posición */
+  }
+}
+
+
+
+
+
+.shadow_box {
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.shadow_box2 {
+  box-shadow: 0px 0px 30px 8px rgba(0, 0, 0, 0.5);
+}
+
+nav a.active-link {
+  position: relative;
+  border-bottom: 2px solid white;
+}
+
+
+/* Evitar cambios en la altura de las secciones */
+section {
+  padding-top: 4rem;
+  /* Ajuste para que el contenido no quede oculto detrás del navbar */
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+#navbar-en {
+  transform: translateX(100%);
+  opacity: 0;
+  animation: slideIn 2s ease-out forwards;
+}
+
+.nav-link-en {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.nav-link-en.animate {
+  animation: slideIn 0.8s ease-out forwards;
+  animation-delay: 1s;
+  /* Retarda la animación de los links */
+}
+
+#navbar-logo-en {
+  opacity: 0;
+  /* Inicialmente oculto */
+  transition: opacity 1s ease-in-out;
+  /* Cambia la opacidad de forma gradual */
+}
+
+#navbar-logo-en.visible {
+  opacity: 1;
+  /* Totalmente visible */
+}
+
+#contentHome {
+  opacity: 1;
+  /* Inicialmente oculto */
+  transition: opacity 1s ease-in-out;
+  /* Cambia la opacidad de forma gradual */
+}
+
+#contentHome.oculto {
+  opacity: 0;
+  /* Totalmente visible */
+}
+
+.green-button {
+  color: #fff;
+  background: #5E8A5A;
+  border: 2px solid;
+  border-color: #5E8A5A;
+  position: relative;
+}
+
+.green-button:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 1s ease;
+}
+
+.green-button:hover:before {
+  width: 100%;
+}
+
+#modal-content-en {
+  padding: 16px;
+  /* Espacio interno en el modal */
+  box-sizing: border-box;
+  /* Asegura que el padding no afecte el tamaño del modal */
+}
+
+#modal-image-en {
+  margin: 0 auto;
+  /* Centrar la imagen dentro del modal */
+  display: block;
+  /* Asegura que el margen automático funcione */
+}
